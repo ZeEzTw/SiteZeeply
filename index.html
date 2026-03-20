@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeeply | Modern Collective</title>
+    <!-- Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full z-50 py-6 px-10 flex justify-between items-center bg-transparent backdrop-blur-sm bg-black/10">
+        <a href="#" class="block w-16 h-16 rounded-full overflow-hidden border border-white/10">
+            <img src="Logo/logo.png" alt="ZEEPLY" class="w-full h-full object-cover">
+        </a>
+        <div class="flex items-center space-x-8 text-sm uppercase tracking-widest hidden md:flex">
+            <a href="#products" id="nav-shop" class="hover:text-gray-400 transition">Shop</a>
+            <a href="about.html" class="hover:text-gray-400 transition">About</a>
+            
+            <div class="flex items-center gap-4 border-l border-white/20 pl-8 ml-4">
+                <a href="https://www.instagram.com/zeepl.y/" target="_blank" class="hover:text-gray-400 transition" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                </a>
+                <a href="https://www.tiktok.com/@.zeeply" target="_blank" class="hover:text-gray-400 transition" aria-label="TikTok">
+                    <svg fill="currentColor" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="SiteVideo/WhatsApp Video 2026-03-13 at 18.22.41.mp4" type="video/mp4">
+        </video>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-6xl md:text-8xl font-bold tracking-tighter mb-4 animate-fade-in uppercase">Zeeply</h1>
+            <p class="text-lg md:text-xl font-light tracking-widest text-gray-300 animate-fade-in">Elevate Your Reality</p>
+            <a href="#products" id="discover-btn" class="mt-8 inline-block px-10 py-4 border border-white text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-black transition duration-500 animate-fade-in">Discover Collection</a>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-32 gradient-overlay"></div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section id="products" class="py-24 px-6 md:px-20 bg-black min-h-screen">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 space-y-4 md:space-y-0">
+                <div>
+                    <span id="collection-subtitle" class="text-xs uppercase tracking-[0.4em] text-gray-500 mb-2 block">Zeeply Exclusive</span>
+                    <h2 id="collection-title" class="text-4xl font-semibold heading-font uppercase">The Full Collection</h2>
+                </div>
+                <!-- Category Tabs -->
+                <div class="flex flex-wrap gap-4 text-xs uppercase tracking-widest" id="category-tabs">
+                    <button class="tab-btn active text-white border-b-2 border-white pb-1" data-category="All">All</button>
+                    <button class="tab-btn text-gray-500 hover:text-white transition pb-1" data-category="Trending">Trending</button>
+                    <button class="tab-btn text-gray-500 hover:text-white transition pb-1" data-category="Keycaps">Keycaps</button>
+                    <button class="tab-btn text-gray-500 hover:text-white transition pb-1" data-category="F1">F1</button>
+                    <button class="tab-btn text-gray-500 hover:text-white transition pb-1" data-category="Stranger Things">Stranger Things</button>
+                    <button class="tab-btn text-gray-500 hover:text-white transition pb-1" data-category="Big Products">Big Products</button>
+                </div>
+            </div>
+
+            <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+                <!-- Products dynamically injected via script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-10 border-t border-gray-900 text-center bg-black">
+        <div class="text-[10px] tracking-[0.5em] text-gray-600 uppercase mb-8">© 2026 ZEEPLY COLLECTIVE</div>
+        <div class="flex justify-center space-x-12">
+            <a href="https://www.instagram.com/zeepl.y/" target="_blank" class="text-xs text-gray-400 hover:text-white transition tracking-widest">INSTAGRAM</a>
+            <a href="#" class="text-xs text-gray-400 hover:text-white transition tracking-widest">TERMS</a>
+            <a href="#" class="text-xs text-gray-400 hover:text-white transition tracking-widest">SHIPPING</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

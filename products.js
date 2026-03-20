@@ -554,7 +554,7 @@ const products = [
       "Phothos/(38) Barberpole/1.jpg",
       "Phothos/(38) Barberpole/2.jpg"
     ],
-    "price": "25",
+    "price": "250",
     "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
   }
 ];

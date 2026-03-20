@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="aspect-[4/5] overflow-hidden bg-zinc-900 relative product-image-container">
                     <!-- Image: grayscale by default, colored on hover -->
                     <img src="${product.cover_image}" alt="${product.name}" loading="lazy" 
-                            class="w-full h-full object-cover saturate-[.60] group-hover:saturate-100 group-hover:scale-105 transition-all duration-700 main-product-image">
+                            class="w-full h-full object-cover  group-hover:scale-105 transition-all duration-700 main-product-image">
                     
                     <!-- Progress Indicators for Slideshow -->
                     <div class="absolute top-4 left-4 right-4 flex space-x-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">

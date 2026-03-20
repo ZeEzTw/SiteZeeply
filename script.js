@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div>
                         <h3 class="text-xs font-semibold tracking-widest mb-1 uppercase">${product.name}</h3>
                         <p class="text-[9px] text-gray-500 line-clamp-1 max-w-[150px] font-light uppercase tracking-tighter">
-                            ${images.length} ARCHIVE ITEMS AVAILABLE
+                            ARCHIVE ITEM AVAILABLE
                         </p>
                     </div>
                     <span class="text-[10px] font-bold tracking-widest text-zinc-400 whitespace-nowrap shrink-0 ml-4">${product.price} LEI</span>

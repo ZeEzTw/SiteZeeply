@@ -3,29 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Zeeply | Modern Collective</title>
+    <title>Shipping Information | Zeeply</title>
     <!-- Dependencies -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        .text-shadow-hero {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-        /* Rotated video fix for portrait mode recording */
-        .hero-video-rotated {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100vh !important;
-            height: 100vw !important;
-            min-width: 100vh !important;
-            min-height: 100vw !important;
-            transform: translate(-50%, -50%) rotate(90deg);
-            object-fit: cover;
-            filter: brightness(0.4);
-        }
-    </style>
     <script data-goatcounter="https://zeeply.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -38,7 +20,7 @@
         </a>
         <div class="flex items-center space-x-4 md:space-x-8 text-[10px] md:text-sm uppercase tracking-widest">
             <a href="index.html#products" class="hover:text-gray-400 transition" data-goatcounter-click="nav-shop">Shop</a>
-            <a href="about.html" class="text-white border-b border-white hover:text-gray-400 transition" data-goatcounter-click="nav-about">About</a>
+            <a href="about.html" class="hover:text-gray-400 transition" data-goatcounter-click="nav-about">About</a>
             
             <div class="flex items-center gap-3 md:gap-4 border-l border-white/20 pl-4 md:pl-8 ml-2 md:ml-4">
                 <a href="https://www.instagram.com/zeepl.y/" target="_blank" class="hover:text-gray-400 transition" aria-label="Instagram" data-goatcounter-click="nav-instagram">
@@ -51,27 +33,39 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
-        <video autoplay muted loop playsinline class="hero-video-rotated">
-            <source src="Logo/aboutus.mp4" type="video/mp4">
-        </video>
-        
-        <div class="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6 md:space-y-8 animate-fade-in">
-            <h1 class="text-4xl md:text-7xl font-bold tracking-tighter uppercase heading-font text-shadow-hero">Our Journey</h1>
-            <div class="h-px w-16 md:w-24 bg-white/50 mx-auto"></div>
-            <p class="text-base md:text-xl font-light leading-relaxed tracking-wide text-gray-200 text-shadow-hero">
-                We embarked on this journey a year ago, pouring our heart and soul into every product we create. At Zeeply, we strive to stay ahead of the trends, crafting experiences that resonate with what people want to see and feel. We are constantly evolving, improving, and seeking new opportunities to innovate.
-            </p>
-            <p class="text-base md:text-xl font-light leading-relaxed tracking-wide text-gray-200 text-shadow-hero mt-4">
-                Your feedback fuels our passion—if you have any suggestions or just want to connect, we'd love to hear from you.
-            </p>
-            <a href="https://www.instagram.com/zeepl.y/" target="_blank" class="inline-block mt-8 px-10 py-4 border border-white text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-black transition duration-500" data-goatcounter-click="about-instagram-dm">
-                DM Us On Instagram
-            </a>
+    <!-- Content Section -->
+    <section class="relative pt-32 pb-24 px-6 md:px-20 bg-black min-h-screen">
+        <div class="max-w-4xl mx-auto space-y-12 animate-fade-in">
+            <header class="text-center space-y-4">
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tighter uppercase heading-font">Shipping Policy</h1>
+                <div class="h-px w-16 md:w-24 bg-white/50 mx-auto"></div>
+            </header>
+
+            <div class="space-y-8 text-gray-300 font-light leading-relaxed tracking-wide">
+                <div class="space-y-4">
+                    <h2 class="text-white text-xl uppercase tracking-widest font-semibold">1. Shipping Provider</h2>
+                    <p>We use <strong>Colete-Online</strong> to manage our deliveries, ensuring you get the best possible rates and reliable service.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="text-white text-xl uppercase tracking-widest font-semibold">2. Delivery Times</h2>
+                    <p>Estimated delivery time is <strong>2-3 business days</strong> once the order has been processed. Please note that custom items may require additional preparation time.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="text-white text-xl uppercase tracking-widest font-semibold">3. Shipping Rates</h2>
+                    <p>Shipping costs are calculated based on Colete-Online best deals, typically ranging between <strong>8 - 20 LEI</strong>.</p>
+                    <div class="mt-6 p-6 border border-white/10 bg-white/5">
+                        <p class="text-white font-bold tracking-widest uppercase text-center">Free Shipping on all orders over 50 LEI</p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h2 class="text-white text-xl uppercase tracking-widest font-semibold">4. Tracking</h2>
+                    <p>Once your order is shipped, you will receive a tracking number provided by Colete-Online to monitor your package's journey.</p>
+                </div>
+            </div>
         </div>
-        
-        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent"></div>
     </section>
 
     <!-- Footer -->
@@ -81,7 +75,7 @@
             <a href="https://www.instagram.com/zeepl.y/" target="_blank" class="text-[10px] text-gray-400 hover:text-white transition tracking-widest" data-goatcounter-click="footer-instagram">INSTAGRAM</a>
             <a href="index.html#products" class="text-[10px] text-gray-400 hover:text-white transition tracking-widest" data-goatcounter-click="footer-shop">SHOP</a>
             <a href="terms.html" class="text-[10px] text-gray-400 hover:text-white transition tracking-widest" data-goatcounter-click="footer-terms">TERMS</a>
-            <a href="shipping.html" class="text-[10px] text-gray-400 hover:text-white transition tracking-widest" data-goatcounter-click="footer-shipping">SHIPPING</a>
+            <a href="shipping.html" class="text-[10px] text-white transition tracking-widest" data-goatcounter-click="footer-shipping">SHIPPING</a>
         </div>
     </footer>
 

@@ -68,7 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const images = product.all_images;
             const description = product.description || "Limited stock available for this design.";
             const wordCount = description.split(/\s+/).length;
-            const fontSizeClass = wordCount > 17 ? 'text-[10px]' : 'text-[12px]';
+            
+            let fontSizeClass = 'text-[12px]';
+            if (wordCount > 40) fontSizeClass = 'text-[8px]';
+            else if (wordCount > 30) fontSizeClass = 'text-[9px]';
+            else if (wordCount > 20) fontSizeClass = 'text-[10px]';
+            else if (wordCount > 15) fontSizeClass = 'text-[11px]';
 
             card.innerHTML = `
                 <div class="aspect-[4/5] overflow-hidden bg-zinc-900 relative product-image-container">

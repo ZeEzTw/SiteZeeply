@@ -55,14 +55,27 @@ h1, h2, h3, .heading-font {
 /* Unified Description Overlay (Desktop & Mobile) */
 .mobile-desc-active {
     opacity: 1 !important;
-    translate: 0 0 !important;
-    height: 80% !important; /* Larger overlay to fit more text */
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.9) 70%, rgba(0,0,0,0) 100%) !important;
+    transform: translateY(0) !important;
+    height: 100% !important;
+    background: linear-gradient(to top, rgba(0,0,0,1) 20%, rgba(0,0,0,0.8) 100%) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 1.5rem !important;
+    z-index: 30 !important;
 }
 
 .mobile-desc-active p {
-    -webkit-line-clamp: unset !important; /* Show all text */
-    overflow: visible !important;
-    font-size: 10px !important; /* Same as original desktop */
+    display: block !important;
+    -webkit-line-clamp: unset !important;
+    font-size: 10px !important;
     line-height: 1.5 !important;
+    margin-bottom: 1.5rem !important;
+    max-height: 70% !important;
+    overflow-y: auto !important;
+    scrollbar-width: none; /* Hide scrollbar for clean look */
+}
+
+.mobile-desc-active p::-webkit-scrollbar {
+    display: none;
 }

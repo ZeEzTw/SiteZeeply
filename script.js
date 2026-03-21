@@ -135,9 +135,30 @@ document.addEventListener('DOMContentLoaded', () => {
             card.addEventListener('mouseenter', startSlideshow);
             card.addEventListener('mouseleave', stopSlideshow);
             
-            // Click to Instagram
-            card.addEventListener('click', () => {
-                window.open('https://www.instagram.com/zeepl.y/', '_blank');
+            // Click Handling: On mobile, toggle description. On desktop, go to Instagram.
+            card.addEventListener('click', (e) => {
+                if (window.innerWidth < 768) {
+                    const descOverlay = card.querySelector('.absolute.inset-x-0.bottom-0');
+                    const isVisible = descOverlay.classList.contains('active-mobile-desc');
+                    
+                    if (!isVisible) {
+                        // Show overlay as a full-height top-down reveal
+                        descOverlay.classList.add('active-mobile-desc');
+                        descOverlay.classList.remove('h-2/3', 'bg-gradient-to-t', 'from-black', 'via-black/80', 'translate-y-4', 'opacity-0');
+                        descOverlay.classList.add('h-full', 'top-0', 'bg-black/90', 'opacity-100', 'translate-y-0', 'flex', 'flex-col', 'justify-center', 'items-center', 'text-center');
+                        
+                        const p = descOverlay.querySelector('p');
+                        p.classList.remove('line-clamp-3', 'mb-4');
+                        p.classList.add('mb-8', 'px-6', 'text-xs', 'leading-relaxed');
+                        
+                        // Prevent event bubbling if needed, but here we just want to block the Instagram redirect on first click
+                    } else {
+                        // If already visible, clicking again goes to Instagram
+                        window.open('https://www.instagram.com/zeepl.y/', '_blank');
+                    }
+                } else {
+                    window.open('https://www.instagram.com/zeepl.y/', '_blank');
+                }
             });
 
             grid.appendChild(card);

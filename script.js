@@ -138,6 +138,15 @@ document.addEventListener('DOMContentLoaded', () => {
             
             // Click Handling: On mobile, toggle description. On desktop, go to Instagram.
             card.addEventListener('click', (e) => {
+                // Track product click in GoatCounter
+                if (window.goatcounter && window.goatcounter.count) {
+                    window.goatcounter.count({
+                        path:  'product-' + product.name.replace(/\s+/g, '-').toLowerCase(),
+                        title: 'Clicked Product: ' + product.name,
+                        event: true,
+                    });
+                }
+
                 if (window.innerWidth < 768) {
                     const descOverlay = card.querySelector('.absolute.inset-x-0.bottom-0');
                     const isVisible = descOverlay.classList.contains('mobile-desc-active');

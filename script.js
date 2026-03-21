@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
 
                     <!-- Hover Overlay with Description -->
-                    <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-10 flex flex-col justify-end h-2/3">
-                        <p class="text-[10px] text-gray-300 font-light tracking-wide mb-4 line-clamp-3">
+                    <div class="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t from-black via-black/80 to-transparent translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-10 flex flex-col justify-end h-2/3">
+                        <p class="text-[10px] md:text-xs text-gray-300 font-light tracking-wide mb-4">
                             ${description}
                         </p>
                         <button class="w-full py-3 bg-white text-black text-[10px] uppercase font-bold tracking-widest hover:bg-gray-200 transition">
@@ -89,14 +89,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         </button>
                     </div>
                 </div>
-                <div class="mt-6 flex justify-between items-start px-2">
-                    <div>
-                        <h3 class="text-xs font-semibold tracking-widest mb-1 uppercase">${product.name}</h3>
-                        <p class="text-[9px] text-gray-500 line-clamp-1 max-w-[150px] font-light uppercase tracking-tighter">
+                <div class="mt-4 md:mt-6 flex justify-between items-start px-1 md:px-2">
+                    <div class="min-w-0 flex-1">
+                        <h3 class="text-[10px] md:text-xs font-semibold tracking-wide md:tracking-widest mb-1 uppercase break-words">${product.name}</h3>
+                        <p class="text-[8px] md:text-[9px] text-gray-500 font-light uppercase tracking-tighter">
                             ARCHIVE ITEM AVAILABLE
                         </p>
                     </div>
-                    <span class="text-[10px] font-bold tracking-widest text-zinc-400 whitespace-nowrap shrink-0 ml-4">${product.price} LEI</span>
+                    <span class="text-[10px] md:text-xs font-bold tracking-widest text-zinc-400 whitespace-nowrap shrink-0 ml-2 md:ml-4">${product.price} LEI</span>
                 </div>
             `;
 

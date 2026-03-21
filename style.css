@@ -68,7 +68,7 @@ h1, h2, h3, .heading-font {
 .mobile-desc-active p {
     display: block !important;
     -webkit-line-clamp: unset !important;
-    font-size: 10px !important;
+    font-size: inherit !important;
     line-height: 1.5 !important;
     margin-bottom: 1.5rem !important;
     max-height: 70% !important;

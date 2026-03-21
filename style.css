@@ -51,3 +51,47 @@ h1, h2, h3, .heading-font {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Mobile Description Overlay - Top to Bottom Reveal */
+@keyframes slideDown {
+    from { transform: translateY(-100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.mobile-desc-active {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    height: 100% !important;
+    background-color: rgba(0, 0, 0, 0.95) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    z-index: 40 !important;
+    padding: 2.5rem !important;
+    animation: slideDown 0.6s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.mobile-desc-active p {
+    font-size: 13px !important;
+    line-height: 1.8 !important;
+    color: #fff !important;
+    letter-spacing: 0.05em !important;
+    font-weight: 400 !important;
+    margin-bottom: 2rem !important;
+    display: block !important;
+    overflow: visible !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: initial !important;
+    -webkit-box-orient: initial !important;
+}
+
+.mobile-desc-active button {
+    width: 100% !important;
+    opacity: 1 !important;
+    transform: none !important;
+}

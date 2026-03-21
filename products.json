@@ -8,7 +8,9 @@
       "Phothos/(01) F1 Race Calendar - Matte Edition/1.jpeg",
       "Phothos/(01) F1 Race Calendar - Matte Edition/2.jpeg",
       "Phothos/(01) F1 Race Calendar - Matte Edition/3.jpeg",
-      "Phothos/(01) F1 Race Calendar - Matte Edition/4.jpeg"
+      "Phothos/(01) F1 Race Calendar - Matte Edition/4.jpeg",
+      "Phothos/(01) F1 Race Calendar - Matte Edition/5.jpeg",
+      "Phothos/(01) F1 Race Calendar - Matte Edition/7.jpeg"
     ],
     "price": "40",
     "description": "Premium 2026 F1 calendar, matte finish."
@@ -23,36 +25,77 @@
       "Phothos/(02) Suport Pix-uri F1/2.jpeg",
       "Phothos/(02) Suport Pix-uri F1/3.jpeg",
       "Phothos/(02) Suport Pix-uri F1/4.jpeg",
-      "Phothos/(02) Suport Pix-uri F1/5.jpeg"
+      "Phothos/(02) Suport Pix-uri F1/5.jpeg",
+      "Phothos/(02) Suport Pix-uri F1/6.jpeg"
     ],
     "price": "45",
     "description": "Sleek F1 desk organizer for pens."
   },
   {
+    "name": "Formula 1 Wall Display",
+    "category": "F1",
+    "is_trending": false,
+    "cover_image": "Phothos/(03) Formula 1 Wall Display/1.jpeg",
+    "all_images": [
+      "Phothos/(03) Formula 1 Wall Display/1.jpeg",
+      "Phothos/(03) Formula 1 Wall Display/2.jpeg",
+      "Phothos/(03) Formula 1 Wall Display/3.jpeg",
+      "Phothos/(03) Formula 1 Wall Display/4.jpeg",
+      "Phothos/(03) Formula 1 Wall Display/5.jpeg",
+      "Phothos/(03) Formula 1 Wall Display/6.jpeg"
+    ],
+    "price": "70",
+    "description": "A stunning Formula 1 car wall display, perfect for racing enthusiasts."
+  },
+  {
     "name": "Stranger Things Kinder Joy Display",
     "category": "Stranger Things",
     "is_trending": true,
-    "cover_image": "Phothos/(03) Stranger Things Kinder Joy Display/1.jpeg",
+    "cover_image": "Phothos/(04) Stranger Things Kinder Joy Display/1.jpeg",
     "all_images": [
-      "Phothos/(03) Stranger Things Kinder Joy Display/1.jpeg",
-      "Phothos/(03) Stranger Things Kinder Joy Display/2.jpeg",
-      "Phothos/(03) Stranger Things Kinder Joy Display/3.jpeg",
-      "Phothos/(03) Stranger Things Kinder Joy Display/4.jpeg",
-      "Phothos/(03) Stranger Things Kinder Joy Display/5.jpeg",
-      "Phothos/(03) Stranger Things Kinder Joy Display/6.jpeg"
+      "Phothos/(04) Stranger Things Kinder Joy Display/1.jpeg",
+      "Phothos/(04) Stranger Things Kinder Joy Display/2.jpeg",
+      "Phothos/(04) Stranger Things Kinder Joy Display/3.jpeg",
+      "Phothos/(04) Stranger Things Kinder Joy Display/4.jpeg",
+      "Phothos/(04) Stranger Things Kinder Joy Display/5.jpeg",
+      "Phothos/(04) Stranger Things Kinder Joy Display/6.jpeg"
     ],
     "price": "120",
     "description": "Exclusive book-shaped collector display case."
   },
   {
+    "name": "Personalized Newborn Frame - Boy",
+    "category": "Personalized",
+    "is_trending": false,
+    "cover_image": "Phothos/(05) Personalized Newborn Frame - Boy/1.jpeg",
+    "all_images": [
+      "Phothos/(05) Personalized Newborn Frame - Boy/1.jpeg",
+      "Phothos/(05) Personalized Newborn Frame - Boy/2.jpeg"
+    ],
+    "price": "50",
+    "description": "A beautiful personalized newborn frame for boys. Custom name, date, time, weight and height included."
+  },
+  {
+    "name": "Personalized Newborn Frame - Girl",
+    "category": "Personalized",
+    "is_trending": false,
+    "cover_image": "Phothos/(06) Personalized Newborn Frame - Girl/1.jpeg",
+    "all_images": [
+      "Phothos/(06) Personalized Newborn Frame - Girl/1.jpeg",
+      "Phothos/(06) Personalized Newborn Frame - Girl/2.jpeg"
+    ],
+    "price": "50",
+    "description": "A beautiful personalized newborn frame for girls. Custom name, date, time, weight and height included."
+  },
+  {
     "name": "Figurine Fiends McDonalds Support",
     "category": "Big Products",
     "is_trending": true,
-    "cover_image": "Phothos/(04) Figurine Fiends McDonalds Support/1.jpeg",
+    "cover_image": "Phothos/(07) Figurine Fiends McDonalds Support/1.jpeg",
     "all_images": [
-      "Phothos/(04) Figurine Fiends McDonalds Support/1.jpeg",
-      "Phothos/(04) Figurine Fiends McDonalds Support/2.webp",
-      "Phothos/(04) Figurine Fiends McDonalds Support/3.jpg"
+      "Phothos/(07) Figurine Fiends McDonalds Support/1.jpeg",
+      "Phothos/(07) Figurine Fiends McDonalds Support/2.webp",
+      "Phothos/(07) Figurine Fiends McDonalds Support/3.jpg"
     ],
     "price": "120",
     "description": "Premium frame for your favorite figurines."
@@ -61,12 +104,12 @@
     "name": "Counter Strike keycap",
     "category": "Keycaps",
     "is_trending": true,
-    "cover_image": "Phothos/(05) Counter Strike keycap/1.jpg",
+    "cover_image": "Phothos/(08) Counter Strike keycap/1.jpg",
     "all_images": [
-      "Phothos/(05) Counter Strike keycap/1.jpg",
-      "Phothos/(05) Counter Strike keycap/6.jpg",
-      "Phothos/(05) Counter Strike keycap/7.jpg",
-      "Phothos/(05) Counter Strike keycap/8.jpg"
+      "Phothos/(08) Counter Strike keycap/1.jpg",
+      "Phothos/(08) Counter Strike keycap/6.jpg",
+      "Phothos/(08) Counter Strike keycap/7.jpg",
+      "Phothos/(08) Counter Strike keycap/8.jpg"
     ],
     "price": "25",
     "description": "High-quality matte CS gaming keycap."
@@ -75,12 +118,12 @@
     "name": "League of Legends keycap",
     "category": "Keycaps",
     "is_trending": true,
-    "cover_image": "Phothos/(06) League of Legends keycap/1.jpg",
+    "cover_image": "Phothos/(09) League of Legends keycap/1.jpg",
     "all_images": [
-      "Phothos/(06) League of Legends keycap/1.jpg",
-      "Phothos/(06) League of Legends keycap/6.jpg",
-      "Phothos/(06) League of Legends keycap/7.jpg",
-      "Phothos/(06) League of Legends keycap/9.jpg"
+      "Phothos/(09) League of Legends keycap/1.jpg",
+      "Phothos/(09) League of Legends keycap/6.jpg",
+      "Phothos/(09) League of Legends keycap/7.jpg",
+      "Phothos/(09) League of Legends keycap/9.jpg"
     ],
     "price": "25",
     "description": "Premium LoL keycap with matte finish."
@@ -89,14 +132,14 @@
     "name": "Valorant keycap",
     "category": "Keycaps",
     "is_trending": true,
-    "cover_image": "Phothos/(07) Valorant keycap/1.jpg",
+    "cover_image": "Phothos/(10) Valorant keycap/1.jpg",
     "all_images": [
-      "Phothos/(07) Valorant keycap/1.jpg",
-      "Phothos/(07) Valorant keycap/2.jpg",
-      "Phothos/(07) Valorant keycap/3.jpg",
-      "Phothos/(07) Valorant keycap/4.jpg",
-      "Phothos/(07) Valorant keycap/5.jpg",
-      "Phothos/(07) Valorant keycap/6.jpg"
+      "Phothos/(10) Valorant keycap/1.jpg",
+      "Phothos/(10) Valorant keycap/2.jpg",
+      "Phothos/(10) Valorant keycap/3.jpg",
+      "Phothos/(10) Valorant keycap/4.jpg",
+      "Phothos/(10) Valorant keycap/5.jpg",
+      "Phothos/(10) Valorant keycap/6.jpg"
     ],
     "price": "25",
     "description": "Custom Valorant keycap for dedicated gamers."
@@ -105,13 +148,13 @@
     "name": "Dota2",
     "category": "Keycaps",
     "is_trending": true,
-    "cover_image": "Phothos/(08) Dota2/1.jpg",
+    "cover_image": "Phothos/(11) Dota2/1.jpg",
     "all_images": [
-      "Phothos/(08) Dota2/1.jpg",
-      "Phothos/(08) Dota2/2.jpg",
-      "Phothos/(08) Dota2/3.jpg",
-      "Phothos/(08) Dota2/4.jpg",
-      "Phothos/(08) Dota2/5.jpg"
+      "Phothos/(11) Dota2/1.jpg",
+      "Phothos/(11) Dota2/2.jpg",
+      "Phothos/(11) Dota2/3.jpg",
+      "Phothos/(11) Dota2/4.jpg",
+      "Phothos/(11) Dota2/5.jpg"
     ],
     "price": "25",
     "description": "Detailed Dota 2 keycap, matte design."
@@ -120,13 +163,13 @@
     "name": "Heart keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(09) Heart keycap/1.jpg",
+    "cover_image": "Phothos/(12) Heart keycap/1.jpg",
     "all_images": [
-      "Phothos/(09) Heart keycap/1.jpg",
-      "Phothos/(09) Heart keycap/4.jpg",
-      "Phothos/(09) Heart keycap/5.jpg",
-      "Phothos/(09) Heart keycap/6.jpg",
-      "Phothos/(09) Heart keycap/7.jpg"
+      "Phothos/(12) Heart keycap/1.jpg",
+      "Phothos/(12) Heart keycap/4.jpg",
+      "Phothos/(12) Heart keycap/5.jpg",
+      "Phothos/(12) Heart keycap/6.jpg",
+      "Phothos/(12) Heart keycap/7.jpg"
     ],
     "price": "25",
     "description": "Beautiful heart-shaped keycap for your keyboard."
@@ -135,10 +178,10 @@
     "name": "Heart Lego",
     "category": "General",
     "is_trending": true,
-    "cover_image": "Phothos/(10) Heart Lego/1.jpeg",
+    "cover_image": "Phothos/(13) Heart Lego/1.jpeg",
     "all_images": [
-      "Phothos/(10) Heart Lego/1.jpeg",
-      "Phothos/(10) Heart Lego/2.jpeg"
+      "Phothos/(13) Heart Lego/1.jpeg",
+      "Phothos/(13) Heart Lego/2.jpeg"
     ],
     "price": "20",
     "description": "Handcrafted Lego heart for your collection."
@@ -147,10 +190,10 @@
     "name": "Heart Puzzle",
     "category": "General",
     "is_trending": false,
-    "cover_image": "Phothos/(11) Heart Puzzle/1.jpeg",
+    "cover_image": "Phothos/(14) Heart Puzzle/1.jpeg",
     "all_images": [
-      "Phothos/(11) Heart Puzzle/1.jpeg",
-      "Phothos/(11) Heart Puzzle/2.jpeg"
+      "Phothos/(14) Heart Puzzle/1.jpeg",
+      "Phothos/(14) Heart Puzzle/2.jpeg"
     ],
     "price": "30",
     "description": "Elegant heart puzzle for loved ones."
@@ -159,12 +202,12 @@
     "name": "Rust keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(12) Rust keycap/1.jpg",
+    "cover_image": "Phothos/(15) Rust keycap/1.jpg",
     "all_images": [
-      "Phothos/(12) Rust keycap/1.jpg",
-      "Phothos/(12) Rust keycap/2.jpg",
-      "Phothos/(12) Rust keycap/3.jpg",
-      "Phothos/(12) Rust keycap/4.jpg"
+      "Phothos/(15) Rust keycap/1.jpg",
+      "Phothos/(15) Rust keycap/2.jpg",
+      "Phothos/(15) Rust keycap/3.jpg",
+      "Phothos/(15) Rust keycap/4.jpg"
     ],
     "price": "25",
     "description": "Rugged Rust inspired matte keycap."
@@ -173,13 +216,13 @@
     "name": "Garry'S Mod",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(13) Garry'S Mod/1.jpg",
+    "cover_image": "Phothos/(16) Garry'S Mod/1.jpg",
     "all_images": [
-      "Phothos/(13) Garry'S Mod/1.jpg",
-      "Phothos/(13) Garry'S Mod/2.jpg",
-      "Phothos/(13) Garry'S Mod/3.jpg",
-      "Phothos/(13) Garry'S Mod/4.jpg",
-      "Phothos/(13) Garry'S Mod/5.jpg"
+      "Phothos/(16) Garry'S Mod/1.jpg",
+      "Phothos/(16) Garry'S Mod/2.jpg",
+      "Phothos/(16) Garry'S Mod/3.jpg",
+      "Phothos/(16) Garry'S Mod/4.jpg",
+      "Phothos/(16) Garry'S Mod/5.jpg"
     ],
     "price": "25",
     "description": "Iconic Garry's Mod inspired custom keycap."
@@ -188,14 +231,14 @@
     "name": "Apex Legends keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(14) Apex Legends keycap/1.jpg",
+    "cover_image": "Phothos/(17) Apex Legends keycap/1.jpg",
     "all_images": [
-      "Phothos/(14) Apex Legends keycap/1.jpg",
-      "Phothos/(14) Apex Legends keycap/2.jpg",
-      "Phothos/(14) Apex Legends keycap/3.jpg",
-      "Phothos/(14) Apex Legends keycap/4.jpg",
-      "Phothos/(14) Apex Legends keycap/5.jpg",
-      "Phothos/(14) Apex Legends keycap/6.jpg"
+      "Phothos/(17) Apex Legends keycap/1.jpg",
+      "Phothos/(17) Apex Legends keycap/2.jpg",
+      "Phothos/(17) Apex Legends keycap/3.jpg",
+      "Phothos/(17) Apex Legends keycap/4.jpg",
+      "Phothos/(17) Apex Legends keycap/5.jpg",
+      "Phothos/(17) Apex Legends keycap/6.jpg"
     ],
     "price": "25",
     "description": "Apex Legends keycap, high precision craft."
@@ -204,13 +247,13 @@
     "name": "Terraria keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(15) Terraria keycap/1.jpg",
+    "cover_image": "Phothos/(18) Terraria keycap/1.jpg",
     "all_images": [
-      "Phothos/(15) Terraria keycap/1.jpg",
-      "Phothos/(15) Terraria keycap/2.jpg",
-      "Phothos/(15) Terraria keycap/3.jpg",
-      "Phothos/(15) Terraria keycap/4.jpg",
-      "Phothos/(15) Terraria keycap/5.jpg"
+      "Phothos/(18) Terraria keycap/1.jpg",
+      "Phothos/(18) Terraria keycap/2.jpg",
+      "Phothos/(18) Terraria keycap/3.jpg",
+      "Phothos/(18) Terraria keycap/4.jpg",
+      "Phothos/(18) Terraria keycap/5.jpg"
     ],
     "price": "25",
     "description": "Classic Terraria inspired matte keycap."
@@ -219,13 +262,13 @@
     "name": "Team Fortress 2 keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(16) Team Fortress 2 keycap/1.jpg",
+    "cover_image": "Phothos/(19) Team Fortress 2 keycap/1.jpg",
     "all_images": [
-      "Phothos/(16) Team Fortress 2 keycap/1.jpg",
-      "Phothos/(16) Team Fortress 2 keycap/2.jpg",
-      "Phothos/(16) Team Fortress 2 keycap/3.jpg",
-      "Phothos/(16) Team Fortress 2 keycap/4.jpg",
-      "Phothos/(16) Team Fortress 2 keycap/5.jpg"
+      "Phothos/(19) Team Fortress 2 keycap/1.jpg",
+      "Phothos/(19) Team Fortress 2 keycap/2.jpg",
+      "Phothos/(19) Team Fortress 2 keycap/3.jpg",
+      "Phothos/(19) Team Fortress 2 keycap/4.jpg",
+      "Phothos/(19) Team Fortress 2 keycap/5.jpg"
     ],
     "price": "25",
     "description": "TF2 collector keycap, premium quality."
@@ -234,12 +277,12 @@
     "name": "Escape From Tarkov keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(17) Escape From Tarkov keycap/1.jpg",
+    "cover_image": "Phothos/(20) Escape From Tarkov keycap/1.jpg",
     "all_images": [
-      "Phothos/(17) Escape From Tarkov keycap/1.jpg",
-      "Phothos/(17) Escape From Tarkov keycap/2.jpg",
-      "Phothos/(17) Escape From Tarkov keycap/3.jpg",
-      "Phothos/(17) Escape From Tarkov keycap/4.jpeg"
+      "Phothos/(20) Escape From Tarkov keycap/1.jpg",
+      "Phothos/(20) Escape From Tarkov keycap/2.jpg",
+      "Phothos/(20) Escape From Tarkov keycap/3.jpg",
+      "Phothos/(20) Escape From Tarkov keycap/4.jpeg"
     ],
     "price": "25",
     "description": "Tactical EFT keycap with matte finish."
@@ -248,15 +291,15 @@
     "name": "Overwatch keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(18) Overwatch keycap/1.jpg",
+    "cover_image": "Phothos/(21) Overwatch keycap/1.jpg",
     "all_images": [
-      "Phothos/(18) Overwatch keycap/1.jpg",
-      "Phothos/(18) Overwatch keycap/2.jpg",
-      "Phothos/(18) Overwatch keycap/3.jpg",
-      "Phothos/(18) Overwatch keycap/4.jpg",
-      "Phothos/(18) Overwatch keycap/5.jpg",
-      "Phothos/(18) Overwatch keycap/6.jpg",
-      "Phothos/(18) Overwatch keycap/7.jpg"
+      "Phothos/(21) Overwatch keycap/1.jpg",
+      "Phothos/(21) Overwatch keycap/2.jpg",
+      "Phothos/(21) Overwatch keycap/3.jpg",
+      "Phothos/(21) Overwatch keycap/4.jpg",
+      "Phothos/(21) Overwatch keycap/5.jpg",
+      "Phothos/(21) Overwatch keycap/6.jpg",
+      "Phothos/(21) Overwatch keycap/7.jpg"
     ],
     "price": "25",
     "description": "Overwatch hero keycap for true fans."
@@ -265,13 +308,13 @@
     "name": "N7 keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(19) N7 keycap/1.jpg",
+    "cover_image": "Phothos/(22) N7 keycap/1.jpg",
     "all_images": [
-      "Phothos/(19) N7 keycap/1.jpg",
-      "Phothos/(19) N7 keycap/2.jpg",
-      "Phothos/(19) N7 keycap/3.jpg",
-      "Phothos/(19) N7 keycap/4.jpg",
-      "Phothos/(19) N7 keycap/5.jpg"
+      "Phothos/(22) N7 keycap/1.jpg",
+      "Phothos/(22) N7 keycap/2.jpg",
+      "Phothos/(22) N7 keycap/3.jpg",
+      "Phothos/(22) N7 keycap/4.jpg",
+      "Phothos/(22) N7 keycap/5.jpg"
     ],
     "price": "25",
     "description": "Mass Effect N7 premium matte keycap."
@@ -280,14 +323,14 @@
     "name": "The Sims keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(20) The Sims keycap/1.jpg",
+    "cover_image": "Phothos/(23) The Sims keycap/1.jpg",
     "all_images": [
-      "Phothos/(20) The Sims keycap/1.jpg",
-      "Phothos/(20) The Sims keycap/2.jpg",
-      "Phothos/(20) The Sims keycap/3.jpg",
-      "Phothos/(20) The Sims keycap/4.jpg",
-      "Phothos/(20) The Sims keycap/5.jpg",
-      "Phothos/(20) The Sims keycap/6.jpg"
+      "Phothos/(23) The Sims keycap/1.jpg",
+      "Phothos/(23) The Sims keycap/2.jpg",
+      "Phothos/(23) The Sims keycap/3.jpg",
+      "Phothos/(23) The Sims keycap/4.jpg",
+      "Phothos/(23) The Sims keycap/5.jpg",
+      "Phothos/(23) The Sims keycap/6.jpg"
     ],
     "price": "25",
     "description": "Iconic Sims Plumbob custom keycap."
@@ -296,13 +339,13 @@
     "name": "Aphex Twin keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(21) Aphex Twin keycap/1.jpg",
+    "cover_image": "Phothos/(24) Aphex Twin keycap/1.jpg",
     "all_images": [
-      "Phothos/(21) Aphex Twin keycap/1.jpg",
-      "Phothos/(21) Aphex Twin keycap/2.jpg",
-      "Phothos/(21) Aphex Twin keycap/3.jpg",
-      "Phothos/(21) Aphex Twin keycap/4.jpg",
-      "Phothos/(21) Aphex Twin keycap/5.jpg"
+      "Phothos/(24) Aphex Twin keycap/1.jpg",
+      "Phothos/(24) Aphex Twin keycap/2.jpg",
+      "Phothos/(24) Aphex Twin keycap/3.jpg",
+      "Phothos/(24) Aphex Twin keycap/4.jpg",
+      "Phothos/(24) Aphex Twin keycap/5.jpg"
     ],
     "price": "25",
     "description": "Minimalist Aphex Twin logo matte keycap."
@@ -311,14 +354,14 @@
     "name": "Minecraft keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(22) Minecraft keycap/1.png",
+    "cover_image": "Phothos/(25) Minecraft keycap/1.png",
     "all_images": [
-      "Phothos/(22) Minecraft keycap/1.png",
-      "Phothos/(22) Minecraft keycap/2.jpg",
-      "Phothos/(22) Minecraft keycap/3.jpg",
-      "Phothos/(22) Minecraft keycap/4.jpg",
-      "Phothos/(22) Minecraft keycap/5.jpg",
-      "Phothos/(22) Minecraft keycap/6.jpg"
+      "Phothos/(25) Minecraft keycap/1.png",
+      "Phothos/(25) Minecraft keycap/2.jpg",
+      "Phothos/(25) Minecraft keycap/3.jpg",
+      "Phothos/(25) Minecraft keycap/4.jpg",
+      "Phothos/(25) Minecraft keycap/5.jpg",
+      "Phothos/(25) Minecraft keycap/6.jpg"
     ],
     "price": "25",
     "description": "Blocky Minecraft inspired custom keycap."
@@ -327,12 +370,12 @@
     "name": "Rockstar keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(23) Rockstar keycap/1.jpg",
+    "cover_image": "Phothos/(26) Rockstar keycap/1.jpg",
     "all_images": [
-      "Phothos/(23) Rockstar keycap/1.jpg",
-      "Phothos/(23) Rockstar keycap/2.jpg",
-      "Phothos/(23) Rockstar keycap/3.jpg",
-      "Phothos/(23) Rockstar keycap/4.jpg"
+      "Phothos/(26) Rockstar keycap/1.jpg",
+      "Phothos/(26) Rockstar keycap/2.jpg",
+      "Phothos/(26) Rockstar keycap/3.jpg",
+      "Phothos/(26) Rockstar keycap/4.jpg"
     ],
     "price": "25",
     "description": "Premium Rockstar Games matte keycap."
@@ -341,13 +384,13 @@
     "name": "Candycan keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(24) Candycan keycap/1.jpg",
+    "cover_image": "Phothos/(27) Candycan keycap/1.jpg",
     "all_images": [
-      "Phothos/(24) Candycan keycap/1.jpg",
-      "Phothos/(24) Candycan keycap/2.jpg",
-      "Phothos/(24) Candycan keycap/3.jpg",
-      "Phothos/(24) Candycan keycap/4.jpg",
-      "Phothos/(24) Candycan keycap/5.jpeg"
+      "Phothos/(27) Candycan keycap/1.jpg",
+      "Phothos/(27) Candycan keycap/2.jpg",
+      "Phothos/(27) Candycan keycap/3.jpg",
+      "Phothos/(27) Candycan keycap/4.jpg",
+      "Phothos/(27) Candycan keycap/5.jpeg"
     ],
     "price": "25",
     "description": "Sweet Candycan design, festive matte finish."
@@ -356,11 +399,11 @@
     "name": "The Upside Down Bookmark",
     "category": "Stranger Things",
     "is_trending": true,
-    "cover_image": "Phothos/(25) The Upside Down Bookmark/1.jpeg",
+    "cover_image": "Phothos/(28) The Upside Down Bookmark/1.jpeg",
     "all_images": [
-      "Phothos/(25) The Upside Down Bookmark/1.jpeg",
-      "Phothos/(25) The Upside Down Bookmark/2.jpeg",
-      "Phothos/(25) The Upside Down Bookmark/3.jpeg"
+      "Phothos/(28) The Upside Down Bookmark/1.jpeg",
+      "Phothos/(28) The Upside Down Bookmark/2.jpeg",
+      "Phothos/(28) The Upside Down Bookmark/3.jpeg"
     ],
     "price": "15",
     "description": "Spooky Stranger Things inspired bookmark."
@@ -369,10 +412,10 @@
     "name": "Stranger Things keychain",
     "category": "Stranger Things",
     "is_trending": true,
-    "cover_image": "Phothos/(26) Stranger Things keychain/1.jpeg",
+    "cover_image": "Phothos/(29) Stranger Things keychain/1.jpeg",
     "all_images": [
-      "Phothos/(26) Stranger Things keychain/1.jpeg",
-      "Phothos/(26) Stranger Things keychain/2.jpeg"
+      "Phothos/(29) Stranger Things keychain/1.jpeg",
+      "Phothos/(29) Stranger Things keychain/2.jpeg"
     ],
     "price": "15",
     "description": "Matte Stranger Things keychain for fans."
@@ -381,14 +424,14 @@
     "name": "Pika keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(27) Pika keycap/1.jpg",
+    "cover_image": "Phothos/(30) Pika keycap/1.jpg",
     "all_images": [
-      "Phothos/(27) Pika keycap/1.jpg",
-      "Phothos/(27) Pika keycap/2.png",
-      "Phothos/(27) Pika keycap/3.jpg",
-      "Phothos/(27) Pika keycap/4.jpg",
-      "Phothos/(27) Pika keycap/5.jpg",
-      "Phothos/(27) Pika keycap/6.jpeg"
+      "Phothos/(30) Pika keycap/1.jpg",
+      "Phothos/(30) Pika keycap/2.png",
+      "Phothos/(30) Pika keycap/3.jpg",
+      "Phothos/(30) Pika keycap/4.jpg",
+      "Phothos/(30) Pika keycap/5.jpg",
+      "Phothos/(30) Pika keycap/6.jpeg"
     ],
     "price": "25",
     "description": "Cute Pika-inspired premium matte keycap."
@@ -397,17 +440,17 @@
     "name": "SantaClaus keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(28) SantaClaus keycap/1.jpeg",
+    "cover_image": "Phothos/(31) SantaClaus keycap/1.jpeg",
     "all_images": [
-      "Phothos/(28) SantaClaus keycap/1.jpeg",
-      "Phothos/(28) SantaClaus keycap/2.jpeg",
-      "Phothos/(28) SantaClaus keycap/3.jpeg",
-      "Phothos/(28) SantaClaus keycap/4.jpeg",
-      "Phothos/(28) SantaClaus keycap/5.jpeg",
-      "Phothos/(28) SantaClaus keycap/6.jpeg",
-      "Phothos/(28) SantaClaus keycap/7.jpeg",
-      "Phothos/(28) SantaClaus keycap/8.jpeg",
-      "Phothos/(28) SantaClaus keycap/9.jpeg"
+      "Phothos/(31) SantaClaus keycap/1.jpeg",
+      "Phothos/(31) SantaClaus keycap/2.jpeg",
+      "Phothos/(31) SantaClaus keycap/3.jpeg",
+      "Phothos/(31) SantaClaus keycap/4.jpeg",
+      "Phothos/(31) SantaClaus keycap/5.jpeg",
+      "Phothos/(31) SantaClaus keycap/6.jpeg",
+      "Phothos/(31) SantaClaus keycap/7.jpeg",
+      "Phothos/(31) SantaClaus keycap/8.jpeg",
+      "Phothos/(31) SantaClaus keycap/9.jpeg"
     ],
     "price": "25",
     "description": "Festive Santa keycap, holiday matte edition."
@@ -416,13 +459,13 @@
     "name": "Wolft Keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(29) Wolft Keycap/1.jpeg",
+    "cover_image": "Phothos/(32) Wolft Keycap/1.jpeg",
     "all_images": [
-      "Phothos/(29) Wolft Keycap/1.jpeg",
-      "Phothos/(29) Wolft Keycap/2.jpeg",
-      "Phothos/(29) Wolft Keycap/3.jpeg",
-      "Phothos/(29) Wolft Keycap/4.jpeg",
-      "Phothos/(29) Wolft Keycap/5.jpeg"
+      "Phothos/(32) Wolft Keycap/1.jpeg",
+      "Phothos/(32) Wolft Keycap/2.jpeg",
+      "Phothos/(32) Wolft Keycap/3.jpeg",
+      "Phothos/(32) Wolft Keycap/4.jpeg",
+      "Phothos/(32) Wolft Keycap/5.jpeg"
     ],
     "price": "25",
     "description": "Ferocious Wolf design premium matte keycap."
@@ -431,13 +474,13 @@
     "name": "The Finals keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(30) The Finals keycap/1.jpg",
+    "cover_image": "Phothos/(33) The Finals keycap/1.jpg",
     "all_images": [
-      "Phothos/(30) The Finals keycap/1.jpg",
-      "Phothos/(30) The Finals keycap/2.jpg",
-      "Phothos/(30) The Finals keycap/3.jpg",
-      "Phothos/(30) The Finals keycap/4.jpg",
-      "Phothos/(30) The Finals keycap/5.jpeg"
+      "Phothos/(33) The Finals keycap/1.jpg",
+      "Phothos/(33) The Finals keycap/2.jpg",
+      "Phothos/(33) The Finals keycap/3.jpg",
+      "Phothos/(33) The Finals keycap/4.jpg",
+      "Phothos/(33) The Finals keycap/5.jpeg"
     ],
     "price": "25",
     "description": "Competitive The Finals matte keycap."
@@ -446,14 +489,14 @@
     "name": "Half Life keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(31) Half Life keycap/1.jpg",
+    "cover_image": "Phothos/(34) Half Life keycap/1.jpg",
     "all_images": [
-      "Phothos/(31) Half Life keycap/1.jpg",
-      "Phothos/(31) Half Life keycap/2.jpg",
-      "Phothos/(31) Half Life keycap/3.jpg",
-      "Phothos/(31) Half Life keycap/4.jpg",
-      "Phothos/(31) Half Life keycap/5.jpg",
-      "Phothos/(31) Half Life keycap/6.jpg"
+      "Phothos/(34) Half Life keycap/1.jpg",
+      "Phothos/(34) Half Life keycap/2.jpg",
+      "Phothos/(34) Half Life keycap/3.jpg",
+      "Phothos/(34) Half Life keycap/4.jpg",
+      "Phothos/(34) Half Life keycap/5.jpg",
+      "Phothos/(34) Half Life keycap/6.jpg"
     ],
     "price": "25",
     "description": "Legendary Half-Life Lambda matte keycap."
@@ -462,11 +505,11 @@
     "name": "Suport Cheie Masina",
     "category": "General",
     "is_trending": false,
-    "cover_image": "Phothos/(32) Suport Cheie Masina/1.jpeg",
+    "cover_image": "Phothos/(35) Suport Cheie Masina/1.jpeg",
     "all_images": [
-      "Phothos/(32) Suport Cheie Masina/1.jpeg",
-      "Phothos/(32) Suport Cheie Masina/2.jpeg",
-      "Phothos/(32) Suport Cheie Masina/3.jpeg"
+      "Phothos/(35) Suport Cheie Masina/1.jpeg",
+      "Phothos/(35) Suport Cheie Masina/2.jpeg",
+      "Phothos/(35) Suport Cheie Masina/3.jpeg"
     ],
     "price": "50",
     "description": "Premium Zeeply car key organizer."
@@ -475,13 +518,13 @@
     "name": "Snowman keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(33) Snowman keycap/1.jpeg",
+    "cover_image": "Phothos/(36) Snowman keycap/1.jpeg",
     "all_images": [
-      "Phothos/(33) Snowman keycap/1.jpeg",
-      "Phothos/(33) Snowman keycap/2.jpeg",
-      "Phothos/(33) Snowman keycap/3.jpeg",
-      "Phothos/(33) Snowman keycap/4.jpeg",
-      "Phothos/(33) Snowman keycap/5.jpeg"
+      "Phothos/(36) Snowman keycap/1.jpeg",
+      "Phothos/(36) Snowman keycap/2.jpeg",
+      "Phothos/(36) Snowman keycap/3.jpeg",
+      "Phothos/(36) Snowman keycap/4.jpeg",
+      "Phothos/(36) Snowman keycap/5.jpeg"
     ],
     "price": "25",
     "description": "Winter Snowman keycap, seasonal matte finish."
@@ -490,13 +533,13 @@
     "name": "Turtadulce",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(34) Turtadulce/1.jpeg",
+    "cover_image": "Phothos/(37) Turtadulce/1.jpeg",
     "all_images": [
-      "Phothos/(34) Turtadulce/1.jpeg",
-      "Phothos/(34) Turtadulce/2.jpeg",
-      "Phothos/(34) Turtadulce/3.jpeg",
-      "Phothos/(34) Turtadulce/4.jpeg",
-      "Phothos/(34) Turtadulce/5.jpeg"
+      "Phothos/(37) Turtadulce/1.jpeg",
+      "Phothos/(37) Turtadulce/2.jpeg",
+      "Phothos/(37) Turtadulce/3.jpeg",
+      "Phothos/(37) Turtadulce/4.jpeg",
+      "Phothos/(37) Turtadulce/5.jpeg"
     ],
     "price": "25",
     "description": "Gingerbread inspired custom matte keycap."
@@ -505,14 +548,14 @@
     "name": "Radiations keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(35) Radiations keycap/1.jpg",
+    "cover_image": "Phothos/(38) Radiations keycap/1.jpg",
     "all_images": [
-      "Phothos/(35) Radiations keycap/1.jpg",
-      "Phothos/(35) Radiations keycap/2.jpg",
-      "Phothos/(35) Radiations keycap/3.jpg",
-      "Phothos/(35) Radiations keycap/4.jpg",
-      "Phothos/(35) Radiations keycap/5.jpg",
-      "Phothos/(35) Radiations keycap/6.jpg"
+      "Phothos/(38) Radiations keycap/1.jpg",
+      "Phothos/(38) Radiations keycap/2.jpg",
+      "Phothos/(38) Radiations keycap/3.jpg",
+      "Phothos/(38) Radiations keycap/4.jpg",
+      "Phothos/(38) Radiations keycap/5.jpg",
+      "Phothos/(38) Radiations keycap/6.jpg"
     ],
     "price": "25",
     "description": "Hazardous Radiation design matte keycap."
@@ -521,13 +564,13 @@
     "name": "Ciocolata",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(36) Ciocolata/1.jpg",
+    "cover_image": "Phothos/(39) Ciocolata/1.jpg",
     "all_images": [
-      "Phothos/(36) Ciocolata/1.jpg",
-      "Phothos/(36) Ciocolata/2.jpg",
-      "Phothos/(36) Ciocolata/3.jpg",
-      "Phothos/(36) Ciocolata/4.jpg",
-      "Phothos/(36) Ciocolata/5.jpg"
+      "Phothos/(39) Ciocolata/1.jpg",
+      "Phothos/(39) Ciocolata/2.jpg",
+      "Phothos/(39) Ciocolata/3.jpg",
+      "Phothos/(39) Ciocolata/4.jpg",
+      "Phothos/(39) Ciocolata/5.jpg"
     ],
     "price": "25",
     "description": "Chocolate bar design custom keycap."
@@ -536,11 +579,11 @@
     "name": "Justachillfrog",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(37) Justachillfrog/1.jpg",
+    "cover_image": "Phothos/(40) Justachillfrog/1.jpg",
     "all_images": [
-      "Phothos/(37) Justachillfrog/1.jpg",
-      "Phothos/(37) Justachillfrog/2.jpg",
-      "Phothos/(37) Justachillfrog/3.jpg"
+      "Phothos/(40) Justachillfrog/1.jpg",
+      "Phothos/(40) Justachillfrog/2.jpg",
+      "Phothos/(40) Justachillfrog/3.jpg"
     ],
     "price": "25",
     "description": "Relaxed Chillfrog premium matte keycap."
@@ -549,10 +592,10 @@
     "name": "Barberpole",
     "category": "Big Products",
     "is_trending": false,
-    "cover_image": "Phothos/(38) Barberpole/1.jpg",
+    "cover_image": "Phothos/(41) Barberpole/1.jpg",
     "all_images": [
-      "Phothos/(38) Barberpole/1.jpg",
-      "Phothos/(38) Barberpole/2.jpg"
+      "Phothos/(41) Barberpole/1.jpg",
+      "Phothos/(41) Barberpole/2.jpg"
     ],
     "price": "250",
     "description": "Classic Barberpole design matte keycap."

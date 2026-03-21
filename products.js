@@ -11,7 +11,7 @@ const products = [
       "Phothos/(01) F1 Race Calendar - Matte Edition/4.jpeg"
     ],
     "price": "40",
-    "description": "Premium F1 calendar for the 2026 season. Crafted with a matte finish and high precision."
+    "description": "Premium 2026 F1 calendar, matte finish."
   },
   {
     "name": "Suport Pix-uri F1",
@@ -26,7 +26,7 @@ const products = [
       "Phothos/(02) Suport Pix-uri F1/5.jpeg"
     ],
     "price": "45",
-    "description": "Keep your workspace on the right track. A high-speed home for your pens and essentials. Crafted with premium matte materials and racing precision."
+    "description": "Sleek F1 desk organizer for pens."
   },
   {
     "name": "Stranger Things Kinder Joy Display",
@@ -42,7 +42,7 @@ const products = [
       "Phothos/(03) Stranger Things Kinder Joy Display/6.jpeg"
     ],
     "price": "120",
-    "description": "A premium Stranger Things collector's case. Designed to hold your favorite figurines, this book-shaped display opens and closes with a satisfying click. Crafted with high-quality matte materials for a flawless finish."
+    "description": "Exclusive book-shaped collector display case."
   },
   {
     "name": "Figurine Fiends McDonalds Support",
@@ -55,7 +55,7 @@ const products = [
       "Phothos/(04) Figurine Fiends McDonalds Support/3.jpg"
     ],
     "price": "120",
-    "description": "Give your favorite figurines a dedicated place to stay. This premium frame is designed to hold them all and can be mounted anywhere\u2014even on your walls. Crafted with high-quality matte materials for a flawless finish."
+    "description": "Premium frame for your favorite figurines."
   },
   {
     "name": "Counter Strike keycap",
@@ -69,7 +69,7 @@ const products = [
       "Phothos/(05) Counter Strike keycap/8.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "High-quality matte CS gaming keycap."
   },
   {
     "name": "League of Legends keycap",
@@ -83,7 +83,7 @@ const products = [
       "Phothos/(06) League of Legends keycap/9.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Premium LoL keycap with matte finish."
   },
   {
     "name": "Valorant keycap",
@@ -99,7 +99,7 @@ const products = [
       "Phothos/(07) Valorant keycap/6.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Custom Valorant keycap for dedicated gamers."
   },
   {
     "name": "Dota2",
@@ -114,7 +114,7 @@ const products = [
       "Phothos/(08) Dota2/5.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Detailed Dota 2 keycap, matte design."
   },
   {
     "name": "Heart keycap",
@@ -129,7 +129,7 @@ const products = [
       "Phothos/(09) Heart keycap/7.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Beautiful heart-shaped keycap for your keyboard."
   },
   {
     "name": "Heart Lego",
@@ -141,7 +141,7 @@ const products = [
       "Phothos/(10) Heart Lego/2.jpeg"
     ],
     "price": "20",
-    "description": "A heart-shaped Lego heart, just to know someone loves you. Crafted with premium materials for a flawless finish."
+    "description": "Handcrafted Lego heart for your collection."
   },
   {
     "name": "Heart Puzzle",
@@ -153,7 +153,7 @@ const products = [
       "Phothos/(11) Heart Puzzle/2.jpeg"
     ],
     "price": "30",
-    "description": "A heart puzzle to create with your loved ones, just to show your love. Crafted with premium matte materials"
+    "description": "Elegant heart puzzle for loved ones."
   },
   {
     "name": "Rust keycap",
@@ -167,7 +167,7 @@ const products = [
       "Phothos/(12) Rust keycap/4.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Rugged Rust inspired matte keycap."
   },
   {
     "name": "Garry'S Mod",
@@ -182,7 +182,7 @@ const products = [
       "Phothos/(13) Garry'S Mod/5.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Iconic Garry's Mod inspired custom keycap."
   },
   {
     "name": "Apex Legends keycap",
@@ -198,7 +198,7 @@ const products = [
       "Phothos/(14) Apex Legends keycap/6.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Apex Legends keycap, high precision craft."
   },
   {
     "name": "Terraria keycap",
@@ -213,7 +213,7 @@ const products = [
       "Phothos/(15) Terraria keycap/5.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Classic Terraria inspired matte keycap."
   },
   {
     "name": "Team Fortress 2 keycap",
@@ -228,7 +228,7 @@ const products = [
       "Phothos/(16) Team Fortress 2 keycap/5.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "TF2 collector keycap, premium quality."
   },
   {
     "name": "Escape From Tarkov keycap",
@@ -242,7 +242,7 @@ const products = [
       "Phothos/(17) Escape From Tarkov keycap/4.jpeg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Tactical EFT keycap with matte finish."
   },
   {
     "name": "Overwatch keycap",
@@ -259,7 +259,7 @@ const products = [
       "Phothos/(18) Overwatch keycap/7.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Overwatch hero keycap for true fans."
   },
   {
     "name": "N7 keycap",
@@ -274,7 +274,7 @@ const products = [
       "Phothos/(19) N7 keycap/5.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Mass Effect N7 premium matte keycap."
   },
   {
     "name": "The Sims keycap",
@@ -290,7 +290,7 @@ const products = [
       "Phothos/(20) The Sims keycap/6.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Iconic Sims Plumbob custom keycap."
   },
   {
     "name": "Aphex Twin keycap",
@@ -305,7 +305,7 @@ const products = [
       "Phothos/(21) Aphex Twin keycap/5.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Minimalist Aphex Twin logo matte keycap."
   },
   {
     "name": "Minecraft keycap",
@@ -321,7 +321,7 @@ const products = [
       "Phothos/(22) Minecraft keycap/6.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Blocky Minecraft inspired custom keycap."
   },
   {
     "name": "Rockstar keycap",
@@ -335,7 +335,7 @@ const products = [
       "Phothos/(23) Rockstar keycap/4.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Premium Rockstar Games matte keycap."
   },
   {
     "name": "Candycan keycap",
@@ -350,7 +350,7 @@ const products = [
       "Phothos/(24) Candycan keycap/5.jpeg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Sweet Candycan design, festive matte finish."
   },
   {
     "name": "The Upside Down Bookmark",
@@ -363,7 +363,7 @@ const products = [
       "Phothos/(25) The Upside Down Bookmark/3.jpeg"
     ],
     "price": "15",
-    "description": "A premium Stranger Things design, meticulously crafted for true fans. Made with high-quality matte materials. Step into the Upside Down"
+    "description": "Spooky Stranger Things inspired bookmark."
   },
   {
     "name": "Stranger Things keychain",
@@ -375,7 +375,7 @@ const products = [
       "Phothos/(26) Stranger Things keychain/2.jpeg"
     ],
     "price": "15",
-    "description": "A premium Stranger Things design, meticulously crafted for true fans. Made with high-quality matte materials. Step into the Upside Down"
+    "description": "Matte Stranger Things keychain for fans."
   },
   {
     "name": "Pika keycap",
@@ -391,7 +391,7 @@ const products = [
       "Phothos/(27) Pika keycap/6.jpeg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Cute Pika-inspired premium matte keycap."
   },
   {
     "name": "SantaClaus keycap",
@@ -410,7 +410,7 @@ const products = [
       "Phothos/(28) SantaClaus keycap/9.jpeg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Festive Santa keycap, holiday matte edition."
   },
   {
     "name": "Wolft Keycap",
@@ -425,7 +425,7 @@ const products = [
       "Phothos/(29) Wolft Keycap/5.jpeg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Ferocious Wolf design premium matte keycap."
   },
   {
     "name": "The Finals keycap",
@@ -440,7 +440,7 @@ const products = [
       "Phothos/(30) The Finals keycap/5.jpeg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Competitive The Finals matte keycap."
   },
   {
     "name": "Half Life keycap",
@@ -456,7 +456,7 @@ const products = [
       "Phothos/(31) Half Life keycap/6.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Legendary Half-Life Lambda matte keycap."
   },
   {
     "name": "Suport Cheie Masina",
@@ -469,7 +469,7 @@ const products = [
       "Phothos/(32) Suport Cheie Masina/3.jpeg"
     ],
     "price": "50",
-    "description": "A premium Suport Cheie Masina design, meticulously crafted for the Zeeply collection."
+    "description": "Premium Zeeply car key organizer."
   },
   {
     "name": "Snowman keycap",
@@ -484,7 +484,7 @@ const products = [
       "Phothos/(33) Snowman keycap/5.jpeg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Winter Snowman keycap, seasonal matte finish."
   },
   {
     "name": "Turtadulce",
@@ -499,7 +499,7 @@ const products = [
       "Phothos/(34) Turtadulce/5.jpeg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Gingerbread inspired custom matte keycap."
   },
   {
     "name": "Radiations keycap",
@@ -515,7 +515,7 @@ const products = [
       "Phothos/(35) Radiations keycap/6.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail."
+    "description": "Hazardous Radiation design matte keycap."
   },
   {
     "name": "Ciocolata",
@@ -530,7 +530,7 @@ const products = [
       "Phothos/(36) Ciocolata/5.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Chocolate bar design custom keycap."
   },
   {
     "name": "Justachillfrog",
@@ -543,7 +543,7 @@ const products = [
       "Phothos/(37) Justachillfrog/3.jpg"
     ],
     "price": "25",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Relaxed Chillfrog premium matte keycap."
   },
   {
     "name": "Barberpole",
@@ -555,6 +555,6 @@ const products = [
       "Phothos/(38) Barberpole/2.jpg"
     ],
     "price": "250",
-    "description": "Premium keycap, featuring a sleek matte finish and crafted with meticulous attention to detail. Designed for true fans."
+    "description": "Classic Barberpole design matte keycap."
   }
 ];

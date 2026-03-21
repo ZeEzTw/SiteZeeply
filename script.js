@@ -67,13 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
             let currentImgIndex = 0;
             const images = product.all_images;
             const description = product.description || "Limited stock available for this design.";
-            const wordCount = description.split(/\s+/).length;
-            
-            let fontSizeClass = 'text-[12px]';
-            if (wordCount > 40) fontSizeClass = 'text-[8px]';
-            else if (wordCount > 30) fontSizeClass = 'text-[9px]';
-            else if (wordCount > 20) fontSizeClass = 'text-[10px]';
-            else if (wordCount > 15) fontSizeClass = 'text-[11px]';
 
             card.innerHTML = `
                 <div class="aspect-[4/5] overflow-hidden bg-zinc-900 relative product-image-container">
@@ -88,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     <!-- Hover Overlay with Description -->
                     <div class="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black via-black/80 to-transparent translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-10 flex flex-col justify-end h-2/3">
-                        <p class="${fontSizeClass} text-gray-300 font-light tracking-wide mb-4 line-clamp-3">
+                        <p class="text-[10px] text-gray-300 font-light tracking-wide mb-4 line-clamp-3">
                             ${description}
                         </p>
                         <button class="w-full py-3 bg-white text-black text-[10px] uppercase font-bold tracking-widest hover:bg-gray-200 transition">

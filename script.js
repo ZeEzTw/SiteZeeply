@@ -45,9 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         grid.innerHTML = '';
         
+        // Categories that have their own tab
+        const tabbedCategories = ['Keycaps', 'F1', 'Stranger Things', 'Big Products'];
+
         let filteredProducts = products;
         if (categoryPlugin === 'Trending') {
-            filteredProducts = products.filter(p => p.is_trending === true);
+            // Show trending products + products from categories without a dedicated tab
+            filteredProducts = products.filter(p => p.is_trending === true || !tabbedCategories.includes(p.category));
         } else if (categoryPlugin !== 'All') {
             filteredProducts = products.filter(p => p.category === categoryPlugin);
         }
@@ -68,6 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const images = product.all_images;
             const description = product.description || "Limited stock available for this design.";
 
+            // Build Instagram DM link with pre-filled message
+            const dmMessage = encodeURIComponent(`Hi! I'm interested in ordering: ${product.name} (${product.price} LEI)`);
+            const dmLink = `https://ig.me/m/zeepl.y?text=${dmMessage}`;
+
             card.innerHTML = `
                 <div class="aspect-[4/5] overflow-hidden bg-zinc-900 relative product-image-container">
                     <!-- Image: grayscale by default, colored on hover -->
@@ -84,9 +92,9 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p class="text-[10px] md:text-xs text-gray-300 font-light tracking-wide mb-4">
                             ${description}
                         </p>
-                        <button class="w-full py-3 bg-white text-black text-[10px] uppercase font-bold tracking-widest hover:bg-gray-200 transition">
+                        <a href="${dmLink}" target="_blank" class="block w-full py-3 bg-white text-black text-[10px] text-center uppercase font-bold tracking-widest hover:bg-gray-200 transition" onclick="event.stopPropagation()">
                             DM TO ORDER
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="mt-4 md:mt-6 flex justify-between items-start px-1 md:px-2">
@@ -136,7 +144,16 @@ document.addEventListener('DOMContentLoaded', () => {
             card.addEventListener('mouseenter', startSlideshow);
             card.addEventListener('mouseleave', stopSlideshow);
             
-            // Click Handling: On mobile, toggle description. On desktop, go to Instagram.
+            // Mobile overlay auto-dismiss timer
+            let mobileOverlayTimer = null;
+
+            const dismissOverlay = (overlay) => {
+                overlay.classList.remove('mobile-desc-active');
+                clearTimeout(mobileOverlayTimer);
+                mobileOverlayTimer = null;
+            };
+
+            // Click Handling: On mobile, toggle description. On desktop, go to Instagram DM.
             card.addEventListener('click', (e) => {
                 // Track product click in GoatCounter
                 if (window.goatcounter && window.goatcounter.count) {
@@ -150,16 +167,24 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (window.innerWidth < 768) {
                     const descOverlay = card.querySelector('.absolute.inset-x-0.bottom-0');
                     const isVisible = descOverlay.classList.contains('mobile-desc-active');
-                    
+
                     if (!isVisible) {
-                        // Show overlay using the dedicated CSS class
+                        // Close any other open overlays first
+                        document.querySelectorAll('.mobile-desc-active').forEach(el => {
+                            el.classList.remove('mobile-desc-active');
+                        });
+                        // Show overlay
                         descOverlay.classList.add('mobile-desc-active');
+                        // Auto-dismiss after 5 seconds
+                        clearTimeout(mobileOverlayTimer);
+                        mobileOverlayTimer = setTimeout(() => dismissOverlay(descOverlay), 5000);
                     } else {
-                        // If already visible, clicking again goes to Instagram
-                        window.open('https://www.instagram.com/zeepl.y/', '_blank');
+                        // If already visible, clicking again opens Instagram DM
+                        window.open(dmLink, '_blank');
+                        dismissOverlay(descOverlay);
                     }
                 } else {
-                    window.open('https://www.instagram.com/zeepl.y/', '_blank');
+                    window.open(dmLink, '_blank');
                 }
             });
 
@@ -167,6 +192,15 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(card);
         });
     };
+
+    // Close mobile overlays when tapping outside any product card
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.product-card')) {
+            document.querySelectorAll('.mobile-desc-active').forEach(el => {
+                el.classList.remove('mobile-desc-active');
+            });
+        }
+    });
 
     // Initialize with All
     if (typeof products !== 'undefined') {

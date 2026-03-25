@@ -3,14 +3,14 @@ const products = [
     "name": "F1 Race Calendar - Matte Edition",
     "category": "F1",
     "is_trending": true,
-    "cover_image": "Phothos/(01) F1 Race Calendar - Matte Edition/1.jpeg",
+    "cover_image": "Phothos/(01) F1 Race Calendar - Matte Edition/1.webp",
     "all_images": [
-      "Phothos/(01) F1 Race Calendar - Matte Edition/1.jpeg",
-      "Phothos/(01) F1 Race Calendar - Matte Edition/2.jpeg",
-      "Phothos/(01) F1 Race Calendar - Matte Edition/3.jpeg",
-      "Phothos/(01) F1 Race Calendar - Matte Edition/4.jpeg",
-      "Phothos/(01) F1 Race Calendar - Matte Edition/5.jpeg",
-      "Phothos/(01) F1 Race Calendar - Matte Edition/7.jpeg"
+      "Phothos/(01) F1 Race Calendar - Matte Edition/1.webp",
+      "Phothos/(01) F1 Race Calendar - Matte Edition/2.webp",
+      "Phothos/(01) F1 Race Calendar - Matte Edition/3.webp",
+      "Phothos/(01) F1 Race Calendar - Matte Edition/4.webp",
+      "Phothos/(01) F1 Race Calendar - Matte Edition/5.webp",
+      "Phothos/(01) F1 Race Calendar - Matte Edition/7.webp"
     ],
     "price": "40",
     "description": "Premium 2026 F1 calendar, matte finish."
@@ -19,14 +19,14 @@ const products = [
     "name": "Suport Pix-uri F1",
     "category": "F1",
     "is_trending": true,
-    "cover_image": "Phothos/(02) Suport Pix-uri F1/1.jpeg",
+    "cover_image": "Phothos/(02) Suport Pix-uri F1/1.webp",
     "all_images": [
-      "Phothos/(02) Suport Pix-uri F1/1.jpeg",
-      "Phothos/(02) Suport Pix-uri F1/2.jpeg",
-      "Phothos/(02) Suport Pix-uri F1/3.jpeg",
-      "Phothos/(02) Suport Pix-uri F1/4.jpeg",
-      "Phothos/(02) Suport Pix-uri F1/5.jpeg",
-      "Phothos/(02) Suport Pix-uri F1/6.jpeg"
+      "Phothos/(02) Suport Pix-uri F1/1.webp",
+      "Phothos/(02) Suport Pix-uri F1/2.webp",
+      "Phothos/(02) Suport Pix-uri F1/3.webp",
+      "Phothos/(02) Suport Pix-uri F1/4.webp",
+      "Phothos/(02) Suport Pix-uri F1/5.webp",
+      "Phothos/(02) Suport Pix-uri F1/6.webp"
     ],
     "price": "45",
     "description": "Sleek F1 desk organizer for pens."
@@ -35,14 +35,14 @@ const products = [
     "name": "Formula 1 Wall Display",
     "category": "F1",
     "is_trending": false,
-    "cover_image": "Phothos/(03) Formula 1 Wall Display/1.jpeg",
+    "cover_image": "Phothos/(03) Formula 1 Wall Display/1.webp",
     "all_images": [
-      "Phothos/(03) Formula 1 Wall Display/1.jpeg",
-      "Phothos/(03) Formula 1 Wall Display/2.jpeg",
-      "Phothos/(03) Formula 1 Wall Display/3.jpeg",
-      "Phothos/(03) Formula 1 Wall Display/4.jpeg",
-      "Phothos/(03) Formula 1 Wall Display/5.jpeg",
-      "Phothos/(03) Formula 1 Wall Display/6.jpeg"
+      "Phothos/(03) Formula 1 Wall Display/1.webp",
+      "Phothos/(03) Formula 1 Wall Display/2.webp",
+      "Phothos/(03) Formula 1 Wall Display/3.webp",
+      "Phothos/(03) Formula 1 Wall Display/4.webp",
+      "Phothos/(03) Formula 1 Wall Display/5.webp",
+      "Phothos/(03) Formula 1 Wall Display/6.webp"
     ],
     "price": "70",
     "description": "A stunning Formula 1 car wall display, perfect for racing enthusiasts."
@@ -51,14 +51,14 @@ const products = [
     "name": "Stranger Things Kinder Joy Display",
     "category": "Stranger Things",
     "is_trending": true,
-    "cover_image": "Phothos/(04) Stranger Things Kinder Joy Display/1.jpeg",
+    "cover_image": "Phothos/(04) Stranger Things Kinder Joy Display/1.webp",
     "all_images": [
-      "Phothos/(04) Stranger Things Kinder Joy Display/1.jpeg",
-      "Phothos/(04) Stranger Things Kinder Joy Display/2.jpeg",
-      "Phothos/(04) Stranger Things Kinder Joy Display/3.jpeg",
-      "Phothos/(04) Stranger Things Kinder Joy Display/4.jpeg",
-      "Phothos/(04) Stranger Things Kinder Joy Display/5.jpeg",
-      "Phothos/(04) Stranger Things Kinder Joy Display/6.jpeg"
+      "Phothos/(04) Stranger Things Kinder Joy Display/1.webp",
+      "Phothos/(04) Stranger Things Kinder Joy Display/2.webp",
+      "Phothos/(04) Stranger Things Kinder Joy Display/3.webp",
+      "Phothos/(04) Stranger Things Kinder Joy Display/4.webp",
+      "Phothos/(04) Stranger Things Kinder Joy Display/5.webp",
+      "Phothos/(04) Stranger Things Kinder Joy Display/6.webp"
     ],
     "price": "120",
     "description": "Exclusive book-shaped collector display case."
@@ -67,10 +67,10 @@ const products = [
     "name": "Personalized Newborn Frame - Boy",
     "category": "Personalized",
     "is_trending": false,
-    "cover_image": "Phothos/(05) Personalized Newborn Frame - Boy/1.jpeg",
+    "cover_image": "Phothos/(05) Personalized Newborn Frame - Boy/1.webp",
     "all_images": [
-      "Phothos/(05) Personalized Newborn Frame - Boy/1.jpeg",
-      "Phothos/(05) Personalized Newborn Frame - Boy/2.jpeg"
+      "Phothos/(05) Personalized Newborn Frame - Boy/1.webp",
+      "Phothos/(05) Personalized Newborn Frame - Boy/2.webp"
     ],
     "price": "50",
     "description": "A beautiful personalized newborn frame for boys. Custom name, date, time, weight and height included."
@@ -79,10 +79,10 @@ const products = [
     "name": "Personalized Newborn Frame - Girl",
     "category": "Personalized",
     "is_trending": false,
-    "cover_image": "Phothos/(06) Personalized Newborn Frame - Girl/1.jpeg",
+    "cover_image": "Phothos/(06) Personalized Newborn Frame - Girl/1.webp",
     "all_images": [
-      "Phothos/(06) Personalized Newborn Frame - Girl/1.jpeg",
-      "Phothos/(06) Personalized Newborn Frame - Girl/2.jpeg"
+      "Phothos/(06) Personalized Newborn Frame - Girl/1.webp",
+      "Phothos/(06) Personalized Newborn Frame - Girl/2.webp"
     ],
     "price": "50",
     "description": "A beautiful personalized newborn frame for girls. Custom name, date, time, weight and height included."
@@ -91,11 +91,11 @@ const products = [
     "name": "Figurine Fiends McDonalds Support",
     "category": "Big Products",
     "is_trending": true,
-    "cover_image": "Phothos/(07) Figurine Fiends McDonalds Support/1.jpeg",
+    "cover_image": "Phothos/(07) Figurine Fiends McDonalds Support/1.webp",
     "all_images": [
-      "Phothos/(07) Figurine Fiends McDonalds Support/1.jpeg",
+      "Phothos/(07) Figurine Fiends McDonalds Support/1.webp",
       "Phothos/(07) Figurine Fiends McDonalds Support/2.webp",
-      "Phothos/(07) Figurine Fiends McDonalds Support/3.jpg"
+      "Phothos/(07) Figurine Fiends McDonalds Support/3.webp"
     ],
     "price": "120",
     "description": "Premium frame for your favorite figurines."
@@ -104,12 +104,12 @@ const products = [
     "name": "Counter Strike keycap",
     "category": "Keycaps",
     "is_trending": true,
-    "cover_image": "Phothos/(08) Counter Strike keycap/1.jpg",
+    "cover_image": "Phothos/(08) Counter Strike keycap/1.webp",
     "all_images": [
-      "Phothos/(08) Counter Strike keycap/1.jpg",
-      "Phothos/(08) Counter Strike keycap/6.jpg",
-      "Phothos/(08) Counter Strike keycap/7.jpg",
-      "Phothos/(08) Counter Strike keycap/8.jpg"
+      "Phothos/(08) Counter Strike keycap/1.webp",
+      "Phothos/(08) Counter Strike keycap/6.webp",
+      "Phothos/(08) Counter Strike keycap/7.webp",
+      "Phothos/(08) Counter Strike keycap/8.webp"
     ],
     "price": "25",
     "description": "High-quality matte CS gaming keycap."
@@ -118,12 +118,12 @@ const products = [
     "name": "League of Legends keycap",
     "category": "Keycaps",
     "is_trending": true,
-    "cover_image": "Phothos/(09) League of Legends keycap/1.jpg",
+    "cover_image": "Phothos/(09) League of Legends keycap/1.webp",
     "all_images": [
-      "Phothos/(09) League of Legends keycap/1.jpg",
-      "Phothos/(09) League of Legends keycap/6.jpg",
-      "Phothos/(09) League of Legends keycap/7.jpg",
-      "Phothos/(09) League of Legends keycap/9.jpg"
+      "Phothos/(09) League of Legends keycap/1.webp",
+      "Phothos/(09) League of Legends keycap/6.webp",
+      "Phothos/(09) League of Legends keycap/7.webp",
+      "Phothos/(09) League of Legends keycap/9.webp"
     ],
     "price": "25",
     "description": "Premium LoL keycap with matte finish."
@@ -132,14 +132,14 @@ const products = [
     "name": "Valorant keycap",
     "category": "Keycaps",
     "is_trending": true,
-    "cover_image": "Phothos/(10) Valorant keycap/1.jpg",
+    "cover_image": "Phothos/(10) Valorant keycap/1.webp",
     "all_images": [
-      "Phothos/(10) Valorant keycap/1.jpg",
-      "Phothos/(10) Valorant keycap/2.jpg",
-      "Phothos/(10) Valorant keycap/3.jpg",
-      "Phothos/(10) Valorant keycap/4.jpg",
-      "Phothos/(10) Valorant keycap/5.jpg",
-      "Phothos/(10) Valorant keycap/6.jpg"
+      "Phothos/(10) Valorant keycap/1.webp",
+      "Phothos/(10) Valorant keycap/2.webp",
+      "Phothos/(10) Valorant keycap/3.webp",
+      "Phothos/(10) Valorant keycap/4.webp",
+      "Phothos/(10) Valorant keycap/5.webp",
+      "Phothos/(10) Valorant keycap/6.webp"
     ],
     "price": "25",
     "description": "Custom Valorant keycap for dedicated gamers."
@@ -148,13 +148,13 @@ const products = [
     "name": "Dota2",
     "category": "Keycaps",
     "is_trending": true,
-    "cover_image": "Phothos/(11) Dota2/1.jpg",
+    "cover_image": "Phothos/(11) Dota2/1.webp",
     "all_images": [
-      "Phothos/(11) Dota2/1.jpg",
-      "Phothos/(11) Dota2/2.jpg",
-      "Phothos/(11) Dota2/3.jpg",
-      "Phothos/(11) Dota2/4.jpg",
-      "Phothos/(11) Dota2/5.jpg"
+      "Phothos/(11) Dota2/1.webp",
+      "Phothos/(11) Dota2/2.webp",
+      "Phothos/(11) Dota2/3.webp",
+      "Phothos/(11) Dota2/4.webp",
+      "Phothos/(11) Dota2/5.webp"
     ],
     "price": "25",
     "description": "Detailed Dota 2 keycap, matte design."
@@ -163,13 +163,13 @@ const products = [
     "name": "Heart keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(12) Heart keycap/1.jpg",
+    "cover_image": "Phothos/(12) Heart keycap/1.webp",
     "all_images": [
-      "Phothos/(12) Heart keycap/1.jpg",
-      "Phothos/(12) Heart keycap/4.jpg",
-      "Phothos/(12) Heart keycap/5.jpg",
-      "Phothos/(12) Heart keycap/6.jpg",
-      "Phothos/(12) Heart keycap/7.jpg"
+      "Phothos/(12) Heart keycap/1.webp",
+      "Phothos/(12) Heart keycap/4.webp",
+      "Phothos/(12) Heart keycap/5.webp",
+      "Phothos/(12) Heart keycap/6.webp",
+      "Phothos/(12) Heart keycap/7.webp"
     ],
     "price": "25",
     "description": "Beautiful heart-shaped keycap for your keyboard."
@@ -178,10 +178,10 @@ const products = [
     "name": "Heart Lego",
     "category": "General",
     "is_trending": true,
-    "cover_image": "Phothos/(13) Heart Lego/1.jpeg",
+    "cover_image": "Phothos/(13) Heart Lego/1.webp",
     "all_images": [
-      "Phothos/(13) Heart Lego/1.jpeg",
-      "Phothos/(13) Heart Lego/2.jpeg"
+      "Phothos/(13) Heart Lego/1.webp",
+      "Phothos/(13) Heart Lego/2.webp"
     ],
     "price": "20",
     "description": "Handcrafted Lego heart for your collection."
@@ -190,10 +190,10 @@ const products = [
     "name": "Heart Puzzle",
     "category": "General",
     "is_trending": false,
-    "cover_image": "Phothos/(14) Heart Puzzle/1.jpeg",
+    "cover_image": "Phothos/(14) Heart Puzzle/1.webp",
     "all_images": [
-      "Phothos/(14) Heart Puzzle/1.jpeg",
-      "Phothos/(14) Heart Puzzle/2.jpeg"
+      "Phothos/(14) Heart Puzzle/1.webp",
+      "Phothos/(14) Heart Puzzle/2.webp"
     ],
     "price": "30",
     "description": "Elegant heart puzzle for loved ones."
@@ -202,12 +202,12 @@ const products = [
     "name": "Rust keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(15) Rust keycap/1.jpg",
+    "cover_image": "Phothos/(15) Rust keycap/1.webp",
     "all_images": [
-      "Phothos/(15) Rust keycap/1.jpg",
-      "Phothos/(15) Rust keycap/2.jpg",
-      "Phothos/(15) Rust keycap/3.jpg",
-      "Phothos/(15) Rust keycap/4.jpg"
+      "Phothos/(15) Rust keycap/1.webp",
+      "Phothos/(15) Rust keycap/2.webp",
+      "Phothos/(15) Rust keycap/3.webp",
+      "Phothos/(15) Rust keycap/4.webp"
     ],
     "price": "25",
     "description": "Rugged Rust inspired matte keycap."
@@ -216,13 +216,13 @@ const products = [
     "name": "Garry'S Mod",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(16) Garry'S Mod/1.jpg",
+    "cover_image": "Phothos/(16) Garry'S Mod/1.webp",
     "all_images": [
-      "Phothos/(16) Garry'S Mod/1.jpg",
-      "Phothos/(16) Garry'S Mod/2.jpg",
-      "Phothos/(16) Garry'S Mod/3.jpg",
-      "Phothos/(16) Garry'S Mod/4.jpg",
-      "Phothos/(16) Garry'S Mod/5.jpg"
+      "Phothos/(16) Garry'S Mod/1.webp",
+      "Phothos/(16) Garry'S Mod/2.webp",
+      "Phothos/(16) Garry'S Mod/3.webp",
+      "Phothos/(16) Garry'S Mod/4.webp",
+      "Phothos/(16) Garry'S Mod/5.webp"
     ],
     "price": "25",
     "description": "Iconic Garry's Mod inspired custom keycap."
@@ -231,14 +231,14 @@ const products = [
     "name": "Apex Legends keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(17) Apex Legends keycap/1.jpg",
+    "cover_image": "Phothos/(17) Apex Legends keycap/1.webp",
     "all_images": [
-      "Phothos/(17) Apex Legends keycap/1.jpg",
-      "Phothos/(17) Apex Legends keycap/2.jpg",
-      "Phothos/(17) Apex Legends keycap/3.jpg",
-      "Phothos/(17) Apex Legends keycap/4.jpg",
-      "Phothos/(17) Apex Legends keycap/5.jpg",
-      "Phothos/(17) Apex Legends keycap/6.jpg"
+      "Phothos/(17) Apex Legends keycap/1.webp",
+      "Phothos/(17) Apex Legends keycap/2.webp",
+      "Phothos/(17) Apex Legends keycap/3.webp",
+      "Phothos/(17) Apex Legends keycap/4.webp",
+      "Phothos/(17) Apex Legends keycap/5.webp",
+      "Phothos/(17) Apex Legends keycap/6.webp"
     ],
     "price": "25",
     "description": "Apex Legends keycap, high precision craft."
@@ -247,13 +247,13 @@ const products = [
     "name": "Terraria keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(18) Terraria keycap/1.jpg",
+    "cover_image": "Phothos/(18) Terraria keycap/1.webp",
     "all_images": [
-      "Phothos/(18) Terraria keycap/1.jpg",
-      "Phothos/(18) Terraria keycap/2.jpg",
-      "Phothos/(18) Terraria keycap/3.jpg",
-      "Phothos/(18) Terraria keycap/4.jpg",
-      "Phothos/(18) Terraria keycap/5.jpg"
+      "Phothos/(18) Terraria keycap/1.webp",
+      "Phothos/(18) Terraria keycap/2.webp",
+      "Phothos/(18) Terraria keycap/3.webp",
+      "Phothos/(18) Terraria keycap/4.webp",
+      "Phothos/(18) Terraria keycap/5.webp"
     ],
     "price": "25",
     "description": "Classic Terraria inspired matte keycap."
@@ -262,13 +262,13 @@ const products = [
     "name": "Team Fortress 2 keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(19) Team Fortress 2 keycap/1.jpg",
+    "cover_image": "Phothos/(19) Team Fortress 2 keycap/1.webp",
     "all_images": [
-      "Phothos/(19) Team Fortress 2 keycap/1.jpg",
-      "Phothos/(19) Team Fortress 2 keycap/2.jpg",
-      "Phothos/(19) Team Fortress 2 keycap/3.jpg",
-      "Phothos/(19) Team Fortress 2 keycap/4.jpg",
-      "Phothos/(19) Team Fortress 2 keycap/5.jpg"
+      "Phothos/(19) Team Fortress 2 keycap/1.webp",
+      "Phothos/(19) Team Fortress 2 keycap/2.webp",
+      "Phothos/(19) Team Fortress 2 keycap/3.webp",
+      "Phothos/(19) Team Fortress 2 keycap/4.webp",
+      "Phothos/(19) Team Fortress 2 keycap/5.webp"
     ],
     "price": "25",
     "description": "TF2 collector keycap, premium quality."
@@ -277,12 +277,12 @@ const products = [
     "name": "Escape From Tarkov keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(20) Escape From Tarkov keycap/1.jpg",
+    "cover_image": "Phothos/(20) Escape From Tarkov keycap/1.webp",
     "all_images": [
-      "Phothos/(20) Escape From Tarkov keycap/1.jpg",
-      "Phothos/(20) Escape From Tarkov keycap/2.jpg",
-      "Phothos/(20) Escape From Tarkov keycap/3.jpg",
-      "Phothos/(20) Escape From Tarkov keycap/4.jpeg"
+      "Phothos/(20) Escape From Tarkov keycap/1.webp",
+      "Phothos/(20) Escape From Tarkov keycap/2.webp",
+      "Phothos/(20) Escape From Tarkov keycap/3.webp",
+      "Phothos/(20) Escape From Tarkov keycap/4.webp"
     ],
     "price": "25",
     "description": "Tactical EFT keycap with matte finish."
@@ -291,15 +291,15 @@ const products = [
     "name": "Overwatch keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(21) Overwatch keycap/1.jpg",
+    "cover_image": "Phothos/(21) Overwatch keycap/1.webp",
     "all_images": [
-      "Phothos/(21) Overwatch keycap/1.jpg",
-      "Phothos/(21) Overwatch keycap/2.jpg",
-      "Phothos/(21) Overwatch keycap/3.jpg",
-      "Phothos/(21) Overwatch keycap/4.jpg",
-      "Phothos/(21) Overwatch keycap/5.jpg",
-      "Phothos/(21) Overwatch keycap/6.jpg",
-      "Phothos/(21) Overwatch keycap/7.jpg"
+      "Phothos/(21) Overwatch keycap/1.webp",
+      "Phothos/(21) Overwatch keycap/2.webp",
+      "Phothos/(21) Overwatch keycap/3.webp",
+      "Phothos/(21) Overwatch keycap/4.webp",
+      "Phothos/(21) Overwatch keycap/5.webp",
+      "Phothos/(21) Overwatch keycap/6.webp",
+      "Phothos/(21) Overwatch keycap/7.webp"
     ],
     "price": "25",
     "description": "Overwatch hero keycap for true fans."
@@ -308,13 +308,13 @@ const products = [
     "name": "N7 keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(22) N7 keycap/1.jpg",
+    "cover_image": "Phothos/(22) N7 keycap/1.webp",
     "all_images": [
-      "Phothos/(22) N7 keycap/1.jpg",
-      "Phothos/(22) N7 keycap/2.jpg",
-      "Phothos/(22) N7 keycap/3.jpg",
-      "Phothos/(22) N7 keycap/4.jpg",
-      "Phothos/(22) N7 keycap/5.jpg"
+      "Phothos/(22) N7 keycap/1.webp",
+      "Phothos/(22) N7 keycap/2.webp",
+      "Phothos/(22) N7 keycap/3.webp",
+      "Phothos/(22) N7 keycap/4.webp",
+      "Phothos/(22) N7 keycap/5.webp"
     ],
     "price": "25",
     "description": "Mass Effect N7 premium matte keycap."
@@ -323,14 +323,14 @@ const products = [
     "name": "The Sims keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(23) The Sims keycap/1.jpg",
+    "cover_image": "Phothos/(23) The Sims keycap/1.webp",
     "all_images": [
-      "Phothos/(23) The Sims keycap/1.jpg",
-      "Phothos/(23) The Sims keycap/2.jpg",
-      "Phothos/(23) The Sims keycap/3.jpg",
-      "Phothos/(23) The Sims keycap/4.jpg",
-      "Phothos/(23) The Sims keycap/5.jpg",
-      "Phothos/(23) The Sims keycap/6.jpg"
+      "Phothos/(23) The Sims keycap/1.webp",
+      "Phothos/(23) The Sims keycap/2.webp",
+      "Phothos/(23) The Sims keycap/3.webp",
+      "Phothos/(23) The Sims keycap/4.webp",
+      "Phothos/(23) The Sims keycap/5.webp",
+      "Phothos/(23) The Sims keycap/6.webp"
     ],
     "price": "25",
     "description": "Iconic Sims Plumbob custom keycap."
@@ -339,13 +339,13 @@ const products = [
     "name": "Aphex Twin keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(24) Aphex Twin keycap/1.jpg",
+    "cover_image": "Phothos/(24) Aphex Twin keycap/1.webp",
     "all_images": [
-      "Phothos/(24) Aphex Twin keycap/1.jpg",
-      "Phothos/(24) Aphex Twin keycap/2.jpg",
-      "Phothos/(24) Aphex Twin keycap/3.jpg",
-      "Phothos/(24) Aphex Twin keycap/4.jpg",
-      "Phothos/(24) Aphex Twin keycap/5.jpg"
+      "Phothos/(24) Aphex Twin keycap/1.webp",
+      "Phothos/(24) Aphex Twin keycap/2.webp",
+      "Phothos/(24) Aphex Twin keycap/3.webp",
+      "Phothos/(24) Aphex Twin keycap/4.webp",
+      "Phothos/(24) Aphex Twin keycap/5.webp"
     ],
     "price": "25",
     "description": "Minimalist Aphex Twin logo matte keycap."
@@ -354,14 +354,14 @@ const products = [
     "name": "Minecraft keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(25) Minecraft keycap/1.png",
+    "cover_image": "Phothos/(25) Minecraft keycap/1.webp",
     "all_images": [
-      "Phothos/(25) Minecraft keycap/1.png",
-      "Phothos/(25) Minecraft keycap/2.jpg",
-      "Phothos/(25) Minecraft keycap/3.jpg",
-      "Phothos/(25) Minecraft keycap/4.jpg",
-      "Phothos/(25) Minecraft keycap/5.jpg",
-      "Phothos/(25) Minecraft keycap/6.jpg"
+      "Phothos/(25) Minecraft keycap/1.webp",
+      "Phothos/(25) Minecraft keycap/2.webp",
+      "Phothos/(25) Minecraft keycap/3.webp",
+      "Phothos/(25) Minecraft keycap/4.webp",
+      "Phothos/(25) Minecraft keycap/5.webp",
+      "Phothos/(25) Minecraft keycap/6.webp"
     ],
     "price": "25",
     "description": "Blocky Minecraft inspired custom keycap."
@@ -370,12 +370,12 @@ const products = [
     "name": "Rockstar keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(26) Rockstar keycap/1.jpg",
+    "cover_image": "Phothos/(26) Rockstar keycap/1.webp",
     "all_images": [
-      "Phothos/(26) Rockstar keycap/1.jpg",
-      "Phothos/(26) Rockstar keycap/2.jpg",
-      "Phothos/(26) Rockstar keycap/3.jpg",
-      "Phothos/(26) Rockstar keycap/4.jpg"
+      "Phothos/(26) Rockstar keycap/1.webp",
+      "Phothos/(26) Rockstar keycap/2.webp",
+      "Phothos/(26) Rockstar keycap/3.webp",
+      "Phothos/(26) Rockstar keycap/4.webp"
     ],
     "price": "25",
     "description": "Premium Rockstar Games matte keycap."
@@ -384,13 +384,13 @@ const products = [
     "name": "Candycan keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(27) Candycan keycap/1.jpg",
+    "cover_image": "Phothos/(27) Candycan keycap/1.webp",
     "all_images": [
-      "Phothos/(27) Candycan keycap/1.jpg",
-      "Phothos/(27) Candycan keycap/2.jpg",
-      "Phothos/(27) Candycan keycap/3.jpg",
-      "Phothos/(27) Candycan keycap/4.jpg",
-      "Phothos/(27) Candycan keycap/5.jpeg"
+      "Phothos/(27) Candycan keycap/1.webp",
+      "Phothos/(27) Candycan keycap/2.webp",
+      "Phothos/(27) Candycan keycap/3.webp",
+      "Phothos/(27) Candycan keycap/4.webp",
+      "Phothos/(27) Candycan keycap/5.webp"
     ],
     "price": "25",
     "description": "Sweet Candycan design, festive matte finish."
@@ -399,11 +399,11 @@ const products = [
     "name": "The Upside Down Bookmark",
     "category": "Stranger Things",
     "is_trending": true,
-    "cover_image": "Phothos/(28) The Upside Down Bookmark/1.jpeg",
+    "cover_image": "Phothos/(28) The Upside Down Bookmark/1.webp",
     "all_images": [
-      "Phothos/(28) The Upside Down Bookmark/1.jpeg",
-      "Phothos/(28) The Upside Down Bookmark/2.jpeg",
-      "Phothos/(28) The Upside Down Bookmark/3.jpeg"
+      "Phothos/(28) The Upside Down Bookmark/1.webp",
+      "Phothos/(28) The Upside Down Bookmark/2.webp",
+      "Phothos/(28) The Upside Down Bookmark/3.webp"
     ],
     "price": "15",
     "description": "Spooky Stranger Things inspired bookmark."
@@ -412,10 +412,10 @@ const products = [
     "name": "Stranger Things keychain",
     "category": "Stranger Things",
     "is_trending": true,
-    "cover_image": "Phothos/(29) Stranger Things keychain/1.jpeg",
+    "cover_image": "Phothos/(29) Stranger Things keychain/1.webp",
     "all_images": [
-      "Phothos/(29) Stranger Things keychain/1.jpeg",
-      "Phothos/(29) Stranger Things keychain/2.jpeg"
+      "Phothos/(29) Stranger Things keychain/1.webp",
+      "Phothos/(29) Stranger Things keychain/2.webp"
     ],
     "price": "15",
     "description": "Matte Stranger Things keychain for fans."
@@ -424,14 +424,14 @@ const products = [
     "name": "Pika keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(30) Pika keycap/1.jpg",
+    "cover_image": "Phothos/(30) Pika keycap/1.webp",
     "all_images": [
-      "Phothos/(30) Pika keycap/1.jpg",
-      "Phothos/(30) Pika keycap/2.png",
-      "Phothos/(30) Pika keycap/3.jpg",
-      "Phothos/(30) Pika keycap/4.jpg",
-      "Phothos/(30) Pika keycap/5.jpg",
-      "Phothos/(30) Pika keycap/6.jpeg"
+      "Phothos/(30) Pika keycap/1.webp",
+      "Phothos/(30) Pika keycap/2.webp",
+      "Phothos/(30) Pika keycap/3.webp",
+      "Phothos/(30) Pika keycap/4.webp",
+      "Phothos/(30) Pika keycap/5.webp",
+      "Phothos/(30) Pika keycap/6.webp"
     ],
     "price": "25",
     "description": "Cute Pika-inspired premium matte keycap."
@@ -440,17 +440,17 @@ const products = [
     "name": "SantaClaus keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(31) SantaClaus keycap/1.jpeg",
+    "cover_image": "Phothos/(31) SantaClaus keycap/1.webp",
     "all_images": [
-      "Phothos/(31) SantaClaus keycap/1.jpeg",
-      "Phothos/(31) SantaClaus keycap/2.jpeg",
-      "Phothos/(31) SantaClaus keycap/3.jpeg",
-      "Phothos/(31) SantaClaus keycap/4.jpeg",
-      "Phothos/(31) SantaClaus keycap/5.jpeg",
-      "Phothos/(31) SantaClaus keycap/6.jpeg",
-      "Phothos/(31) SantaClaus keycap/7.jpeg",
-      "Phothos/(31) SantaClaus keycap/8.jpeg",
-      "Phothos/(31) SantaClaus keycap/9.jpeg"
+      "Phothos/(31) SantaClaus keycap/1.webp",
+      "Phothos/(31) SantaClaus keycap/2.webp",
+      "Phothos/(31) SantaClaus keycap/3.webp",
+      "Phothos/(31) SantaClaus keycap/4.webp",
+      "Phothos/(31) SantaClaus keycap/5.webp",
+      "Phothos/(31) SantaClaus keycap/6.webp",
+      "Phothos/(31) SantaClaus keycap/7.webp",
+      "Phothos/(31) SantaClaus keycap/8.webp",
+      "Phothos/(31) SantaClaus keycap/9.webp"
     ],
     "price": "25",
     "description": "Festive Santa keycap, holiday matte edition."
@@ -459,13 +459,13 @@ const products = [
     "name": "Wolft Keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(32) Wolft Keycap/1.jpeg",
+    "cover_image": "Phothos/(32) Wolft Keycap/1.webp",
     "all_images": [
-      "Phothos/(32) Wolft Keycap/1.jpeg",
-      "Phothos/(32) Wolft Keycap/2.jpeg",
-      "Phothos/(32) Wolft Keycap/3.jpeg",
-      "Phothos/(32) Wolft Keycap/4.jpeg",
-      "Phothos/(32) Wolft Keycap/5.jpeg"
+      "Phothos/(32) Wolft Keycap/1.webp",
+      "Phothos/(32) Wolft Keycap/2.webp",
+      "Phothos/(32) Wolft Keycap/3.webp",
+      "Phothos/(32) Wolft Keycap/4.webp",
+      "Phothos/(32) Wolft Keycap/5.webp"
     ],
     "price": "25",
     "description": "Ferocious Wolf design premium matte keycap."
@@ -474,13 +474,13 @@ const products = [
     "name": "The Finals keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(33) The Finals keycap/1.jpg",
+    "cover_image": "Phothos/(33) The Finals keycap/1.webp",
     "all_images": [
-      "Phothos/(33) The Finals keycap/1.jpg",
-      "Phothos/(33) The Finals keycap/2.jpg",
-      "Phothos/(33) The Finals keycap/3.jpg",
-      "Phothos/(33) The Finals keycap/4.jpg",
-      "Phothos/(33) The Finals keycap/5.jpeg"
+      "Phothos/(33) The Finals keycap/1.webp",
+      "Phothos/(33) The Finals keycap/2.webp",
+      "Phothos/(33) The Finals keycap/3.webp",
+      "Phothos/(33) The Finals keycap/4.webp",
+      "Phothos/(33) The Finals keycap/5.webp"
     ],
     "price": "25",
     "description": "Competitive The Finals matte keycap."
@@ -489,14 +489,14 @@ const products = [
     "name": "Half Life keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(34) Half Life keycap/1.jpg",
+    "cover_image": "Phothos/(34) Half Life keycap/1.webp",
     "all_images": [
-      "Phothos/(34) Half Life keycap/1.jpg",
-      "Phothos/(34) Half Life keycap/2.jpg",
-      "Phothos/(34) Half Life keycap/3.jpg",
-      "Phothos/(34) Half Life keycap/4.jpg",
-      "Phothos/(34) Half Life keycap/5.jpg",
-      "Phothos/(34) Half Life keycap/6.jpg"
+      "Phothos/(34) Half Life keycap/1.webp",
+      "Phothos/(34) Half Life keycap/2.webp",
+      "Phothos/(34) Half Life keycap/3.webp",
+      "Phothos/(34) Half Life keycap/4.webp",
+      "Phothos/(34) Half Life keycap/5.webp",
+      "Phothos/(34) Half Life keycap/6.webp"
     ],
     "price": "25",
     "description": "Legendary Half-Life Lambda matte keycap."
@@ -505,11 +505,11 @@ const products = [
     "name": "Suport Cheie Masina",
     "category": "General",
     "is_trending": false,
-    "cover_image": "Phothos/(35) Suport Cheie Masina/1.jpeg",
+    "cover_image": "Phothos/(35) Suport Cheie Masina/1.webp",
     "all_images": [
-      "Phothos/(35) Suport Cheie Masina/1.jpeg",
-      "Phothos/(35) Suport Cheie Masina/2.jpeg",
-      "Phothos/(35) Suport Cheie Masina/3.jpeg"
+      "Phothos/(35) Suport Cheie Masina/1.webp",
+      "Phothos/(35) Suport Cheie Masina/2.webp",
+      "Phothos/(35) Suport Cheie Masina/3.webp"
     ],
     "price": "50",
     "description": "Premium Zeeply car key organizer."
@@ -518,13 +518,13 @@ const products = [
     "name": "Snowman keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(36) Snowman keycap/1.jpeg",
+    "cover_image": "Phothos/(36) Snowman keycap/1.webp",
     "all_images": [
-      "Phothos/(36) Snowman keycap/1.jpeg",
-      "Phothos/(36) Snowman keycap/2.jpeg",
-      "Phothos/(36) Snowman keycap/3.jpeg",
-      "Phothos/(36) Snowman keycap/4.jpeg",
-      "Phothos/(36) Snowman keycap/5.jpeg"
+      "Phothos/(36) Snowman keycap/1.webp",
+      "Phothos/(36) Snowman keycap/2.webp",
+      "Phothos/(36) Snowman keycap/3.webp",
+      "Phothos/(36) Snowman keycap/4.webp",
+      "Phothos/(36) Snowman keycap/5.webp"
     ],
     "price": "25",
     "description": "Winter Snowman keycap, seasonal matte finish."
@@ -533,13 +533,13 @@ const products = [
     "name": "Turtadulce",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(37) Turtadulce/1.jpeg",
+    "cover_image": "Phothos/(37) Turtadulce/1.webp",
     "all_images": [
-      "Phothos/(37) Turtadulce/1.jpeg",
-      "Phothos/(37) Turtadulce/2.jpeg",
-      "Phothos/(37) Turtadulce/3.jpeg",
-      "Phothos/(37) Turtadulce/4.jpeg",
-      "Phothos/(37) Turtadulce/5.jpeg"
+      "Phothos/(37) Turtadulce/1.webp",
+      "Phothos/(37) Turtadulce/2.webp",
+      "Phothos/(37) Turtadulce/3.webp",
+      "Phothos/(37) Turtadulce/4.webp",
+      "Phothos/(37) Turtadulce/5.webp"
     ],
     "price": "25",
     "description": "Gingerbread inspired custom matte keycap."
@@ -548,14 +548,14 @@ const products = [
     "name": "Radiations keycap",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(38) Radiations keycap/1.jpg",
+    "cover_image": "Phothos/(38) Radiations keycap/1.webp",
     "all_images": [
-      "Phothos/(38) Radiations keycap/1.jpg",
-      "Phothos/(38) Radiations keycap/2.jpg",
-      "Phothos/(38) Radiations keycap/3.jpg",
-      "Phothos/(38) Radiations keycap/4.jpg",
-      "Phothos/(38) Radiations keycap/5.jpg",
-      "Phothos/(38) Radiations keycap/6.jpg"
+      "Phothos/(38) Radiations keycap/1.webp",
+      "Phothos/(38) Radiations keycap/2.webp",
+      "Phothos/(38) Radiations keycap/3.webp",
+      "Phothos/(38) Radiations keycap/4.webp",
+      "Phothos/(38) Radiations keycap/5.webp",
+      "Phothos/(38) Radiations keycap/6.webp"
     ],
     "price": "25",
     "description": "Hazardous Radiation design matte keycap."
@@ -564,13 +564,13 @@ const products = [
     "name": "Ciocolata",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(39) Ciocolata/1.jpg",
+    "cover_image": "Phothos/(39) Ciocolata/1.webp",
     "all_images": [
-      "Phothos/(39) Ciocolata/1.jpg",
-      "Phothos/(39) Ciocolata/2.jpg",
-      "Phothos/(39) Ciocolata/3.jpg",
-      "Phothos/(39) Ciocolata/4.jpg",
-      "Phothos/(39) Ciocolata/5.jpg"
+      "Phothos/(39) Ciocolata/1.webp",
+      "Phothos/(39) Ciocolata/2.webp",
+      "Phothos/(39) Ciocolata/3.webp",
+      "Phothos/(39) Ciocolata/4.webp",
+      "Phothos/(39) Ciocolata/5.webp"
     ],
     "price": "25",
     "description": "Chocolate bar design custom keycap."
@@ -579,11 +579,11 @@ const products = [
     "name": "Justachillfrog",
     "category": "Keycaps",
     "is_trending": false,
-    "cover_image": "Phothos/(40) Justachillfrog/1.jpg",
+    "cover_image": "Phothos/(40) Justachillfrog/1.webp",
     "all_images": [
-      "Phothos/(40) Justachillfrog/1.jpg",
-      "Phothos/(40) Justachillfrog/2.jpg",
-      "Phothos/(40) Justachillfrog/3.jpg"
+      "Phothos/(40) Justachillfrog/1.webp",
+      "Phothos/(40) Justachillfrog/2.webp",
+      "Phothos/(40) Justachillfrog/3.webp"
     ],
     "price": "25",
     "description": "Relaxed Chillfrog premium matte keycap."
@@ -592,10 +592,10 @@ const products = [
     "name": "Barberpole",
     "category": "Big Products",
     "is_trending": false,
-    "cover_image": "Phothos/(41) Barberpole/1.jpg",
+    "cover_image": "Phothos/(41) Barberpole/1.webp",
     "all_images": [
-      "Phothos/(41) Barberpole/1.jpg",
-      "Phothos/(41) Barberpole/2.jpg"
+      "Phothos/(41) Barberpole/1.webp",
+      "Phothos/(41) Barberpole/2.webp"
     ],
     "price": "250",
     "description": "Classic Barberpole design matte keycap."

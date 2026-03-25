@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@source "./**/*.html";
+@source "./script.js";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+}

@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const titles = {
             'All': { title: 'The Full Collection', subtitle: 'Zeeply Exclusive' },
             'Trending': { title: 'Trending Now', subtitle: 'Most Popular' },
+            'Flori': { title: 'Flori 3D', subtitle: 'Handcrafted Blooms' },
             'Keycaps': { title: 'Custom Keycaps', subtitle: 'Mechanical Art' },
             'F1': { title: 'Formula 1 Collection', subtitle: 'Race Ready' },
             'Stranger Things': { title: 'Stranger Things', subtitle: 'Upside Down' },
@@ -46,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.innerHTML = '';
         
         // Categories that have their own tab
-        const tabbedCategories = ['Keycaps', 'F1', 'Stranger Things', 'Big Products'];
+        const tabbedCategories = ['Flori', 'Keycaps', 'F1', 'Stranger Things', 'Big Products'];
 
         let filteredProducts = products;
         if (categoryPlugin === 'Trending') {

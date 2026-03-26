@@ -1,13 +1,13 @@
 const products = [
   {
-    "name": "Flori",
+    "name": "Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa",
     "category": "Flori",
     "is_trending": true,
-    "cover_image": "Phothos/(01) Flori/1.jpeg",
+    "cover_image": "Phothos/(01) Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa/1.jpeg",
     "all_images": [
-      "Phothos/(01) Flori/1.jpeg",
-      "Phothos/(01) Flori/2.jpeg",
-      "Phothos/(01) Flori/3.jpeg"
+      "Phothos/(01) Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa/1.jpeg",
+      "Phothos/(01) Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa/2.jpeg",
+      "Phothos/(01) Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa/3.jpeg"
     ],
     "price": "80",
     "description": "Yoyo posted them in their video from us! They are a 3D printed vase with 3D printed tulips, any color possible."

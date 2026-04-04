@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @source "./**/*.html";
 @source "./script.js";
+@source "./3d/script.js";
+@source "./wool/script.js";
 
 @theme {
   --font-sans: 'Inter', sans-serif;

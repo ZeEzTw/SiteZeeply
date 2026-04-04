@@ -3,98 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zeeply | Modern Collective</title>
-    <meta name="description" content="Zeeply — Elevate Your Reality. Exclusive collection of custom gaming keycaps, F1 memorabilia, Stranger Things collectibles, and personalized frames. Handcrafted in Romania.">
+    <title>Zeeply | Choose Your World</title>
+    <meta name="description" content="Zeeply Studio — 3D Printed Collectibles & Handcrafted Crochet Creations. Elevate Your Reality.">
     <meta property="og:title" content="Zeeply | Modern Collective">
-    <meta property="og:description" content="Exclusive collection of custom gaming keycaps, F1 memorabilia, and handcrafted collectibles. Elevate Your Reality.">
+    <meta property="og:description" content="Exclusive collection of 3D printed collectibles and handcrafted crochet creations.">
     <meta property="og:image" content="Logo/logo.webp">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/webp" href="Logo/logo.webp">
-    <!-- Dependencies -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist.css">
-    <link rel="stylesheet" href="style.css">
     <script data-goatcounter="https://zeeply.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow: hidden;
+            height: 100vh;
+        }
+        h1, h2, h3, .heading-font {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .selector-page {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100%;
+        }
+
+        /* Logo header */
+        .selector-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem 1rem;
+            flex-shrink: 0;
+        }
+        .selector-header img {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Brand name + tagline */
+        .selector-brand {
+            text-align: center;
+            padding: 0.5rem 1rem 1.5rem;
+            flex-shrink: 0;
+        }
+        .selector-brand h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.05em;
+            text-transform: uppercase;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        .selector-brand p {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            color: #999;
+            text-transform: uppercase;
+            margin-top: 0.5rem;
+            animation: fadeInUp 1s ease-out 0.2s forwards;
+            opacity: 0;
+        }
+
+        /* Two-panel selector */
+        .selector-panels {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+            gap: 2px;
+            padding: 0 1rem 1rem;
+        }
+
+        .selector-panel {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #fff;
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+
+        .panel-3d {
+            background: #0a0a0a;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+        .panel-wool {
+            background: #fafafa;
+            color: #111;
+            border: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .selector-panel:hover {
+            flex: 1.3;
+        }
+        .selector-panel:not(:hover) {
+            flex: 0.85;
+        }
+        /* When nothing is hovered, reset */
+        .selector-panels:not(:hover) .selector-panel {
+            flex: 1;
+        }
+
+        .panel-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out 0.4s forwards;
+        }
+
+        .panel-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out 0.5s forwards;
+        }
+
+        .panel-subtitle {
+            font-size: 0.65rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out 0.6s forwards;
+        }
+        .panel-3d .panel-subtitle { color: #666; }
+        .panel-wool .panel-subtitle { color: #888; }
+
+        .panel-cta {
+            margin-top: 1.5rem;
+            padding: 0.75rem 2rem;
+            font-size: 0.6rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out 0.7s forwards;
+        }
+        .panel-3d .panel-cta {
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+        }
+        .panel-3d:hover .panel-cta {
+            background: #fff;
+            color: #000;
+        }
+        .panel-wool .panel-cta {
+            border: 1px solid rgba(0,0,0,0.3);
+            color: #111;
+        }
+        .panel-wool:hover .panel-cta {
+            background: #111;
+            color: #fff;
+        }
+
+        /* Decorative line between panels */
+        .panel-divider {
+            width: 2px;
+            background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.1), transparent);
+            flex-shrink: 0;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile adjustments */
+        @media (max-width: 640px) {
+            .selector-brand h1 { font-size: 1.8rem; }
+            .selector-brand p { font-size: 0.6rem; }
+            .selector-panels { flex-direction: column; gap: 2px; }
+            .selector-panel:hover { flex: 1.2; }
+            .selector-panel:not(:hover) { flex: 0.9; }
+            .selector-panels:not(:hover) .selector-panel { flex: 1; }
+            .panel-title { font-size: 1.2rem; }
+            .panel-icon { font-size: 2rem; margin-bottom: 1rem; }
+            .panel-divider { width: auto; height: 2px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent); }
+            .selector-header { padding: 1.5rem 1rem 0.5rem; }
+            .selector-header img { width: 48px; height: 48px; }
+            .selector-brand { padding: 0.25rem 1rem 1rem; }
+        }
+    </style>
 </head>
-<body class="overflow-x-hidden">
+<body>
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 w-full z-50 py-4 px-6 md:px-10 flex justify-between items-center bg-transparent backdrop-blur-[2px] bg-black/10">
-        <a href="./" class="block w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden border border-white/10" data-goatcounter-click="nav-logo">
-            <img src="Logo/logo.webp" alt="ZEEPLY" class="w-full h-full object-cover">
-        </a>
-        <div class="flex items-center space-x-4 md:space-x-8 text-[10px] md:text-sm uppercase tracking-widest">
-            <a href="#products" id="nav-shop" class="hover:text-gray-400 transition" data-goatcounter-click="nav-shop">Shop</a>
-            <a href="./about/" class="hover:text-gray-400 transition" data-goatcounter-click="nav-about">About</a>
-            
-            <div class="flex items-center gap-3 md:gap-4 border-l border-white/20 pl-4 md:pl-8 ml-2 md:ml-4">
-                <a href="https://www.instagram.com/zeepl.y/" target="_blank" class="hover:text-gray-400 transition" aria-label="Instagram" data-goatcounter-click="nav-instagram">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                </a>
-                <a href="https://www.tiktok.com/@.zeeply" target="_blank" class="hover:text-gray-400 transition" aria-label="TikTok" data-goatcounter-click="nav-tiktok">
-                    <svg fill="currentColor" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
-                </a>
-            </div>
+    <div class="selector-page">
+        <!-- Header -->
+        <div class="selector-header">
+            <img src="Logo/logo.webp" alt="ZEEPLY">
         </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
-        <video autoplay muted loop playsinline class="hero-video">
-            <source src="SiteVideo/hero.mp4" type="video/mp4">
-        </video>
-        <div class="relative z-10 text-center px-6">
-            <h1 class="text-5xl md:text-8xl font-bold tracking-tighter mb-4 animate-fade-in uppercase">Zeeply</h1>
-            <p class="text-sm md:text-xl font-light tracking-[0.2em] md:tracking-widest text-gray-300 animate-fade-in">Elevate Your Reality</p>
-            <a href="#products" id="discover-btn" class="mt-8 inline-block px-8 py-3 md:px-10 md:py-4 border border-white text-[10px] md:text-xs uppercase tracking-[0.3em] hover:bg-white hover:text-black transition duration-500 animate-fade-in" data-goatcounter-click="hero-discover">Discover Collection</a>
+        <!-- Brand -->
+        <div class="selector-brand">
+            <h1>Zeeply</h1>
+            <p>Choose Your World</p>
         </div>
-        <div class="absolute bottom-0 left-0 w-full h-32 gradient-overlay"></div>
-    </section>
 
-    <!-- Product Grid Section -->
-    <section id="products" class="py-24 px-4 md:px-20 bg-black min-h-screen">
-        <div class="max-w-[1400px] mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 space-y-6 md:space-y-0">
-                <div>
-                    <span id="collection-subtitle" class="text-[10px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.4em] text-gray-500 mb-2 block">Zeeply Exclusive</span>
-                    <h2 id="collection-title" class="text-3xl md:text-4xl font-semibold heading-font uppercase">The Full Collection</h2>
-                    <div class="mt-8 inline-block px-8 py-3 border border-amber-500/30 bg-amber-500/5 rounded-full shadow-[0_0_20px_rgba(245,158,11,0.1)]">
-                        <span class="text-[12px] md:text-base text-amber-200 font-semibold uppercase tracking-[0.3em]">Transport gratuit la comenzi de peste 50 LEI</span>
-                    </div>
-                </div>
-                <!-- Category Tabs -->
-                <div class="flex flex-wrap gap-3 md:gap-4 text-[10px] md:text-xs uppercase tracking-widest" id="category-tabs">
-                    <button class="tab-btn active text-white border-b-2 border-white pb-1" data-category="All" data-goatcounter-click="filter-all">All</button>
-                    <button class="tab-btn text-gray-500 hover:text-white transition pb-1" data-category="Trending" data-goatcounter-click="filter-trending">Trending</button>
-                    <button class="tab-btn text-gray-500 hover:text-white transition pb-1" data-category="Flori" data-goatcounter-click="filter-flori">Flori</button>
-                    <button class="tab-btn text-gray-500 hover:text-white transition pb-1" data-category="Keycaps" data-goatcounter-click="filter-keycaps">Keycaps</button>
-                    <button class="tab-btn text-gray-500 hover:text-white transition pb-1" data-category="F1" data-goatcounter-click="filter-f1">F1</button>
-                    <button class="tab-btn text-gray-500 hover:text-white transition pb-1" data-category="Stranger Things" data-goatcounter-click="filter-stranger-things">Stranger Things</button>
-                    <button class="tab-btn text-gray-500 hover:text-white transition pb-1" data-category="Big Products" data-goatcounter-click="filter-big-products">Big Products</button>
-                </div>
-            </div>
+        <!-- Two Panels -->
+        <div class="selector-panels">
+            <a href="./3d/" class="selector-panel panel-3d" data-goatcounter-click="selector-3d">
+                <div class="panel-icon">&#9670;</div>
+                <div class="panel-title">Zeeply 3D</div>
+                <div class="panel-subtitle">Printed Creations</div>
+                <div class="panel-cta">Explore Collection</div>
+            </a>
 
-            <div id="product-grid" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
-                <!-- Products dynamically injected via script.js -->
-            </div>
+            <div class="panel-divider"></div>
+
+            <a href="./wool/" class="selector-panel panel-wool" data-goatcounter-click="selector-wool">
+                <div class="panel-icon">&#10084;</div>
+                <div class="panel-title">Zeeply Wool</div>
+                <div class="panel-subtitle">Handcrafted Crochet</div>
+                <div class="panel-cta">Explore Collection</div>
+            </a>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer class="py-20 px-6 md:px-10 border-t border-gray-900 text-center bg-black">
-        <div class="text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-[0.5em] text-gray-600 uppercase mb-8">© 2026 ZEEPLY STUDIO</div>
-        <div class="flex justify-center space-x-8 md:space-x-12">
-            <a href="https://www.instagram.com/zeepl.y/" target="_blank" class="text-[10px] text-gray-400 hover:text-white transition tracking-widest" data-goatcounter-click="footer-instagram">INSTAGRAM</a>
-            <a href="./about/" class="text-[10px] text-gray-400 hover:text-white transition tracking-widest" data-goatcounter-click="footer-about">ABOUT</a>
-            <a href="./terms/" class="text-[10px] text-gray-400 hover:text-white transition tracking-widest" data-goatcounter-click="footer-terms">TERMENI</a>
-            <a href="./shipping/" class="text-[10px] text-gray-400 hover:text-white transition tracking-widest" data-goatcounter-click="footer-shipping">LIVRARE</a>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="products.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>

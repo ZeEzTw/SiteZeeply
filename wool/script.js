@@ -152,11 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         clearTimeout(mobileOverlayTimer);
                         mobileOverlayTimer = setTimeout(() => dismissOverlay(descOverlay), 5000);
                     } else {
-                        window.open(dmLink, '_blank');
                         dismissOverlay(descOverlay);
                     }
-                } else {
-                    window.open(dmLink, '_blank');
                 }
             });
 

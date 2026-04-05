@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 mobileOverlayTimer = null;
             };
 
-            // Click Handling: On mobile, toggle description. On desktop, go to Instagram DM.
+            // Click Handling: On mobile, toggle description.
             card.addEventListener('click', (e) => {
                 // Track product click in GoatCounter
                 if (window.goatcounter && window.goatcounter.count) {
@@ -181,12 +181,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         clearTimeout(mobileOverlayTimer);
                         mobileOverlayTimer = setTimeout(() => dismissOverlay(descOverlay), 5000);
                     } else {
-                        // If already visible, clicking again opens Instagram DM
-                        window.open(dmLink, '_blank');
                         dismissOverlay(descOverlay);
                     }
-                } else {
-                    window.open(dmLink, '_blank');
                 }
             });
 

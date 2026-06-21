@@ -11,75 +11,111 @@
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/webp" href="Logo/logo.webp">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist.css">
     <script data-goatcounter="https://zeeply.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
     <style>
+        :root {
+            --ease: cubic-bezier(0.22, 1, 0.36, 1);
+            --accent-3d: #e10600;
+            --accent-wool: #c9836b;
+        }
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; }
         body {
             font-family: 'Inter', sans-serif;
             background-color: #000;
             color: #fff;
             overflow: hidden;
-            height: 100vh;
+            height: 100dvh;
+            -webkit-font-smoothing: antialiased;
         }
-        h1, h2, h3, .heading-font {
-            font-family: 'Montserrat', sans-serif;
-        }
+        h1, h2, h3, .heading-font { font-family: 'Montserrat', sans-serif; }
 
         .selector-page {
             display: flex;
             flex-direction: column;
-            height: 100vh;
+            height: 100dvh;
             width: 100%;
+            position: relative;
+            isolation: isolate;
         }
 
-        /* Logo header */
-        .selector-header {
+        /* ---------- Header (logo + brand) ---------- */
+        .selector-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 30;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            padding: 2rem 1rem 1rem;
-            flex-shrink: 0;
-        }
-        .selector-header img {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
-        /* Brand name + tagline */
-        .selector-brand {
+            padding: 1.75rem 1rem 1rem;
+            pointer-events: none;
             text-align: center;
-            padding: 0.5rem 1rem 1.5rem;
-            flex-shrink: 0;
+        }
+        .selector-lockup {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 2.25rem 1.25rem;
+            border-radius: 24px;
+            background: radial-gradient(120% 130% at 50% 0%, rgba(0,0,0,0.6), rgba(0,0,0,0.32) 60%, transparent);
+            backdrop-filter: blur(3px);
+        }
+        .selector-logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 1px solid rgba(255,255,255,0.18);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.55);
+            animation: fadeDown 0.9s var(--ease) forwards;
+            background: rgba(0,0,0,0.35);
+            backdrop-filter: blur(6px);
         }
         .selector-brand h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.05em;
+            font-size: clamp(1.6rem, 4vw, 2.4rem);
+            font-weight: 800;
+            letter-spacing: 0.18em;
             text-transform: uppercase;
-            animation: fadeInUp 1s ease-out forwards;
+            margin-top: 0.85rem;
+            color: #fff;
+            text-shadow: 0 2px 24px rgba(0,0,0,0.6);
+            opacity: 0;
+            animation: fadeDown 0.9s var(--ease) 0.1s forwards;
         }
         .selector-brand p {
-            font-size: 0.75rem;
-            letter-spacing: 0.2em;
-            color: #999;
+            font-size: 0.62rem;
+            letter-spacing: 0.42em;
+            color: rgba(255,255,255,0.72);
             text-transform: uppercase;
-            margin-top: 0.5rem;
-            animation: fadeInUp 1s ease-out 0.2s forwards;
+            margin-top: 0.6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
             opacity: 0;
+            animation: fadeDown 0.9s var(--ease) 0.22s forwards;
+            text-shadow: 0 1px 12px rgba(0,0,0,0.7);
+        }
+        .selector-brand p::before,
+        .selector-brand p::after {
+            content: "";
+            width: 26px;
+            height: 1px;
+            background: rgba(255,255,255,0.4);
         }
 
-        /* Two-panel selector */
+        /* ---------- Panels ---------- */
         .selector-panels {
             display: flex;
             flex: 1;
             min-height: 0;
-            gap: 2px;
-            padding: 0 1rem 1rem;
+            width: 100%;
         }
 
         .selector-panel {
@@ -87,151 +123,233 @@
             position: relative;
             overflow: hidden;
             cursor: pointer;
+            text-decoration: none;
+            display: flex;
+            transition: flex-grow 0.6s var(--ease);
+        }
+
+        /* Background image layer */
+        .panel-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            transform: scale(1.04);
+            transition: transform 0.9s var(--ease), filter 0.9s var(--ease);
+            z-index: 0;
+        }
+        .panel-3d .panel-bg {
+            background-image: url("Phothos/(04)%20Formula%201%20Wall%20Display/1.webp");
+            filter: saturate(1.05);
+        }
+        .panel-wool .panel-bg {
+            background-image: url("Zeeply_Wool/Baby%20Yoda/1.png");
+            background-color: #f3ede6;
+        }
+
+        /* Scrim layer for legibility */
+        .panel-scrim {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            transition: opacity 0.6s var(--ease);
+        }
+        .panel-3d .panel-scrim {
+            background:
+                linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 35%, rgba(0,0,0,0.35) 65%, rgba(0,0,0,0.92) 100%),
+                radial-gradient(120% 80% at 50% 100%, rgba(225,6,0,0.18), transparent 60%);
+        }
+        .panel-wool .panel-scrim {
+            background:
+                linear-gradient(180deg, rgba(243,237,230,0.35) 0%, rgba(243,237,230,0) 40%, rgba(243,237,230,0.4) 62%, rgba(243,237,230,0.96) 100%),
+                radial-gradient(120% 80% at 50% 100%, rgba(201,131,107,0.22), transparent 60%);
+        }
+
+        /* Top accent bar */
+        .panel-accent {
+            position: absolute;
+            top: 0; left: 0;
+            height: 3px;
+            width: 0;
+            z-index: 3;
+            transition: width 0.6s var(--ease);
+        }
+        .panel-3d .panel-accent { background: var(--accent-3d); }
+        .panel-wool .panel-accent { background: var(--accent-wool); }
+
+        /* Content */
+        .panel-content {
+            position: relative;
+            z-index: 2;
+            margin-top: auto;
+            width: 100%;
+            padding: 2rem 1.5rem 3rem;
+            text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: #fff;
-            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
+        .panel-3d .panel-content { color: #fff; }
+        .panel-wool .panel-content { color: #1a1410; }
 
-        .panel-3d {
-            background: #0a0a0a;
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-        .panel-wool {
-            background: #fafafa;
-            color: #111;
-            border: 1px solid rgba(0,0,0,0.08);
-        }
-
-        .selector-panel:hover {
-            flex: 1.3;
-        }
-        .selector-panel:not(:hover) {
-            flex: 0.85;
-        }
-        /* When nothing is hovered, reset */
-        .selector-panels:not(:hover) .selector-panel {
-            flex: 1;
-        }
-
-        .panel-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
+        .panel-kicker {
+            font-size: 0.6rem;
+            letter-spacing: 0.4em;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 0.85rem;
             opacity: 0;
-            animation: fadeInUp 0.8s ease-out 0.4s forwards;
+            animation: fadeUp 0.9s var(--ease) 0.55s forwards;
         }
+        .panel-3d .panel-kicker { color: var(--accent-3d); }
+        .panel-wool .panel-kicker { color: var(--accent-wool); }
 
         .panel-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 700;
+            font-size: clamp(1.6rem, 3.4vw, 2.6rem);
+            font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: 0.5rem;
+            letter-spacing: 0.04em;
+            line-height: 1;
             opacity: 0;
-            animation: fadeInUp 0.8s ease-out 0.5s forwards;
+            animation: fadeUp 0.9s var(--ease) 0.62s forwards;
         }
-
         .panel-subtitle {
-            font-size: 0.65rem;
-            letter-spacing: 0.3em;
-            text-transform: uppercase;
+            font-size: 0.78rem;
+            letter-spacing: 0.12em;
+            margin-top: 0.6rem;
+            font-weight: 400;
             opacity: 0;
-            animation: fadeInUp 0.8s ease-out 0.6s forwards;
+            animation: fadeUp 0.9s var(--ease) 0.7s forwards;
         }
-        .panel-3d .panel-subtitle { color: #666; }
-        .panel-wool .panel-subtitle { color: #888; }
+        .panel-3d .panel-subtitle { color: rgba(255,255,255,0.78); }
+        .panel-wool .panel-subtitle { color: rgba(26,20,16,0.7); }
 
         .panel-cta {
-            margin-top: 1.5rem;
-            padding: 0.75rem 2rem;
-            font-size: 0.6rem;
-            letter-spacing: 0.3em;
+            margin-top: 1.6rem;
+            padding: 0.85rem 2.2rem;
+            font-size: 0.62rem;
+            letter-spacing: 0.28em;
             text-transform: uppercase;
             font-weight: 600;
-            transition: all 0.3s ease;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            transition: background 0.4s var(--ease), color 0.4s var(--ease), transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
             opacity: 0;
-            animation: fadeInUp 0.8s ease-out 0.7s forwards;
+            animation: fadeUp 0.9s var(--ease) 0.78s forwards;
         }
+        .panel-cta svg { width: 12px; height: 12px; transition: transform 0.4s var(--ease); }
         .panel-3d .panel-cta {
-            border: 1px solid rgba(255,255,255,0.3);
+            border: 1px solid rgba(255,255,255,0.4);
             color: #fff;
-        }
-        .panel-3d:hover .panel-cta {
-            background: #fff;
-            color: #000;
         }
         .panel-wool .panel-cta {
-            border: 1px solid rgba(0,0,0,0.3);
-            color: #111;
+            border: 1px solid rgba(26,20,16,0.35);
+            color: #1a1410;
+        }
+
+        /* ---------- Hover / focus states ---------- */
+        @media (hover: hover) {
+            .selector-panels:hover .selector-panel:hover { flex-grow: 1.35; }
+            .selector-panels:hover .selector-panel:not(:hover) { flex-grow: 0.78; }
+        }
+        .selector-panel:hover .panel-bg { transform: scale(1.12); }
+        .selector-panel:hover .panel-accent { width: 100%; }
+        .panel-3d:hover .panel-scrim { opacity: 0.82; }
+        .panel-wool:hover .panel-scrim { opacity: 0.82; }
+        .panel-3d:hover .panel-cta {
+            background: #fff; color: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
         }
         .panel-wool:hover .panel-cta {
-            background: #111;
-            color: #fff;
+            background: #1a1410; color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
         }
+        .selector-panel:hover .panel-cta svg { transform: translateX(4px); }
 
-        /* Decorative line between panels */
-        .panel-divider {
-            width: 2px;
-            background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.1), transparent);
-            flex-shrink: 0;
+        /* Divider line between panels */
+        .selector-panel + .selector-panel { box-shadow: -1px 0 0 rgba(255,255,255,0.06); }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(22px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-16px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
-        /* Mobile adjustments */
-        @media (max-width: 640px) {
-            .selector-brand h1 { font-size: 1.8rem; }
-            .selector-brand p { font-size: 0.6rem; }
-            .selector-panels { flex-direction: column; gap: 2px; }
-            .selector-panel:hover { flex: 1.2; }
-            .selector-panel:not(:hover) { flex: 0.9; }
-            .selector-panels:not(:hover) .selector-panel { flex: 1; }
-            .panel-title { font-size: 1.2rem; }
-            .panel-icon { font-size: 2rem; margin-bottom: 1rem; }
-            .panel-divider { width: auto; height: 2px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.1), transparent); }
-            .selector-header { padding: 1.5rem 1rem 0.5rem; }
-            .selector-header img { width: 48px; height: 48px; }
-            .selector-brand { padding: 0.25rem 1rem 1rem; }
+        /* ---------- Mobile ---------- */
+        @media (max-width: 760px) {
+            .selector-panels { flex-direction: column; }
+            .selector-panel { width: 100%; }
+            .selector-panel + .selector-panel { box-shadow: 0 -1px 0 rgba(255,255,255,0.08); }
+            @media (hover: hover) {
+                .selector-panels:hover .selector-panel:hover { flex-grow: 1.25; }
+                .selector-panels:hover .selector-panel:not(:hover) { flex-grow: 0.85; }
+            }
+            .panel-content { padding: 1.25rem 1.25rem 1.75rem; margin-top: auto; }
+            .panel-3d .panel-content { justify-content: flex-end; }
+            .panel-wool .panel-content { justify-content: flex-start; margin-top: 0; margin-bottom: auto; padding-top: 1.75rem; }
+            .selector-top { padding-top: 1.25rem; }
+            .selector-logo { width: 48px; height: 48px; }
+            .panel-cta { margin-top: 1rem; padding: 0.7rem 1.7rem; }
+            .panel-3d .panel-bg { background-position: center 35%; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { animation-duration: 0.001s !important; transition-duration: 0.001s !important; }
         }
     </style>
 </head>
 <body>
 
     <div class="selector-page">
-        <!-- Header -->
-        <div class="selector-header">
-            <img src="Logo/logo.webp" alt="ZEEPLY">
-        </div>
-
-        <!-- Brand -->
-        <div class="selector-brand">
-            <h1>Zeeply</h1>
-            <p>Choose Your World</p>
+        <!-- Header overlay -->
+        <div class="selector-top">
+            <div class="selector-lockup">
+                <img class="selector-logo" src="Logo/logo.webp" alt="ZEEPLY">
+                <div class="selector-brand">
+                    <h1>Zeeply</h1>
+                    <p>Choose Your World</p>
+                </div>
+            </div>
         </div>
 
         <!-- Two Panels -->
         <div class="selector-panels">
             <a href="./3d/" class="selector-panel panel-3d" data-goatcounter-click="selector-3d">
-                <div class="panel-icon">&#9670;</div>
-                <div class="panel-title">Zeeply 3D</div>
-                <div class="panel-subtitle">Printed Creations</div>
-                <div class="panel-cta">Explore Collection</div>
+                <div class="panel-bg"></div>
+                <div class="panel-scrim"></div>
+                <div class="panel-accent"></div>
+                <div class="panel-content">
+                    <span class="panel-kicker">Printed Creations</span>
+                    <h2 class="panel-title">Zeeply 3D</h2>
+                    <p class="panel-subtitle">Keycaps, collectibles &amp; custom prints</p>
+                    <span class="panel-cta">
+                        Explore Collection
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                </div>
             </a>
 
-            <div class="panel-divider"></div>
-
             <a href="./wool/" class="selector-panel panel-wool" data-goatcounter-click="selector-wool">
-                <div class="panel-icon">&#10084;</div>
-                <div class="panel-title">Zeeply Wool</div>
-                <div class="panel-subtitle">Handcrafted Crochet</div>
-                <div class="panel-cta">Explore Collection</div>
+                <div class="panel-bg"></div>
+                <div class="panel-scrim"></div>
+                <div class="panel-accent"></div>
+                <div class="panel-content">
+                    <span class="panel-kicker">Handcrafted Crochet</span>
+                    <h2 class="panel-title">Zeeply Wool</h2>
+                    <p class="panel-subtitle">Soft, handmade amigurumi &amp; plushies</p>
+                    <span class="panel-cta">
+                        Explore Collection
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </span>
+                </div>
             </a>
         </div>
     </div>

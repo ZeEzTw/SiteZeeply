@@ -11,7 +11,7 @@ const products = [
       "Phothos/(43)GTA6_Statuie/4.jpeg"
     ],
     "price": "40",
-    "description": "3D printed Grand Theft Auto VI logo display on a solid base. Bold multi-color finish that pops on any shelf or gaming setup. A must-have collector's piece for the most anticipated game ever. Custom colors available on request."
+    "description": "Logo Grand Theft Auto VI printat 3D, montat pe un suport solid. Finisaj multicolor îndrăzneț care iese în evidență pe orice raft sau setup de gaming. Cum precomenzile pentru GTA VI încep pe 25 iunie, ia-ți și o statuie ca să sărbătorești cel mai așteptat joc al momentului! Piesă de colecție obligatorie. Culori personalizate disponibile la cerere."
   },
   {
     "name": "One With Willow",
@@ -23,7 +23,7 @@ const products = [
       "Phothos/(44)OneWithWillow/2.jpeg"
     ],
     "price": "25",
-    "description": "3D printed 'One With Willow' holder/stand in a sleek matte finish. Compact desk piece to show off your card. Any color possible."
+    "description": "Suport \u201eOne With Willow\u201d printat 3D, inspirat din Obsession. Ia-ți dorința acum și pune-ți cardul la loc de cinste pe birou! Finisaj mat elegant, disponibil în orice culoare."
   },
   {
     "name": "Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa",
@@ -36,7 +36,7 @@ const products = [
       "Phothos/(01) Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa/3.jpeg"
     ],
     "price": "80",
-    "description": "Yoyo posted them in their video from us! They are a 3D printed vase with 3D printed tulips, any color possible."
+    "description": "Yoyo le-a postat în videoclipul lor, de la noi! Este o vază printată 3D cu lalele printate 3D, disponibile în orice culoare."
   },
   {
     "name": "F1 Race Calendar - Matte Edition",
@@ -58,7 +58,7 @@ const products = [
       "Phothos/(02) F1 Race Calendar - Matte Edition/7.webp"
     ],
     "price": "40",
-    "description": "Premium 2026 F1 calendar, matte finish."
+    "description": "Calendar F1 2026 premium, cu finisaj mat."
   },
   {
     "name": "Suport Pix-uri F1",
@@ -80,7 +80,7 @@ const products = [
       "Phothos/(03) Suport Pix-uri F1/6.webp"
     ],
     "price": "45",
-    "description": "Sleek F1 desk organizer for pens."
+    "description": "Organizator de birou F1 elegant pentru pixuri."
   },
   {
     "name": "Formula 1 Wall Display",
@@ -102,7 +102,7 @@ const products = [
       "Phothos/(04) Formula 1 Wall Display/6.webp"
     ],
     "price": "70",
-    "description": "A stunning Formula 1 car wall display, perfect for racing enthusiasts."
+    "description": "Un superb decor de perete cu mașină de Formula 1, perfect pentru pasionații de curse."
   },
   {
     "name": "Stranger Things Kinder Joy Display",
@@ -124,7 +124,7 @@ const products = [
       "Phothos/(05) Stranger Things Kinder Joy Display/6.webp"
     ],
     "price": "120",
-    "description": "Exclusive book-shaped collector display case."
+    "description": "Vitrină de colecție exclusivistă în formă de carte."
   },
   {
     "name": "Personalized Newborn Frame - Boy",
@@ -138,7 +138,7 @@ const products = [
       "Phothos/(06) Personalized Newborn Frame - Boy/2.webp"
     ],
     "price": "50",
-    "description": "A beautiful personalized newborn frame for boys. Custom name, date, time, weight and height included."
+    "description": "O ramă personalizată superbă pentru nou-născuți băieți. Include nume, dată, oră, greutate și înălțime personalizate."
   },
   {
     "name": "Personalized Newborn Frame - Girl",
@@ -152,7 +152,7 @@ const products = [
       "Phothos/(07) Personalized Newborn Frame - Girl/2.webp"
     ],
     "price": "50",
-    "description": "A beautiful personalized newborn frame for girls. Custom name, date, time, weight and height included."
+    "description": "O ramă personalizată superbă pentru nou-născute fetițe. Include nume, dată, oră, greutate și înălțime personalizate."
   },
   {
     "name": "Figurine Fiends McDonalds Support",
@@ -167,7 +167,7 @@ const products = [
       "Phothos/(08) Figurine Fiends McDonalds Support/3.webp"
     ],
     "price": "120",
-    "description": "Premium frame for your favorite figurines."
+    "description": "Ramă premium pentru figurinele tale preferate."
   },
   {
     "name": "Counter Strike keycap",
@@ -185,7 +185,7 @@ const products = [
       "Phothos/(09) Counter Strike keycap/8.webp"
     ],
     "price": "25",
-    "description": "High-quality matte CS gaming keycap."
+    "description": "Keycap de gaming CS, mat, de înaltă calitate."
   },
   {
     "name": "League of Legends keycap",
@@ -203,7 +203,7 @@ const products = [
       "Phothos/(10) League of Legends keycap/9.webp"
     ],
     "price": "25",
-    "description": "Premium LoL keycap with matte finish."
+    "description": "Keycap LoL premium, cu finisaj mat."
   },
   {
     "name": "Valorant keycap",
@@ -225,7 +225,7 @@ const products = [
       "Phothos/(11) Valorant keycap/6.webp"
     ],
     "price": "25",
-    "description": "Custom Valorant keycap for dedicated gamers."
+    "description": "Keycap Valorant personalizat pentru gamerii dedicați."
   },
   {
     "name": "Dota2",
@@ -245,7 +245,7 @@ const products = [
       "Phothos/(12) Dota2/5.webp"
     ],
     "price": "25",
-    "description": "Detailed Dota 2 keycap, matte design."
+    "description": "Keycap Dota 2 detaliat, design mat."
   },
   {
     "name": "Heart keycap",
@@ -265,7 +265,7 @@ const products = [
       "Phothos/(13) Heart keycap/7.webp"
     ],
     "price": "25",
-    "description": "Beautiful heart-shaped keycap for your keyboard."
+    "description": "Keycap superb în formă de inimă pentru tastatura ta."
   },
   {
     "name": "Heart Lego",
@@ -279,7 +279,7 @@ const products = [
       "Phothos/(14) Heart Lego/2.webp"
     ],
     "price": "20",
-    "description": "Handcrafted Lego heart for your collection."
+    "description": "Inimă Lego lucrată manual pentru colecția ta."
   },
   {
     "name": "Heart Puzzle",
@@ -293,7 +293,7 @@ const products = [
       "Phothos/(15) Heart Puzzle/2.webp"
     ],
     "price": "30",
-    "description": "Elegant heart puzzle for loved ones."
+    "description": "Puzzle elegant în formă de inimă pentru cei dragi."
   },
   {
     "name": "Rust keycap",
@@ -311,7 +311,7 @@ const products = [
       "Phothos/(16) Rust keycap/4.webp"
     ],
     "price": "25",
-    "description": "Rugged Rust inspired matte keycap."
+    "description": "Keycap mat inspirat din Rust, cu aspect robust."
   },
   {
     "name": "Garry'S Mod",
@@ -331,7 +331,7 @@ const products = [
       "Phothos/(17) Garry'S Mod/5.webp"
     ],
     "price": "25",
-    "description": "Iconic Garry's Mod inspired custom keycap."
+    "description": "Keycap personalizat iconic inspirat din Garry's Mod."
   },
   {
     "name": "Apex Legends keycap",
@@ -353,7 +353,7 @@ const products = [
       "Phothos/(18) Apex Legends keycap/6.webp"
     ],
     "price": "25",
-    "description": "Apex Legends keycap, high precision craft."
+    "description": "Keycap Apex Legends, realizat cu precizie înaltă."
   },
   {
     "name": "Terraria keycap",
@@ -373,7 +373,7 @@ const products = [
       "Phothos/(19) Terraria keycap/5.webp"
     ],
     "price": "25",
-    "description": "Classic Terraria inspired matte keycap."
+    "description": "Keycap mat clasic inspirat din Terraria."
   },
   {
     "name": "Team Fortress 2 keycap",
@@ -393,7 +393,7 @@ const products = [
       "Phothos/(20) Team Fortress 2 keycap/5.webp"
     ],
     "price": "25",
-    "description": "TF2 collector keycap, premium quality."
+    "description": "Keycap de colecție TF2, calitate premium."
   },
   {
     "name": "Escape From Tarkov keycap",
@@ -411,7 +411,7 @@ const products = [
       "Phothos/(21) Escape From Tarkov keycap/4.webp"
     ],
     "price": "25",
-    "description": "Tactical EFT keycap with matte finish."
+    "description": "Keycap tactic EFT cu finisaj mat."
   },
   {
     "name": "Overwatch keycap",
@@ -435,7 +435,7 @@ const products = [
       "Phothos/(22) Overwatch keycap/7.webp"
     ],
     "price": "25",
-    "description": "Overwatch hero keycap for true fans."
+    "description": "Keycap Overwatch pentru fanii adevărați."
   },
   {
     "name": "N7 keycap",
@@ -455,7 +455,7 @@ const products = [
       "Phothos/(23) N7 keycap/5.webp"
     ],
     "price": "25",
-    "description": "Mass Effect N7 premium matte keycap."
+    "description": "Keycap mat premium Mass Effect N7."
   },
   {
     "name": "The Sims keycap",
@@ -477,7 +477,7 @@ const products = [
       "Phothos/(24) The Sims keycap/6.webp"
     ],
     "price": "25",
-    "description": "Iconic Sims Plumbob custom keycap."
+    "description": "Keycap personalizat iconic Sims Plumbob."
   },
   {
     "name": "Aphex Twin keycap",
@@ -497,7 +497,7 @@ const products = [
       "Phothos/(25) Aphex Twin keycap/5.webp"
     ],
     "price": "25",
-    "description": "Minimalist Aphex Twin logo matte keycap."
+    "description": "Keycap mat minimalist cu logo Aphex Twin."
   },
   {
     "name": "Minecraft keycap",
@@ -519,7 +519,7 @@ const products = [
       "Phothos/(26) Minecraft keycap/6.webp"
     ],
     "price": "25",
-    "description": "Blocky Minecraft inspired custom keycap."
+    "description": "Keycap personalizat inspirat din Minecraft, cu aspect cubic."
   },
   {
     "name": "Rockstar keycap",
@@ -537,7 +537,7 @@ const products = [
       "Phothos/(27) Rockstar keycap/4.webp"
     ],
     "price": "25",
-    "description": "Premium Rockstar Games matte keycap."
+    "description": "Keycap mat premium Rockstar Games."
   },
   {
     "name": "Candycan keycap",
@@ -557,7 +557,7 @@ const products = [
       "Phothos/(28) Candycan keycap/5.webp"
     ],
     "price": "25",
-    "description": "Sweet Candycan design, festive matte finish."
+    "description": "Design dulce de acadea, finisaj mat festiv."
   },
   {
     "name": "The Upside Down Bookmark",
@@ -573,7 +573,7 @@ const products = [
       "Phothos/(29) The Upside Down Bookmark/3.webp"
     ],
     "price": "15",
-    "description": "Spooky Stranger Things inspired bookmark."
+    "description": "Semn de carte inspirat din Stranger Things, cu aspect misterios."
   },
   {
     "name": "Stranger Things keychain",
@@ -587,7 +587,7 @@ const products = [
       "Phothos/(30) Stranger Things keychain/2.webp"
     ],
     "price": "15",
-    "description": "Matte Stranger Things keychain for fans."
+    "description": "Breloc mat Stranger Things pentru fani."
   },
   {
     "name": "Pika keycap",
@@ -609,7 +609,7 @@ const products = [
       "Phothos/(31) Pika keycap/6.webp"
     ],
     "price": "25",
-    "description": "Cute Pika-inspired premium matte keycap."
+    "description": "Keycap mat premium drăgălaș, inspirat din Pika."
   },
   {
     "name": "SantaClaus keycap",
@@ -637,7 +637,7 @@ const products = [
       "Phothos/(32) SantaClaus keycap/9.webp"
     ],
     "price": "25",
-    "description": "Festive Santa keycap, holiday matte edition."
+    "description": "Keycap festiv cu Moș Crăciun, ediție mată de sărbători."
   },
   {
     "name": "Wolft Keycap",
@@ -657,7 +657,7 @@ const products = [
       "Phothos/(33) Wolft Keycap/5.webp"
     ],
     "price": "25",
-    "description": "Ferocious Wolf design premium matte keycap."
+    "description": "Keycap mat premium cu design feroce de lup."
   },
   {
     "name": "The Finals keycap",
@@ -677,7 +677,7 @@ const products = [
       "Phothos/(34) The Finals keycap/5.webp"
     ],
     "price": "25",
-    "description": "Competitive The Finals matte keycap."
+    "description": "Keycap mat The Finals pentru jocul competitiv."
   },
   {
     "name": "Half Life keycap",
@@ -699,7 +699,7 @@ const products = [
       "Phothos/(35) Half Life keycap/6.webp"
     ],
     "price": "25",
-    "description": "Legendary Half-Life Lambda matte keycap."
+    "description": "Keycap mat legendar cu Lambda din Half-Life."
   },
   {
     "name": "Suport Cheie Masina",
@@ -715,7 +715,7 @@ const products = [
       "Phothos/(36) Suport Cheie Masina/3.webp"
     ],
     "price": "50",
-    "description": "Premium Zeeply car key organizer."
+    "description": "Organizator premium Zeeply pentru cheile mașinii."
   },
   {
     "name": "Snowman keycap",
@@ -735,7 +735,7 @@ const products = [
       "Phothos/(37) Snowman keycap/5.webp"
     ],
     "price": "25",
-    "description": "Winter Snowman keycap, seasonal matte finish."
+    "description": "Keycap de iarnă cu om de zăpadă, finisaj mat de sezon."
   },
   {
     "name": "Turtadulce",
@@ -755,7 +755,7 @@ const products = [
       "Phothos/(38) Turtadulce/5.webp"
     ],
     "price": "25",
-    "description": "Gingerbread inspired custom matte keycap."
+    "description": "Keycap mat personalizat inspirat din turtă dulce."
   },
   {
     "name": "Radiations keycap",
@@ -777,7 +777,7 @@ const products = [
       "Phothos/(39) Radiations keycap/6.webp"
     ],
     "price": "25",
-    "description": "Hazardous Radiation design matte keycap."
+    "description": "Keycap mat cu design de radiație periculoasă."
   },
   {
     "name": "Ciocolata",
@@ -797,7 +797,7 @@ const products = [
       "Phothos/(40) Ciocolata/5.webp"
     ],
     "price": "25",
-    "description": "Chocolate bar design custom keycap."
+    "description": "Keycap personalizat cu design de baton de ciocolată."
   },
   {
     "name": "Justachillfrog",
@@ -813,7 +813,7 @@ const products = [
       "Phothos/(41) Justachillfrog/3.webp"
     ],
     "price": "25",
-    "description": "Relaxed Chillfrog premium matte keycap."
+    "description": "Keycap mat premium Chillfrog, relaxat."
   },
   {
     "name": "Barberpole",
@@ -827,6 +827,6 @@ const products = [
       "Phothos/(42) Barberpole/2.webp"
     ],
     "price": "250",
-    "description": "Classic Barberpole design matte keycap."
+    "description": "Keycap mat cu design clasic de stâlp de frizerie."
   }
 ];

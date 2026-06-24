@@ -11,7 +11,7 @@ const products = [
       "Phothos/(43)GTA6_Statuie/4.jpeg"
     ],
     "price": "40",
-    "description": "Logo Grand Theft Auto VI printat 3D, montat pe un suport solid. Finisaj multicolor îndrăzneț care iese în evidență pe orice raft sau setup de gaming. Cum precomenzile pentru GTA VI încep pe 25 iunie, ia-ți și o statuie ca să sărbătorești cel mai așteptat joc al momentului! Piesă de colecție obligatorie. Culori personalizate disponibile la cerere."
+    "description": "Pe 25 iunie a început preorder-ul pentru GTA 6. Adaugă în comandă și trofeul de birou GTA 6, pentru o așteptare care merită!"
   },
   {
     "name": "One Wish Willow",
@@ -36,7 +36,7 @@ const products = [
       "Phothos/(01) Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa/3.jpeg"
     ],
     "price": "80",
-    "description": "Yoyo le-a postat în videoclipul lor, de la noi! Este o vază printată 3D cu lalele printate 3D, disponibile în orice culoare."
+    "description": "Yoyo l-a postat în videoclipul ei, de la noi! Este o vază printată 3D cu lalele printate 3D, disponibile în orice culoare."
   },
   {
     "name": "F1 Race Calendar - Matte Edition",

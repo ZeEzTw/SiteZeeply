@@ -1,13 +1,39 @@
 [
   {
-    "name": "Buchet de Lalele „Everbloom” cu Vaza inclusa",
+    "name": "Statuie GTA VI",
+    "category": "General",
+    "is_trending": true,
+    "cover_image": "../Phothos/(43)GTA6_Statuie/Untitled.jpeg",
+    "all_images": [
+      "../Phothos/(43)GTA6_Statuie/Untitled.jpeg",
+      "../Phothos/(43)GTA6_Statuie/2.jpeg",
+      "../Phothos/(43)GTA6_Statuie/3.jpeg",
+      "../Phothos/(43)GTA6_Statuie/4.jpeg"
+    ],
+    "price": "40",
+    "description": "3D printed Grand Theft Auto VI logo display on a solid base. Bold multi-color finish that pops on any shelf or gaming setup. A must-have collector's piece for the most anticipated game ever. Custom colors available on request."
+  },
+  {
+    "name": "One With Willow",
+    "category": "General",
+    "is_trending": false,
+    "cover_image": "../Phothos/(44)OneWithWillow/1.jpeg",
+    "all_images": [
+      "../Phothos/(44)OneWithWillow/1.jpeg",
+      "../Phothos/(44)OneWithWillow/2.jpeg"
+    ],
+    "price": "25",
+    "description": "3D printed 'One With Willow' holder/stand in a sleek matte finish. Compact desk piece to show off your card. Any color possible."
+  },
+  {
+    "name": "Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa",
     "category": "Flori",
     "is_trending": true,
-    "cover_image": "../Phothos/(01) Buchet de Lalele „Everbloom” cu Vaza inclusa/1.jpeg",
+    "cover_image": "../Phothos/(01) Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa/1.jpeg",
     "all_images": [
-      "../Phothos/(01) Buchet de Lalele „Everbloom” cu Vaza inclusa/1.jpeg",
-      "../Phothos/(01) Buchet de Lalele „Everbloom” cu Vaza inclusa/2.jpeg",
-      "../Phothos/(01) Buchet de Lalele „Everbloom” cu Vaza inclusa/3.jpeg"
+      "../Phothos/(01) Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa/1.jpeg",
+      "../Phothos/(01) Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa/2.jpeg",
+      "../Phothos/(01) Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa/3.jpeg"
     ],
     "price": "80",
     "description": "Yoyo posted them in their video from us! They are a 3D printed vase with 3D printed tulips, any color possible."

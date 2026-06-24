@@ -102,7 +102,7 @@ const products = [
       "../Phothos/(04) Formula 1 Wall Display/6.webp"
     ],
     "price": "70",
-    "description": "Un superb decor de perete cu mașină de Formula 1, perfect pentru pasionații de curse."
+    "description": "Un superb decor de perete cu o mașină de Formula 1, perfect pentru pasionații de curse."
   },
   {
     "name": "Stranger Things Kinder Joy Display",

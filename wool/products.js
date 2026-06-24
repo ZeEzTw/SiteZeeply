@@ -10,7 +10,7 @@ const products = [
       "../Zeeply_Wool/Baby Yoda/3.png"
     ],
     "price": "40",
-    "description": "Adaugă un plus de drăgălășenie colecției tale cu acest Baby Yoda croșetat de mine!"
+    "description": "Adaugă un plus de drăgălășenie colecției tale cu acest Baby Yoda croșetat manual!"
   },
   {
     "name": "Cenușilă",
@@ -23,7 +23,7 @@ const products = [
       "../Zeeply_Wool/Cenușilă/hamster spate.jpg"
     ],
     "price": "40",
-    "description": "Faceți cunoștință cu Cenușilă! El este un hamster super pufos, creat 100% manual de mine, fir cu fir."
+    "description": "Faceți cunoștință cu Cenușilă! El este un hamster super pufos, creat 100% manual, fir cu fir."
   },
   {
     "name": "Charmander",
@@ -51,7 +51,7 @@ const products = [
       "../Zeeply_Wool/Cupidonel/3.jpg"
     ],
     "price": "40",
-    "description": "Cupidonel – Planta care dăruiește iubire! El este Cupidonel, cel mai vesel ghiveci cu inimioară, lucrat 100% manual de mine pentru a aduce zâmbete."
+    "description": "Cupidonel – Planta care dăruiește iubire! El este Cupidonel, cel mai vesel ghiveci cu inimioară, lucrat 100% manual pentru a aduce zâmbete."
   },
   {
     "name": "Detectivul Mac",
@@ -90,7 +90,7 @@ const products = [
       "../Zeeply_Wool/Minty/3jpg.jpg"
     ],
     "price": "60",
-    "description": "Ea este Minty, o broscuță țestoasă creată 100% manual de mine, gata să aducă liniște și zâmbete în orice casă."
+    "description": "Ea este Minty, o broscuță țestoasă creată 100% manual, gata să aducă liniște și zâmbete în orice casă."
   },
   {
     "name": "Norilă",

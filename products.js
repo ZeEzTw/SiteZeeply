@@ -14,7 +14,7 @@ const products = [
     "description": "Logo Grand Theft Auto VI printat 3D, montat pe un suport solid. Finisaj multicolor îndrăzneț care iese în evidență pe orice raft sau setup de gaming. Cum precomenzile pentru GTA VI încep pe 25 iunie, ia-ți și o statuie ca să sărbătorești cel mai așteptat joc al momentului! Piesă de colecție obligatorie. Culori personalizate disponibile la cerere."
   },
   {
-    "name": "One With Willow",
+    "name": "One Wish Willow",
     "category": "General",
     "is_trending": false,
     "cover_image": "Phothos/(44)OneWithWillow/1.jpeg",
@@ -23,7 +23,7 @@ const products = [
       "Phothos/(44)OneWithWillow/2.jpeg"
     ],
     "price": "25",
-    "description": "Suport \u201eOne With Willow\u201d printat 3D, inspirat din Obsession. Ia-ți dorința acum și pune-ți cardul la loc de cinste pe birou! Finisaj mat elegant, disponibil în orice culoare."
+    "description": "\u201eOne Wish Willow\u201d printat 3D. Ia-ți dorința acum! Finisaj mat, orice culoare."
   },
   {
     "name": "Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa",

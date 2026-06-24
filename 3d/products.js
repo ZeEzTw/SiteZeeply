@@ -827,6 +827,6 @@ const products = [
       "../Phothos/(42) Barberpole/2.webp"
     ],
     "price": "250",
-    "description": "Keycap mat cu design în stil clasic de stâlp de frizerie."
+    "description": "Stâlp de frizerie (barber pole) de dimensiuni mari, cu design clasic în spirală. Decor de impact pentru orice salon sau frizerie."
   }
 ];

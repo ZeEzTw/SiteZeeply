@@ -73,9 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const images = product.all_images;
             const description = product.description || "Limited stock available for this design.";
 
-            // Build Instagram DM link with pre-filled message
-            const dmMessage = encodeURIComponent(`Hi! I'm interested in ordering: ${product.name} (${product.price} LEI)`);
-            const dmLink = `https://ig.me/m/zeepl.y?text=${dmMessage}`;
+            // Link to Instagram profile page
+            const dmLink = `https://www.instagram.com/zeeply.3d/`;
 
             card.innerHTML = `
                 <div class="aspect-[4/5] overflow-hidden bg-zinc-900 relative product-image-container">

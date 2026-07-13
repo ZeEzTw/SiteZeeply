@@ -56,8 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const images = product.all_images;
             const description = product.description || "Handcrafted with premium velvet yarn.";
 
-            const dmMessage = encodeURIComponent(`Hi! I'm interested in ordering: ${product.name} (${product.price} LEI)`);
-            const dmLink = `https://ig.me/m/thread.ntales?text=${dmMessage}`;
+            // Link to Instagram profile page
+            const dmLink = `https://www.instagram.com/zeeply.wool/`;
 
             card.innerHTML = `
                 <div class="aspect-[4/5] overflow-hidden bg-gray-50 rounded-lg relative product-image-container">

@@ -384,7 +384,7 @@
         } catch (err) {
             submit.disabled = false;
             submit.textContent = 'Trimite comanda';
-            showError(`Comanda nu a putut fi trimisă. Încearcă din nou sau scrie-ne pe <a href="https://ig.me/m/${(window.ZEEPLY_CATALOG || {}).instagram || 'zeeply.3d'}" target="_blank">Instagram</a>.`);
+            showError(`Comanda nu a putut fi trimisă. Încearcă din nou sau scrie-ne pe <a href="https://www.instagram.com/${(window.ZEEPLY_CATALOG || {}).instagram || 'zeeply.3d'}/" target="_blank">Instagram</a>.`);
         }
     });
 

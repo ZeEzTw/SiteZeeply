@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const canHover = window.matchMedia('(hover: hover)').matches;
 
-    // Opens a direct message thread on mobile, the inbox on desktop
-    const dmLink = `https://ig.me/m/${config.instagram}`;
+    // Instagram profile (ig.me direct-message links did not open reliably)
+    const dmLink = `https://www.instagram.com/${config.instagram}/`;
 
     // Render Function
     const renderProducts = (category) => {

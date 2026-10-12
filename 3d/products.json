@@ -1503,5 +1503,39 @@
       }
     ],
     "slug": "barberpole"
+  },
+  {
+    "name": "Set Magic pentru Bibliotec\u0103 - Harry Potter",
+    "category": "General",
+    "is_trending": false,
+    "cover_image": "../Photos/(45) Set Magic pentru Bibliotec\u0103 - Harry Potter/1.webp",
+    "all_images": [
+      "../Photos/(45) Set Magic pentru Bibliotec\u0103 - Harry Potter/1.webp",
+      "../Photos/(45) Set Magic pentru Bibliotec\u0103 - Harry Potter/2.webp",
+      "../Photos/(45) Set Magic pentru Bibliotec\u0103 - Harry Potter/3.webp",
+      "../Photos/(45) Set Magic pentru Bibliotec\u0103 - Harry Potter/4.webp",
+      "../Photos/(45) Set Magic pentru Bibliotec\u0103 - Harry Potter/5.webp",
+      "../Photos/(45) Set Magic pentru Bibliotec\u0103 - Harry Potter/6.webp",
+      "../Photos/(45) Set Magic pentru Bibliotec\u0103 - Harry Potter/7.webp"
+    ],
+    "price": "40",
+    "description": "Transform\u0103-\u021bi raftul de c\u0103r\u021bi cu acest set unic, creat special pentru iubitorii de magie \u0219i aventur\u0103!",
+    "specs": [
+      {
+        "label": "Ce include",
+        "value": "1 suport de c\u0103r\u021bi cu o figurin\u0103 care pare c\u0103 sus\u021bine c\u0103r\u021bile prin vraja Wingardium Leviosa, 2 semne de carte \u0219i 1 breloc"
+      },
+      {
+        "label": "Material",
+        "value": "printat 3D"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
+    "slug": "set-magic-pentru-biblioteca-harry-potter"
   }
 ]

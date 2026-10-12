@@ -329,35 +329,5 @@
       }
     ],
     "slug": "norila"
-  },
-  {
-    "name": "Set Magic pentru Bibliotecă - Harry Potter",
-    "category": "Amigurumi",
-    "is_trending": false,
-    "cover_image": "../Zeeply_Wool/Set Magic pentru Bibliotecă - Harry Potter/1.webp",
-    "all_images": [
-      "../Zeeply_Wool/Set Magic pentru Bibliotecă - Harry Potter/1.webp",
-      "../Zeeply_Wool/Set Magic pentru Bibliotecă - Harry Potter/2.webp",
-      "../Zeeply_Wool/Set Magic pentru Bibliotecă - Harry Potter/3.webp",
-      "../Zeeply_Wool/Set Magic pentru Bibliotecă - Harry Potter/4.webp",
-      "../Zeeply_Wool/Set Magic pentru Bibliotecă - Harry Potter/5.webp",
-      "../Zeeply_Wool/Set Magic pentru Bibliotecă - Harry Potter/6.webp",
-      "../Zeeply_Wool/Set Magic pentru Bibliotecă - Harry Potter/7.webp"
-    ],
-    "price": "40",
-    "description": "Transformă-ți raftul de cărți cu acest set unic, creat special pentru iubitorii de magie și aventură!",
-    "specs": [
-      {
-        "label": "Material",
-        "value": "Realizat prin printare 3D"
-      }
-    ],
-    "colors": [
-      {
-        "name": "Negru",
-        "hex": "#111111"
-      }
-    ],
-    "slug": "set-magic-pentru-biblioteca-harry-potter"
   }
 ]

@@ -14,16 +14,16 @@
     "description": "Pe 25 iunie a \u00eenceput preorder-ul pentru GTA 6. Adaug\u0103 \u00een comand\u0103 \u0219i trofeul de birou GTA 6, pentru o a\u0219teptare care merit\u0103!",
     "colors": [
       {
-        "name": "Mov",
-        "hex": "#8b5cf6"
-      },
-      {
-        "name": "Negru",
-        "hex": "#111111"
+        "name": "Magenta",
+        "hex": "#e0218a"
       },
       {
         "name": "Gri",
         "hex": "#9ca3af"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
       }
     ],
     "slug": "statuie-gta-vi"
@@ -107,6 +107,10 @@
       {
         "name": "Ro\u0219u",
         "hex": "#dc2626"
+      },
+      {
+        "name": "Fosforescent",
+        "hex": "#b4f1e4"
       }
     ],
     "slug": "f1-race-calendar-matte-edition"
@@ -258,6 +262,10 @@
       {
         "name": "Galben",
         "hex": "#facc15"
+      },
+      {
+        "name": "Mov \u00eenchis",
+        "hex": "#3b2a6b"
       }
     ],
     "slug": "figurine-fiends-mcdonalds-support"
@@ -302,12 +310,16 @@
     "description": "Keycap League of Legends premium, cu finisaj mat.",
     "colors": [
       {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
         "name": "Albastru",
         "hex": "#3b82f6"
       },
       {
-        "name": "Galben",
-        "hex": "#facc15"
+        "name": "Auriu",
+        "hex": "#d4af37"
       }
     ],
     "slug": "league-of-legends-keycap"
@@ -423,12 +435,16 @@
     "description": "Puzzle elegant \u00een form\u0103 de inim\u0103, perfect pentru cei dragi.",
     "colors": [
       {
-        "name": "Roz",
-        "hex": "#f9a8d4"
+        "name": "Roz pal",
+        "hex": "#f3d9e3"
       },
       {
         "name": "Ro\u0219u",
         "hex": "#dc2626"
+      },
+      {
+        "name": "Fosforescent",
+        "hex": "#b4f1e4"
       }
     ],
     "slug": "heart-puzzle"
@@ -507,6 +523,10 @@
       {
         "name": "Ro\u0219u",
         "hex": "#dc2626"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
       }
     ],
     "slug": "apex-legends-keycap"
@@ -531,8 +551,12 @@
         "hex": "#111111"
       },
       {
-        "name": "Verde",
-        "hex": "#22c55e"
+        "name": "Verde ment\u0103",
+        "hex": "#a7f3d0"
+      },
+      {
+        "name": "Maro",
+        "hex": "#8b5a2b"
       }
     ],
     "slug": "terraria-keycap"
@@ -553,12 +577,12 @@
     "description": "Keycap de colec\u021bie Team Fortress 2, de calitate premium.",
     "colors": [
       {
-        "name": "Maro",
-        "hex": "#8b5a2b"
-      },
-      {
         "name": "Negru",
         "hex": "#111111"
+      },
+      {
+        "name": "Portocaliu",
+        "hex": "#f97316"
       }
     ],
     "slug": "team-fortress-2-keycap"
@@ -610,8 +634,12 @@
         "hex": "#9ca3af"
       },
       {
-        "name": "Alb",
-        "hex": "#ffffff"
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
+        "name": "Portocaliu",
+        "hex": "#f97316"
       }
     ],
     "slug": "overwatch-keycap"
@@ -667,8 +695,8 @@
         "hex": "#ffffff"
       },
       {
-        "name": "Verde",
-        "hex": "#22c55e"
+        "name": "Verde lime",
+        "hex": "#a3e635"
       }
     ],
     "slug": "the-sims-keycap"
@@ -716,6 +744,10 @@
     "description": "Keycap personalizat inspirat din Minecraft, cu aspectul cubic caracteristic.",
     "colors": [
       {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
         "name": "Gri",
         "hex": "#9ca3af"
       },
@@ -726,6 +758,10 @@
       {
         "name": "Albastru",
         "hex": "#3b82f6"
+      },
+      {
+        "name": "Maro",
+        "hex": "#8b5a2b"
       }
     ],
     "slug": "minecraft-keycap"
@@ -775,12 +811,12 @@
         "hex": "#e8d8c3"
       },
       {
-        "name": "Ro\u0219u",
-        "hex": "#dc2626"
-      },
-      {
         "name": "Alb",
         "hex": "#ffffff"
+      },
+      {
+        "name": "Roz",
+        "hex": "#f9a8d4"
       }
     ],
     "slug": "candycan-keycap"
@@ -889,6 +925,10 @@
       {
         "name": "Negru",
         "hex": "#111111"
+      },
+      {
+        "name": "Auriu",
+        "hex": "#d4af37"
       }
     ],
     "slug": "santaclaus-keycap"
@@ -909,8 +949,8 @@
     "description": "Keycap mat premium, cu un design feroce de lup.",
     "colors": [
       {
-        "name": "Auriu",
-        "hex": "#d4af37"
+        "name": "Galben mu\u0219tar",
+        "hex": "#e8a93a"
       },
       {
         "name": "Negru",
@@ -968,6 +1008,10 @@
       {
         "name": "Portocaliu",
         "hex": "#f97316"
+      },
+      {
+        "name": "Gri",
+        "hex": "#9ca3af"
       }
     ],
     "slug": "half-life-keycap"
@@ -986,8 +1030,8 @@
     "description": "Suport premium Zeeply pentru cheile ma\u0219inii tale.",
     "colors": [
       {
-        "name": "Bej",
-        "hex": "#e8d8c3"
+        "name": "Bej nisipiu",
+        "hex": "#d6c08a"
       }
     ],
     "slug": "suport-cheie-masina"
@@ -1038,8 +1082,8 @@
     "description": "Keycap mat personalizat, inspirat din turt\u0103 dulce.",
     "colors": [
       {
-        "name": "Maro",
-        "hex": "#8b5a2b"
+        "name": "Maro deschis",
+        "hex": "#c49a6c"
       },
       {
         "name": "Alb",
@@ -1069,12 +1113,16 @@
     "description": "Keycap mat cu design \u00een stil radioactiv.",
     "colors": [
       {
-        "name": "Albastru",
-        "hex": "#3b82f6"
+        "name": "Portocaliu",
+        "hex": "#f97316"
       },
       {
-        "name": "Mov",
-        "hex": "#8b5cf6"
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Fosforescent",
+        "hex": "#b4f1e4"
       }
     ],
     "slug": "radiations-keycap"
@@ -1094,6 +1142,10 @@
     "price": "25",
     "description": "Keycap personalizat \u00een form\u0103 de baton de ciocolat\u0103.",
     "colors": [
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
       {
         "name": "Maro",
         "hex": "#8b5a2b"

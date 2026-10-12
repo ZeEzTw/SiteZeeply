@@ -1,2 +1,3 @@
-Albastru
-Mov
+Portocaliu
+Alb
+Fosforescent #b4f1e4

@@ -1,2 +1,3 @@
-Roz
+Roz pal #f3d9e3
 Roșu
+Fosforescent #b4f1e4

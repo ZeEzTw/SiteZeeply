@@ -33,10 +33,11 @@
     };
 
     const add = (product) => {
-        const id = `${product.shop}:${product.name}`;
+        const variant = product.variant || '';
+        const id = `${product.shop}:${product.name}${variant ? ':' + variant : ''}`;
         const existing = items.find(i => i.id === id);
         if (existing) existing.qty += 1;
-        else items.push({ id, name: product.name, price: parseInt(product.price, 10) || 0, image: new URL(product.image, location.href).pathname, shop: product.shop, qty: 1 });
+        else items.push({ id, name: product.name, price: parseInt(product.price, 10) || 0, image: new URL(product.image, location.href).pathname, shop: product.shop, variant, qty: 1 });
         track(`cart-add-${product.shop}-` + product.name.replace(/\s+/g, '-').toLowerCase(), 'Add to cart: ' + product.name);
         save();
         bump();
@@ -171,7 +172,7 @@
             <p>Zeeply e un atelier mic: fiecare produs e făcut de noi. De aceea confirmăm personal fiecare comandă.</p>
             <ol>
                 <li>Trimiți comanda de aici. Nu plătești nimic acum.</li>
-                <li>Te contactăm pe WhatsApp: confirmăm produsele și prețul exact al transportului. Livrăm prin Colete-Online, cu cel mai potrivit curier (Sameday, FAN Courier, Cargus, DPD, GLS și alții).</li>
+                <li>Te contactăm pe WhatsApp: confirmăm produsele și prețul exact al transportului. Coletul ajunge de obicei în 2–3 zile lucrătoare de la confirmare. Livrăm prin Colete-Online, cu cel mai potrivit curier (Sameday, FAN Courier, Cargus, DPD, GLS și alții).</li>
                 <li>Plătești cum preferi: ramburs, transfer bancar sau Revolut.</li>
             </ol>
         </div>`;
@@ -208,7 +209,7 @@
                     <img src="${esc(i.image)}" alt="${esc(i.name)}">
                     <div>
                         <div class="zc-name">${esc(i.name)}</div>
-                        <div class="zc-shop">Zeeply ${i.shop === 'wool' ? 'Wool' : '3D'}</div>
+                        <div class="zc-shop">Zeeply ${i.shop === 'wool' ? 'Wool' : '3D'}${i.variant ? ` · Culoare: ${esc(i.variant)}` : ''}</div>
                         <div class="zc-qty">
                             <button data-qty="-1" data-id="${esc(i.id)}" aria-label="Scade">−</button>
                             <span>${i.qty}</span>
@@ -354,7 +355,7 @@
             _template: 'table',
             _captcha: 'false',
             'Comandă': orderId,
-            'Produse': items.map(i => `${i.qty} × ${i.name} (${i.shop === 'wool' ? 'Wool' : '3D'}) — ${i.price * i.qty} LEI`).join('\n'),
+            'Produse': items.map(i => `${i.qty} × ${i.name}${i.variant ? ` – culoare ${i.variant}` : ''} (${i.shop === 'wool' ? 'Wool' : '3D'}) — ${i.price * i.qty} LEI`).join('\n'),
             'Subtotal': `${sub} LEI`,
             'Transport': free ? 'GRATUIT' : 'de confirmat cu clientul',
             'Livrare': data.livrare + (data.locker ? ` (${data.locker})` : ''),

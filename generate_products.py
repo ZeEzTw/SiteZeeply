@@ -2,6 +2,8 @@ import os
 import json
 import re
 
+import product_details
+
 # Configuration
 BASE_DIR = 'Photos' 
 OUTPUT_JSON = '3d/products.json'
@@ -54,13 +56,14 @@ def get_products():
         # Special logic: If trending.txt doesn't exist, we can still use a fallback list or just default to False
         # (Already handled by read_file_safe default)
 
-        # 3. Collect Images
+        # 3. Collect Images (new photos are converted to webp first)
+        product_details.optimize_images(folder_path)
         images = []
         try:
             files = sorted(os.listdir(folder_path))
             for f in files:
                 ext = os.path.splitext(f)[1].lower()
-                if ext in IMAGE_EXTENSIONS:
+                if ext in IMAGE_EXTENSIONS and not product_details.is_dimensions_image(f):
                     # Relative path for web use
                     rel_path = f"../{BASE_DIR}/{folder_name}/{f}"
                     images.append(rel_path)
@@ -81,6 +84,8 @@ def get_products():
             "price": price, 
             "description": description
         }
+        # Optional: detalii.txt, culori.txt, culori-la-alegere.txt, dimensiuni.jpg
+        product.update(product_details.extras(folder_path, f"../{BASE_DIR}/{folder_name}"))
 
         if is_pinned:
             pinned.append(product)

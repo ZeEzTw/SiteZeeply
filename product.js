@@ -38,11 +38,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     markActive(0);
 
+    // Color choice (products with culori-la-alegere.txt)
+    const colorOptions = document.getElementById('color-options');
+    let chosenColor = '';
+    if (colorOptions) {
+        const ring = colorOptions.dataset.active;
+        const swatches = [...colorOptions.querySelectorAll('.color-swatch')];
+        chosenColor = swatches[0].dataset.color;
+        swatches.forEach(s => s.addEventListener('click', () => {
+            swatches.forEach(o => {
+                const on = o === s;
+                o.setAttribute('aria-pressed', on);
+                o.classList.toggle(ring, on);
+                o.classList.toggle('ring-transparent', !on);
+            });
+            chosenColor = s.dataset.color;
+            document.getElementById('color-name').textContent = chosenColor;
+        }));
+    }
+
     const addBtn = document.getElementById('product-add');
     addBtn.addEventListener('click', () => {
         if (!window.ZeeplyCart) return;
         const { shop, name, price, image } = addBtn.dataset;
-        window.ZeeplyCart.add({ shop, name, price, image });
+        window.ZeeplyCart.add({ shop, name, price, image, variant: chosenColor });
         const label = addBtn.querySelector('.add-label');
         label.textContent = 'Adăugat ✓';
         setTimeout(() => { label.textContent = 'Adaugă în coș'; }, 1200);

@@ -11,6 +11,16 @@ const products = [
     ],
     "price": "40",
     "description": "Adaugă un plus de drăgălășenie colecției tale cu acest Baby Yoda croșetat manual!",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Fir catifelat (velutto), foarte moale"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "11 cm (înălțime) / 10 cm (lungime)."
+      }
+    ],
     "slug": "baby-yoda"
   },
   {
@@ -25,6 +35,34 @@ const products = [
     ],
     "price": "40",
     "description": "Faceți cunoștință cu Cenușilă! El este un hamster super pufos, creat 100% manual, fir cu fir.",
+    "specs": [
+      {
+        "label": "Textură",
+        "value": "Incredibil de moale (din fir catifelat Velluto)."
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "15 cm înălțime și 9 cm lungime."
+      },
+      {
+        "label": "Culori",
+        "value": "Gri perlat, botic alb și lăbuțe roz bombon."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Gri perlat",
+        "hex": "#c9ccd1"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Roz bombon",
+        "hex": "#f472b6"
+      }
+    ],
     "slug": "cenusila"
   },
   {
@@ -41,6 +79,34 @@ const products = [
     ],
     "price": "80",
     "description": "Charmander – Pokemonul tău pufos! L-am adus la viață pe Charmander, unul dintre cei mai iubiți Pokemoni, croșetat 100% manual din fir catifelat.",
+    "specs": [
+      {
+        "label": "Textură",
+        "value": "Ultra-moale (fir Velluto), perfect pentru îmbrățișări."
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "20 cm înălțime și 27 cm lungime (cu tot cu coada lui emblematică)."
+      },
+      {
+        "label": "Detalii",
+        "value": "Culori vii (portocaliu, galben și flacăra roșie), lucrat cu mare atenție la detalii."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Portocaliu",
+        "hex": "#f97316"
+      },
+      {
+        "name": "Galben",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Roșu",
+        "hex": "#dc2626"
+      }
+    ],
     "slug": "charmander"
   },
   {
@@ -55,6 +121,20 @@ const products = [
     ],
     "price": "40",
     "description": "Cupidonel – Planta care dăruiește iubire! El este Cupidonel, cel mai vesel ghiveci cu inimioară, lucrat 100% manual pentru a aduce zâmbete.",
+    "specs": [
+      {
+        "label": "Textură",
+        "value": "Super catifelat (realizat din fir Velluto)."
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "17 cm înălțime și 10 cm lățime."
+      },
+      {
+        "label": "Detalii",
+        "value": "O inimă mare roșie, un ghiveci alb cu obrăjori roz și un zâmbet contagios."
+      }
+    ],
     "slug": "cupidonel"
   },
   {
@@ -69,6 +149,38 @@ const products = [
     ],
     "price": "40",
     "description": "Detectivul Mac – Investigatorul pufos! El este Detectivul Mac, cea mai simpatică rățușcă sub acoperire, lucrată 100% manual din fir catifelat.",
+    "specs": [
+      {
+        "label": "Textură",
+        "value": "Ultra-moale și plăcut la atingere (fir Velluto)."
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "15 cm înălțime și 10 cm lungime."
+      },
+      {
+        "label": "Accesorii",
+        "value": "Poartă o căciuliță de iepuraș (tot croșetată!) pentru a trece neobservat în misiunile de joacă."
+      },
+      {
+        "label": "Culori",
+        "value": "Galben aprins, cioc portocaliu și „deghizare” albă."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Galben",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Portocaliu",
+        "hex": "#f97316"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      }
+    ],
     "slug": "detectivul-mac"
   },
   {
@@ -83,6 +195,34 @@ const products = [
     ],
     "price": "60",
     "description": "Ea este Milkshake, o văcuță croșetată manual, gata să devină cea mai bună prietenă a ta. Este moale, colorată și plină de personalitate!",
+    "specs": [
+      {
+        "label": "Textură",
+        "value": "Catifelată și super pufoasă (fir Velluto)."
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "O prezență generoasă, având 22 cm înălțime și 18 cm lățime."
+      },
+      {
+        "label": "Culori",
+        "value": "Alb imaculat cu pete „de căpșuni” (roz) și cornițe mici, maro."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Roz",
+        "hex": "#f9a8d4"
+      },
+      {
+        "name": "Maro",
+        "hex": "#8b5a2b"
+      }
+    ],
     "slug": "milkshake"
   },
   {
@@ -97,6 +237,30 @@ const products = [
     ],
     "price": "60",
     "description": "Ea este Minty, o broscuță țestoasă creată 100% manual, gata să aducă liniște și zâmbete în orice casă.",
+    "specs": [
+      {
+        "label": "Textură",
+        "value": "Moale ca o îmbrățișare (fir catifelat Velluto)."
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "20 cm lungime și 20 cm lățime (cu tot cu înotătoare)."
+      },
+      {
+        "label": "Culori",
+        "value": "O combinație relaxantă de verde mentă și verde lime."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Verde mentă",
+        "hex": "#a7f3d0"
+      },
+      {
+        "name": "Verde lime",
+        "hex": "#a3e635"
+      }
+    ],
     "slug": "minty"
   },
   {
@@ -112,6 +276,30 @@ const products = [
     ],
     "price": "80",
     "description": "Faceți cunoștință cu Norilă, un dragonel croșetat manual, creat special pentru îmbrățișări pufoase. Cu o textură catifelată și culori vibrante, este companionul ideal pentru momentele de relaxare.",
+    "specs": [
+      {
+        "label": "Dimensiuni",
+        "value": "38 cm lungime x 22 cm lățime (cu aripi)."
+      },
+      {
+        "label": "Material",
+        "value": "Fir tip velutto, extrem de moale și plăcut la atingere."
+      },
+      {
+        "label": "Culori",
+        "value": "Albastru-denim cu detalii galben-solar."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Albastru denim",
+        "hex": "#4f6d9a"
+      },
+      {
+        "name": "Galben",
+        "hex": "#fbbf24"
+      }
+    ],
     "slug": "norila"
   },
   {
@@ -130,6 +318,12 @@ const products = [
     ],
     "price": "40",
     "description": "Transformă-ți raftul de cărți cu acest set unic, creat special pentru iubitorii de magie și aventură!",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Realizat prin printare 3D"
+      }
+    ],
     "slug": "set-magic-pentru-biblioteca-harry-potter"
   }
 ];

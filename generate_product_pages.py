@@ -33,6 +33,8 @@ SHOPS = {
         'divider_text': 'text-gray-500',
         'panel': 'bg-white/[0.03] border-white/10',
         'thumb_active': 'ring-white',
+        'ring_offset': 'ring-offset-black',
+        'divide': 'divide-white/10',
         'hide_category': {'General'},
     },
     'wool': {
@@ -50,6 +52,8 @@ SHOPS = {
         'divider_text': 'text-gray-400',
         'panel': 'bg-gray-50/70 border-gray-200',
         'thumb_active': 'ring-gray-900',
+        'ring_offset': 'ring-offset-white',
+        'divide': 'divide-gray-200',
         'hide_category': set(),
     },
 }
@@ -116,6 +120,61 @@ def related_products(product, products, count=4):
     same = [p for p in products if p is not product and p['category'] == product['category']]
     others = [p for p in products if p is not product and p['category'] != product['category']]
     return (same + others)[:count]
+
+
+def colors_html(product, t, e):
+    colors = product.get('colors')
+    if not colors:
+        return ''
+    label = 'text-[10px] md:text-xs uppercase tracking-[0.2em] mb-3'
+    if product.get('color_choice'):
+        swatches = '\n'.join(
+            f'''                            <button type="button" class="color-swatch w-9 h-9 rounded-full border {t['line']} ring-2 ring-offset-2 {t['ring_offset']} {t['thumb_active'] if n == 0 else 'ring-transparent'} transition" style="background:{e(c['hex'])}" data-color="{e(c['name'])}" aria-pressed="{'true' if n == 0 else 'false'}" aria-label="{e(c['name'])}" title="{e(c['name'])}"></button>'''
+            for n, c in enumerate(colors))
+        return f'''
+                    <div class="mt-6">
+                        <div class="{label} {t['muted']}">Alege culoarea: <span id="color-name" class="font-semibold {t['strong']}">{e(colors[0]['name'])}</span></div>
+                        <div id="color-options" class="flex flex-wrap gap-3" data-active="{t['thumb_active']}">
+{swatches}
+                        </div>
+                    </div>'''
+    swatches = '\n'.join(
+        f'''                            <span class="w-6 h-6 rounded-full border {t['line']}" style="background:{e(c['hex'])}" title="{e(c['name'])}"></span>'''
+        for c in colors)
+    names = ', '.join(c['name'] for c in colors)
+    return f'''
+                    <div class="mt-6">
+                        <div class="{label} {t['muted']}">Culori</div>
+                        <div class="flex flex-wrap items-center gap-2">
+{swatches}
+                            <span class="ml-1 text-xs {t['muted']}">{e(names)}</span>
+                        </div>
+                    </div>'''
+
+
+def details_html(product, t, e):
+    out = ''
+    specs = product.get('specs')
+    if specs:
+        rows = '\n'.join(
+            f'''                            <div class="py-3 grid grid-cols-[100px_1fr] md:grid-cols-[120px_1fr] gap-3">
+                                <dt class="pt-0.5 text-[10px] md:text-xs uppercase tracking-wider {t['muted']}">{e(sp['label'])}</dt>
+                                <dd class="text-xs md:text-sm {t['strong']}">{e(sp['value'])}</dd>
+                            </div>''' for sp in specs)
+        out += f'''
+                    <div class="mt-10">
+                        <h2 class="mb-2 text-xs md:text-sm font-semibold uppercase tracking-[0.25em] heading-font {t['strong']}">Detalii produs</h2>
+                        <dl class="divide-y {t['divide']} border-y {t['line']}">
+{rows}
+                        </dl>
+                    </div>'''
+    if product.get('dimensions_image'):
+        out += f'''
+                    <figure class="mt-6">
+                        <img src="../../../{e(url_quote(site_path(product['dimensions_image'])))}" alt="Dimensiunile produsului {e(product['name'])}" loading="lazy" class="w-full rounded-lg border {t['line']}">
+                        <figcaption class="mt-2 text-[10px] uppercase tracking-widest {t['muted']}">Dimensiuni</figcaption>
+                    </figure>'''
+    return out
 
 
 def render_page(shop, product, products, nav, footer):
@@ -219,6 +278,7 @@ def render_page(shop, product, products, nav, footer):
                     <h1 class="text-2xl md:text-4xl font-bold uppercase tracking-tight heading-font {t['strong']}">{e(product['name'])}</h1>
                     <p class="mt-3 text-xl md:text-2xl font-semibold tracking-wider {t['strong']}">{e(product['price'])} LEI</p>
                     <p class="mt-5 text-sm md:text-base leading-relaxed {t['muted']}">{e(desc)}</p>
+{colors_html(product, t, e)}
 
                     <div class="mt-8">
                         <button type="button" id="product-add" data-shop="{shop}" data-name="{e(product['name'])}" data-price="{e(product['price'])}" data-image="/{e(url_quote(images[0]))}"
@@ -234,9 +294,11 @@ def render_page(shop, product, products, nav, footer):
                             {IG_ICON}<span>Comandă prin mesaj</span>
                         </a>
                     </div>
+{details_html(product, t, e)}
 
                     <ul class="mt-8 p-5 border rounded-xl {t['panel']} space-y-3 text-xs md:text-sm {t['muted']}">
                         <li>✓ Făcut de noi, în atelierul Zeeply</li>
+                        <li>✓ Livrare în 2–3 zile lucrătoare de la confirmarea comenzii (produsele personalizate pot dura puțin mai mult)</li>
                         <li>✓ Livrare prin Colete-Online: curier la adresă sau easybox</li>
                         <li>✓ Transport gratuit la comenzi de peste 50 LEI</li>
                         <li>✓ Nu plătești nimic online: confirmăm comanda pe WhatsApp, apoi plătești ramburs, prin transfer sau Revolut</li>
@@ -256,8 +318,8 @@ def render_page(shop, product, products, nav, footer):
     {footer}
 
     <script>window.ZEEPLY_CATALOG = {{ instagram: '{t['instagram']}', shop: '{shop}' }};</script>
-    <script src="../../../cart.js?v=7"></script>
-    <script src="../../../product.js?v=1"></script>
+    <script src="../../../cart.js?v=8"></script>
+    <script src="../../../product.js?v=2"></script>
 </body>
 </html>
 '''

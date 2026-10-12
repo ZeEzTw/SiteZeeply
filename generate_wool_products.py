@@ -2,6 +2,8 @@ import os
 import json
 import re
 
+import product_details
+
 BASE_DIR = 'Zeeply_Wool'
 OUTPUT_JSON = 'wool/products.json'
 OUTPUT_JS = 'wool/products.js'
@@ -63,13 +65,14 @@ def get_products():
         price = extract_price(text_content)
         description = extract_description(text_content) if text_content else f"Handcrafted {clean_name}, made with love from soft velvet yarn."
 
-        # Collect images
+        # Collect images (new photos are converted to webp first)
+        product_details.optimize_images(folder_path)
         images = []
         try:
             files = sorted(os.listdir(folder_path))
             for f in files:
                 ext = os.path.splitext(f)[1].lower()
-                if ext in IMAGE_EXTENSIONS:
+                if ext in IMAGE_EXTENSIONS and not product_details.is_dimensions_image(f):
                     rel_path = f"../{BASE_DIR}/{folder_name}/{f}"
                     images.append(rel_path)
         except OSError as e:
@@ -88,6 +91,10 @@ def get_products():
             "price": price,
             "description": description
         }
+
+        # Dimensions, material, colors… from description.txt (+ optional extra files)
+        product.update(product_details.extras(folder_path, f"../{BASE_DIR}/{folder_name}",
+                                              product_details.wool_specs(text_content)))
 
         products.append(product)
         print(f"Generated: {clean_name} [{price} LEI]")

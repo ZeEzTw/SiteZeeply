@@ -239,8 +239,8 @@
                 <div class="zc-pay" style="margin-top:12px">
                     <label><input type="radio" name="livrare" value="Curier la adresă" checked>
                         <span>Curier la adresă<small>Coletul vine direct la ușa ta.</small></span></label>
-                    <label><input type="radio" name="livrare" value="Easybox / locker">
-                        <span>Easybox / locker<small>Ridici coletul când vrei, din cel mai apropiat locker.</small></span></label>
+                    <label><input type="radio" name="livrare" value="Locker">
+                        <span>Locker<small>Ridici coletul când vrei, din cel mai apropiat locker.</small></span></label>
                 </div>
                 <div class="zc-two">
                     <div>
@@ -255,7 +255,7 @@
                 <label for="zc-address" id="zc-address-label">Adresă (stradă, număr, bloc, ap.) *</label>
                 <input type="text" id="zc-address" name="adresa" autocomplete="street-address" required>
                 <div id="zc-locker" hidden>
-                    <label for="zc-locker-name">Easybox / locker preferat (opțional)</label>
+                    <label for="zc-locker-name">Lockerul preferat (opțional)</label>
                     <input type="text" id="zc-locker-name" name="locker" placeholder="Ex: easybox Kaufland Mărăști">
                     <div class="zc-hint">Dacă nu știi, alegem noi lockerul cel mai apropiat de adresa ta și ți-l confirmăm pe WhatsApp.</div>
                 </div>
@@ -273,7 +273,7 @@
                 </div>
 
                 <div class="zc-section">4. Detalii (opțional)</div>
-                <label for="zc-notes" style="margin-top:8px">Culori, personalizări, easybox, întrebări</label>
+                <label for="zc-notes" style="margin-top:8px">Culori, personalizări, întrebări</label>
                 <textarea id="zc-notes" name="detalii" placeholder="Ex: lalele roz, numele „Maria” pe ramă…"></textarea>
                 <div class="zc-error" id="zc-error" hidden></div>
             </form>`;
@@ -306,7 +306,7 @@
     // Delivery choice changes the address hint, shows the locker field and the COD wording
     root.addEventListener('change', (e) => {
         if (e.target.name !== 'livrare') return;
-        const locker = e.target.value.startsWith('Easybox');
+        const locker = e.target.value.startsWith('Locker');
         root.querySelector('#zc-locker').hidden = !locker;
         root.querySelector('#zc-address-label').textContent = locker
             ? 'Adresa ta (căutăm cel mai apropiat locker) *'

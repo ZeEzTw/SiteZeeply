@@ -300,7 +300,7 @@ def render_page(shop, product, products, nav, footer):
 
                     <ul class="mt-8 p-5 border rounded-xl {t['panel']} space-y-3 text-xs md:text-sm {t['muted']}">
                         <li>✓ Făcut de noi, în atelierul Zeeply</li>
-                        <li>✓ Livrare prin Colete-Online: curier la adresă sau easybox</li>
+                        <li>✓ Livrare prin Colete-Online: curier la adresă sau la locker</li>
                         <li>✓ Transport gratuit la comenzi de peste 50 LEI</li>
                         <li>✓ Nu plătești nimic online: după ce confirmăm comanda pe WhatsApp, plătești ramburs la curier sau la locker, prin transfer bancar sau prin Revolut</li>
                     </ul>
@@ -319,7 +319,7 @@ def render_page(shop, product, products, nav, footer):
     {footer}
 
     <script>window.ZEEPLY_CATALOG = {{ instagram: '{t['instagram']}', shop: '{shop}' }};</script>
-    <script src="../../../cart.js?v=10"></script>
+    <script src="../../../cart.js?v=11"></script>
     <script src="../../../product.js?v=4"></script>
 </body>
 </html>

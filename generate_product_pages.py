@@ -320,7 +320,7 @@ def render_page(shop, product, products, nav, footer):
 
     <script>window.ZEEPLY_CATALOG = {{ instagram: '{t['instagram']}', shop: '{shop}' }};</script>
     <script src="../../../cart.js?v=9"></script>
-    <script src="../../../product.js?v=3"></script>
+    <script src="../../../product.js?v=4"></script>
 </body>
 </html>
 '''

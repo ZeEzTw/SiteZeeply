@@ -1,16 +1,12 @@
-// Product page: photo gallery (swipe / thumbnails / arrows) and "Adaugă în coș".
+// Product page: endless photo gallery (swipe / thumbnails / arrows) and "Adaugă în coș".
 document.addEventListener('DOMContentLoaded', () => {
     const gallery = document.getElementById('gallery');
     const thumbs = [...document.querySelectorAll('.gallery-thumb')];
     const dots = [...document.querySelectorAll('.gallery-dot')];
     const activeRing = thumbs.length ? thumbs[0].parentElement.dataset.active : '';
+    const count = gallery.children.length;
+    const loop = count > 1;
     let current = 0;
-
-    const goTo = (n) => {
-        const slides = gallery.children.length;
-        current = (n + slides) % slides;
-        gallery.scrollTo({ left: current * gallery.clientWidth });
-    };
 
     const markActive = (n) => {
         current = n;
@@ -22,19 +18,50 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Swiping (or scrolling) the gallery updates the counter and the thumbnails
-    gallery.addEventListener('scroll', () => {
-        const n = Math.round(gallery.scrollLeft / gallery.clientWidth);
-        if (n !== current) markActive(n);
-    }, { passive: true });
+    // Endless loop: a copy of the last photo goes before the first and a copy of the first
+    // after the last. Swiping onto a copy jumps (invisibly) to the real photo it shows.
+    if (loop) {
+        const first = gallery.firstElementChild.cloneNode(true);
+        const last = gallery.lastElementChild.cloneNode(true);
+        [first, last].forEach(c => {
+            c.setAttribute('aria-hidden', 'true');
+            c.querySelector('img').removeAttribute('fetchpriority');
+        });
+        gallery.append(first);
+        gallery.prepend(last);
+    }
+    const offset = loop ? 1 : 0;              // real photo n sits at position n + offset
+    const position = () => Math.round(gallery.scrollLeft / gallery.clientWidth);
+    const jump = (pos) => gallery.scrollTo({ left: pos * gallery.clientWidth, behavior: 'instant' });
+    const slideTo = (pos) => gallery.scrollTo({ left: pos * gallery.clientWidth, behavior: 'smooth' });
+    jump(offset);
 
-    thumbs.forEach(t => t.addEventListener('click', () => goTo(Number(t.dataset.slide))));
+    const settle = () => {
+        if (!loop) return;
+        const pos = position();
+        if (pos === 0) jump(count);           // copy of the last photo -> the real last one
+        else if (pos === count + 1) jump(1);  // copy of the first photo -> the real first one
+    };
+
+    // Swiping (or scrolling) the gallery updates the dots and the thumbnails
+    let settleTimer;
+    gallery.addEventListener('scroll', () => {
+        const n = ((position() - offset) % count + count) % count;
+        if (n !== current) markActive(n);
+        clearTimeout(settleTimer);
+        settleTimer = setTimeout(settle, 120); // fallback for browsers without 'scrollend'
+    }, { passive: true });
+    gallery.addEventListener('scrollend', settle);
+    window.addEventListener('resize', () => jump(current + offset));
+
+    const step = (delta) => slideTo(position() + delta);
+    thumbs.forEach(t => t.addEventListener('click', () => slideTo(Number(t.dataset.slide) + offset)));
     document.querySelectorAll('.gallery-arrow').forEach(a =>
-        a.addEventListener('click', () => goTo(current + Number(a.dataset.step))));
+        a.addEventListener('click', () => step(Number(a.dataset.step))));
     document.addEventListener('keydown', (e) => {
         if (document.documentElement.classList.contains('zc-open')) return;
-        if (e.key === 'ArrowLeft') goTo(current - 1);
-        if (e.key === 'ArrowRight') goTo(current + 1);
+        if (e.key === 'ArrowLeft') step(-1);
+        if (e.key === 'ArrowRight') step(1);
     });
     markActive(0);
 

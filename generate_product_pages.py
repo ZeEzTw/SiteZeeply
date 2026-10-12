@@ -319,7 +319,7 @@ def render_page(shop, product, products, nav, footer):
     {footer}
 
     <script>window.ZEEPLY_CATALOG = {{ instagram: '{t['instagram']}', shop: '{shop}' }};</script>
-    <script src="../../../cart.js?v=9"></script>
+    <script src="../../../cart.js?v=10"></script>
     <script src="../../../product.js?v=4"></script>
 </body>
 </html>
@@ -327,7 +327,7 @@ def render_page(shop, product, products, nav, footer):
 
 
 def build():
-    sitemap = [f'{SITE}/', f'{SITE}/3d/', f'{SITE}/wool/', f'{SITE}/about/', f'{SITE}/shipping/', f'{SITE}/terms/']
+    sitemap = [f'{SITE}/', f'{SITE}/3d/', f'{SITE}/wool/', f'{SITE}/about/', f'{SITE}/shipping/', f'{SITE}/terms/', f'{SITE}/confidentialitate/']
     for shop in SHOPS:
         products = json.load(open(f'{shop}/products.json', encoding='utf-8'))
         if any('slug' not in p for p in products):

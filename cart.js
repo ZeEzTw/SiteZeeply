@@ -281,7 +281,7 @@
         foot.innerHTML = `
             <div class="zc-row zc-total"><span>Total</span><span>${sub >= FREE_SHIPPING_FROM ? `${sub} LEI` : `${sub} LEI + transport`}</span></div>
             <button class="zc-btn" type="submit" form="zc-form" id="zc-submit" style="margin-top:10px">Trimite comanda</button>
-            <p class="zc-legal">Prin trimitere ești de acord cu <a href="/terms/" target="_blank">Termenii</a> și <a href="/shipping/" target="_blank">Politica de livrare</a>.</p>
+            <p class="zc-legal">Prin trimitere ești de acord cu <a href="/terms/" target="_blank">Termenii</a> și <a href="/shipping/" target="_blank">Politica de livrare</a>. Datele tale sunt folosite doar pentru comandă și livrare (<a href="/confidentialitate/" target="_blank">Confidențialitate</a>).</p>
             <button class="zc-link" id="zc-back">← Înapoi la coș</button>`;
     };
 

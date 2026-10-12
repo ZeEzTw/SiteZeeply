@@ -1,0 +1,3 @@
+Compatibilitate: tastaturi mecanice cu switch-uri MX, cu montură în cruce „+” (Cherry MX, Gateron, Kailh, Outemu și altele compatibile). Nu se potrivește pe tastaturi low-profile sau de laptop
+Dimensiuni: mărime standard 1u, cât o tastă obișnuită (aprox. 18 × 18 mm)
+Material: filament cu inserție de lemn

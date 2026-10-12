@@ -18,8 +18,8 @@
         "hex": "#e0218a"
       },
       {
-        "name": "Gri",
-        "hex": "#9ca3af"
+        "name": "Alb",
+        "hex": "#ffffff"
       },
       {
         "name": "Negru",
@@ -43,6 +43,14 @@
       {
         "name": "Negru",
         "hex": "#111111"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
       }
     ],
     "slug": "one-wish-willow"
@@ -283,6 +291,16 @@
     ],
     "price": "25",
     "description": "Keycap Counter-Strike cu finisaj mat, de \u00eenalt\u0103 calitate.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Portocaliu",
@@ -308,6 +326,16 @@
     ],
     "price": "25",
     "description": "Keycap League of Legends premium, cu finisaj mat.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Negru",
@@ -318,8 +346,8 @@
         "hex": "#3b82f6"
       },
       {
-        "name": "Auriu",
-        "hex": "#d4af37"
+        "name": "Portocaliu",
+        "hex": "#f97316"
       }
     ],
     "slug": "league-of-legends-keycap"
@@ -339,6 +367,16 @@
     ],
     "price": "25",
     "description": "Keycap Valorant personalizat, pentru pasiona\u021bii de gaming.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Negru",
@@ -365,6 +403,16 @@
     ],
     "price": "25",
     "description": "Keycap Dota 2 detaliat, cu design mat.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Ro\u0219u",
@@ -391,6 +439,16 @@
     ],
     "price": "25",
     "description": "Keycap superb \u00een form\u0103 de inim\u0103, pentru tastatura ta.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Negru",
@@ -462,6 +520,16 @@
     ],
     "price": "25",
     "description": "Keycap mat inspirat din Rust, cu un aspect robust.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Ro\u0219u",
@@ -488,6 +556,16 @@
     ],
     "price": "25",
     "description": "Keycap personalizat, inspirat din iconicul Garry's Mod.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Albastru",
@@ -515,6 +593,16 @@
     ],
     "price": "25",
     "description": "Keycap Apex Legends, realizat cu precizie.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Negru",
@@ -523,10 +611,6 @@
       {
         "name": "Ro\u0219u",
         "hex": "#dc2626"
-      },
-      {
-        "name": "Alb",
-        "hex": "#ffffff"
       }
     ],
     "slug": "apex-legends-keycap"
@@ -545,14 +629,24 @@
     ],
     "price": "25",
     "description": "Keycap mat, \u00een stil clasic, inspirat din Terraria.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Negru",
         "hex": "#111111"
       },
       {
-        "name": "Verde ment\u0103",
-        "hex": "#a7f3d0"
+        "name": "Verde",
+        "hex": "#22c55e"
       },
       {
         "name": "Maro",
@@ -575,6 +669,16 @@
     ],
     "price": "25",
     "description": "Keycap de colec\u021bie Team Fortress 2, de calitate premium.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Negru",
@@ -600,6 +704,16 @@
     ],
     "price": "25",
     "description": "Keycap tactic Escape From Tarkov, cu finisaj mat.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Alb",
@@ -628,6 +742,16 @@
     ],
     "price": "25",
     "description": "Keycap Overwatch, pentru fanii adev\u0103ra\u021bi.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Gri",
@@ -658,6 +782,16 @@
     ],
     "price": "25",
     "description": "Keycap mat premium, inspirat din Mass Effect N7.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Negru",
@@ -670,6 +804,10 @@
       {
         "name": "Ro\u0219u",
         "hex": "#dc2626"
+      },
+      {
+        "name": "Gri",
+        "hex": "#9ca3af"
       }
     ],
     "slug": "n7-keycap"
@@ -689,6 +827,16 @@
     ],
     "price": "25",
     "description": "Keycap personalizat cu iconicul Plumbob din The Sims.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Alb",
@@ -715,6 +863,16 @@
     ],
     "price": "25",
     "description": "Keycap mat minimalist, cu logo-ul Aphex Twin.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Alb",
@@ -742,6 +900,16 @@
     ],
     "price": "25",
     "description": "Keycap personalizat inspirat din Minecraft, cu aspectul cubic caracteristic.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Negru",
@@ -779,6 +947,16 @@
     ],
     "price": "25",
     "description": "Keycap mat premium, cu logo-ul Rockstar Games.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Portocaliu",
@@ -805,18 +983,32 @@
     ],
     "price": "25",
     "description": "Keycap cu design dulce de acadea \u0219i finisaj mat festiv.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      },
+      {
+        "label": "Material",
+        "value": "filament cu inser\u021bie de lemn"
+      }
+    ],
     "colors": [
       {
-        "name": "Bej",
-        "hex": "#e8d8c3"
+        "name": "Lemn",
+        "hex": "#c49a6c"
       },
       {
         "name": "Alb",
         "hex": "#ffffff"
       },
       {
-        "name": "Roz",
-        "hex": "#f9a8d4"
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
       }
     ],
     "slug": "candycan-keycap"
@@ -883,6 +1075,16 @@
     ],
     "price": "25",
     "description": "Keycap mat premium, dr\u0103g\u0103la\u0219, inspirat din Pika.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Alb",
@@ -913,6 +1115,16 @@
     ],
     "price": "25",
     "description": "Keycap festiv cu Mo\u0219 Cr\u0103ciun, edi\u021bie mat\u0103 de s\u0103rb\u0103tori.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Ro\u0219u",
@@ -947,6 +1159,16 @@
     ],
     "price": "25",
     "description": "Keycap mat premium, cu un design feroce de lup.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Galben mu\u0219tar",
@@ -973,6 +1195,16 @@
     ],
     "price": "25",
     "description": "Keycap mat The Finals, pentru jocul competitiv.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Ro\u0219u",
@@ -1000,6 +1232,16 @@
     ],
     "price": "25",
     "description": "Keycap mat legendar, cu simbolul Lambda din Half-Life.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Negru",
@@ -1050,6 +1292,16 @@
     ],
     "price": "25",
     "description": "Keycap de iarn\u0103 cu om de z\u0103pad\u0103, cu finisaj mat de sezon.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Alb",
@@ -1080,9 +1332,23 @@
     ],
     "price": "25",
     "description": "Keycap mat personalizat, inspirat din turt\u0103 dulce.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      },
+      {
+        "label": "Material",
+        "value": "filament cu inser\u021bie de lemn"
+      }
+    ],
     "colors": [
       {
-        "name": "Maro deschis",
+        "name": "Lemn",
         "hex": "#c49a6c"
       },
       {
@@ -1111,6 +1377,16 @@
     ],
     "price": "25",
     "description": "Keycap mat cu design \u00een stil radioactiv.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Portocaliu",
@@ -1141,6 +1417,16 @@
     ],
     "price": "25",
     "description": "Keycap personalizat \u00een form\u0103 de baton de ciocolat\u0103.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Alb",
@@ -1154,7 +1440,7 @@
     "slug": "ciocolata"
   },
   {
-    "name": "Justachillfrog",
+    "name": "Just a Chill Frog",
     "category": "Keycaps",
     "is_trending": false,
     "cover_image": "../Photos/(41) Justachillfrog/1.webp",
@@ -1165,6 +1451,16 @@
     ],
     "price": "25",
     "description": "Keycap mat premium cu o broscu\u021b\u0103 relaxat\u0103, Chillfrog.",
+    "specs": [
+      {
+        "label": "Compatibilitate",
+        "value": "tastaturi mecanice cu switch-uri MX, cu montur\u0103 \u00een cruce \u201e+\u201d (Cherry MX, Gateron, Kailh, Outemu \u0219i altele compatibile). Nu se potrive\u0219te pe tastaturi low-profile sau de laptop"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "m\u0103rime standard 1u, c\u00e2t o tast\u0103 obi\u0219nuit\u0103 (aprox. 18 \u00d7 18 mm)"
+      }
+    ],
     "colors": [
       {
         "name": "Gri",
@@ -1175,7 +1471,7 @@
         "hex": "#111111"
       }
     ],
-    "slug": "justachillfrog"
+    "slug": "just-a-chill-frog"
   },
   {
     "name": "Barberpole",

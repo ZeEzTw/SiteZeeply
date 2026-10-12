@@ -14,7 +14,7 @@ const products = [
     "description": "Pe 25 iunie a \u00eenceput preorder-ul pentru GTA 6. Adaug\u0103 \u00een comand\u0103 \u0219i trofeul de birou GTA 6, pentru o a\u0219teptare care merit\u0103!",
     "colors": [
       {
-        "name": "Magenta",
+        "name": "Roz",
         "hex": "#e0218a"
       },
       {

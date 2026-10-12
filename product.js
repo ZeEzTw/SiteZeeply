@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const gallery = document.getElementById('gallery');
     const thumbs = [...document.querySelectorAll('.gallery-thumb')];
-    const counter = document.getElementById('gallery-count');
+    const dots = [...document.querySelectorAll('.gallery-dot')];
     const activeRing = thumbs.length ? thumbs[0].parentElement.dataset.active : '';
     let current = 0;
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const markActive = (n) => {
         current = n;
-        if (counter) counter.textContent = n + 1;
+        dots.forEach((d, i) => d.classList.toggle('active', i === n));
         thumbs.forEach((t, i) => {
             t.classList.toggle(activeRing, i === n);
             t.classList.toggle('ring-transparent', i !== n);

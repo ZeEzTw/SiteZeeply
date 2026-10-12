@@ -56,3 +56,41 @@ h1, h2, h3, .heading-font {
 /* Swipeable rows (product gallery, thumbnails) without a visible scrollbar */
 .no-scrollbar { scrollbar-width: none; }
 .no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Product page gallery: animated dots on phones, soft fade-in of the photos */
+.gallery-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: currentColor;
+    opacity: .25;
+    transition: width .35s cubic-bezier(0.22, 1, 0.36, 1), opacity .35s;
+}
+.gallery-dot.active {
+    width: 22px;
+    opacity: 1;
+}
+#gallery .gallery-img {
+    animation: galleryIn .8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes galleryIn {
+    from { opacity: 0; transform: scale(1.04); }
+    to { opacity: 1; transform: none; }
+}
+
+/* Phones: quieter reveal for product cards, gentle press feedback */
+@media (hover: none) {
+    .product-card {
+        transform: translateY(14px);
+        transition: opacity .5s ease, transform .5s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .product-link img, .related-card img {
+        transition: transform .25s ease;
+    }
+    .product-link:active img, .related-card:active img {
+        transform: scale(.97);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    #gallery .gallery-img { animation: none; }
+}

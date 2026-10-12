@@ -17,8 +17,8 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/webp" href="../../../Logo/logo.webp">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../../dist.css?v=4">
-    <link rel="stylesheet" href="../../../style.css?v=3">
+    <link rel="stylesheet" href="../../../dist.css?v=5">
+    <link rel="stylesheet" href="../../../style.css?v=4">
     <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Buchet de Lalele „Everbloom” cu Vaza inclusa", "description": "Yoyo l-a postat în videoclipul ei, de la noi! Este o vază printată 3D cu lalele printate 3D, disponibile în orice culoare.", "image": ["https://zeeply.studio/Photos/(01)%20Buchet%20de%20Lalele%20%E2%80%9EEverbloom%E2%80%9D%20cu%20Vaza%20inclusa/1.webp", "https://zeeply.studio/Photos/(01)%20Buchet%20de%20Lalele%20%E2%80%9EEverbloom%E2%80%9D%20cu%20Vaza%20inclusa/2.webp", "https://zeeply.studio/Photos/(01)%20Buchet%20de%20Lalele%20%E2%80%9EEverbloom%E2%80%9D%20cu%20Vaza%20inclusa/3.webp"], "brand": {"@type": "Brand", "name": "Zeeply"}, "offers": {"@type": "Offer", "price": "80", "priceCurrency": "RON", "availability": "https://schema.org/InStock", "url": "https://zeeply.studio/3d/p/buchet-de-lalele-everbloom-cu-vaza-inclusa/"}}</script>
     <script data-goatcounter="https://zeeply.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
@@ -60,24 +60,25 @@
 
             <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-start">
                 <!-- Gallery: swipe on phones, thumbnails/arrows on desktop -->
-                <div class="min-w-0">
+                <div class="min-w-0 -mx-4 md:mx-0">
                     <div class="relative">
                         <div id="gallery" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar">
                     <div class="snap-center shrink-0 w-full aspect-[4/5] bg-zinc-900">
-                        <img src="../../../Photos/(01)%20Buchet%20de%20Lalele%20%E2%80%9EEverbloom%E2%80%9D%20cu%20Vaza%20inclusa/1.webp" alt="Buchet de Lalele „Everbloom” cu Vaza inclusa – poza 1" class="w-full h-full object-cover" fetchpriority="high">
+                        <img src="../../../Photos/(01)%20Buchet%20de%20Lalele%20%E2%80%9EEverbloom%E2%80%9D%20cu%20Vaza%20inclusa/1.webp" alt="Buchet de Lalele „Everbloom” cu Vaza inclusa – poza 1" class="gallery-img w-full h-full object-cover" fetchpriority="high">
                     </div>
                     <div class="snap-center shrink-0 w-full aspect-[4/5] bg-zinc-900">
-                        <img src="../../../Photos/(01)%20Buchet%20de%20Lalele%20%E2%80%9EEverbloom%E2%80%9D%20cu%20Vaza%20inclusa/2.webp" alt="Buchet de Lalele „Everbloom” cu Vaza inclusa – poza 2" class="w-full h-full object-cover" loading="lazy">
+                        <img src="../../../Photos/(01)%20Buchet%20de%20Lalele%20%E2%80%9EEverbloom%E2%80%9D%20cu%20Vaza%20inclusa/2.webp" alt="Buchet de Lalele „Everbloom” cu Vaza inclusa – poza 2" class="gallery-img w-full h-full object-cover" loading="lazy">
                     </div>
                     <div class="snap-center shrink-0 w-full aspect-[4/5] bg-zinc-900">
-                        <img src="../../../Photos/(01)%20Buchet%20de%20Lalele%20%E2%80%9EEverbloom%E2%80%9D%20cu%20Vaza%20inclusa/3.webp" alt="Buchet de Lalele „Everbloom” cu Vaza inclusa – poza 3" class="w-full h-full object-cover" loading="lazy">
+                        <img src="../../../Photos/(01)%20Buchet%20de%20Lalele%20%E2%80%9EEverbloom%E2%80%9D%20cu%20Vaza%20inclusa/3.webp" alt="Buchet de Lalele „Everbloom” cu Vaza inclusa – poza 3" class="gallery-img w-full h-full object-cover" loading="lazy">
                     </div>
                         </div>
                         <button type="button" data-step="-1" class="gallery-arrow hidden md:flex absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 items-center justify-center rounded-full bg-black/40 text-white hover:bg-black/70 transition" aria-label="Poza anterioară">‹</button>
                         <button type="button" data-step="1" class="gallery-arrow hidden md:flex absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 items-center justify-center rounded-full bg-black/40 text-white hover:bg-black/70 transition" aria-label="Poza următoare">›</button>
-                        <div class="md:hidden absolute bottom-3 inset-x-0 text-center text-[10px] tracking-widest text-white/90"><span class="px-2 py-1 rounded-full bg-black/40"><span id="gallery-count">1</span> / 3</span></div>
+
                     </div>
-                    <div class="mt-3 flex gap-2 overflow-x-auto no-scrollbar" data-active="ring-white">
+                    <div id="gallery-dots" class="md:hidden flex justify-center gap-1.5 mt-4 text-white"><span class="gallery-dot"></span><span class="gallery-dot"></span><span class="gallery-dot"></span></div>
+                    <div class="hidden md:flex mt-3 gap-2 overflow-x-auto no-scrollbar" data-active="ring-white">
                     <button type="button" data-slide="0" class="gallery-thumb shrink-0 w-16 h-20 md:w-20 md:h-24 overflow-hidden ring-2 ring-inset ring-transparent bg-zinc-900 transition" aria-label="Poza 1">
                         <img src="../../../Photos/(01)%20Buchet%20de%20Lalele%20%E2%80%9EEverbloom%E2%80%9D%20cu%20Vaza%20inclusa/1.webp" alt="" class="w-full h-full object-cover" loading="lazy">
                     </button>
@@ -97,6 +98,16 @@
                     <p class="mt-3 text-xl md:text-2xl font-semibold tracking-wider text-white">80 LEI</p>
                     <p class="mt-5 text-sm md:text-base leading-relaxed text-gray-400">Yoyo l-a postat în videoclipul ei, de la noi! Este o vază printată 3D cu lalele printate 3D, disponibile în orice culoare.</p>
 
+                    <div class="mt-6">
+                        <div class="text-[10px] md:text-xs uppercase tracking-[0.2em] mb-3 text-gray-400">Alege culoarea: <span id="color-name" class="font-semibold text-white">Roz</span></div>
+                        <div id="color-options" class="flex flex-wrap gap-3" data-active="ring-white">
+                            <button type="button" class="color-swatch w-9 h-9 rounded-full border border-white/10 ring-2 ring-offset-2 ring-offset-black ring-white transition" style="background:#f9a8d4" data-color="Roz" aria-pressed="true" aria-label="Roz" title="Roz"></button>
+                            <button type="button" class="color-swatch w-9 h-9 rounded-full border border-white/10 ring-2 ring-offset-2 ring-offset-black ring-transparent transition" style="background:#ffffff" data-color="Alb" aria-pressed="false" aria-label="Alb" title="Alb"></button>
+                            <button type="button" class="color-swatch w-9 h-9 rounded-full border border-white/10 ring-2 ring-offset-2 ring-offset-black ring-transparent transition" style="background:#dc2626" data-color="Roșu" aria-pressed="false" aria-label="Roșu" title="Roșu"></button>
+                            <button type="button" class="color-swatch w-9 h-9 rounded-full border border-white/10 ring-2 ring-offset-2 ring-offset-black ring-transparent transition" style="background:#facc15" data-color="Galben" aria-pressed="false" aria-label="Galben" title="Galben"></button>
+                            <button type="button" class="color-swatch w-9 h-9 rounded-full border border-white/10 ring-2 ring-offset-2 ring-offset-black ring-transparent transition" style="background:#8b5cf6" data-color="Mov" aria-pressed="false" aria-label="Mov" title="Mov"></button>
+                        </div>
+                    </div>
 
                     <div class="mt-8">
                         <button type="button" id="product-add" data-shop="3d" data-name="Buchet de Lalele „Everbloom” cu Vaza inclusa" data-price="80" data-image="/Photos/(01)%20Buchet%20de%20Lalele%20%E2%80%9EEverbloom%E2%80%9D%20cu%20Vaza%20inclusa/1.webp"
@@ -116,7 +127,6 @@
 
                     <ul class="mt-8 p-5 border rounded-xl bg-white/[0.03] border-white/10 space-y-3 text-xs md:text-sm text-gray-400">
                         <li>✓ Făcut de noi, în atelierul Zeeply</li>
-                        <li>✓ Livrare în 2–3 zile lucrătoare de la confirmarea comenzii (produsele personalizate pot dura puțin mai mult)</li>
                         <li>✓ Livrare prin Colete-Online: curier la adresă sau easybox</li>
                         <li>✓ Transport gratuit la comenzi de peste 50 LEI</li>
                         <li>✓ Nu plătești nimic online: confirmăm comanda pe WhatsApp, apoi plătești ramburs, prin transfer sau Revolut</li>
@@ -126,41 +136,41 @@
 
             <section class="mt-20 md:mt-28">
                 <h2 class="mb-6 md:mb-8 text-sm md:text-base font-semibold uppercase tracking-[0.25em] heading-font text-white">Îți mai pot plăcea</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-10">
-                <a href="../statuie-gta-vi/" class="group block" data-goatcounter-click="3d-related-statuie-gta-vi">
-                    <div class="aspect-[4/5] overflow-hidden bg-zinc-900">
+                <div class="flex md:grid md:grid-cols-4 gap-4 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory scroll-px-4 md:scroll-px-0 no-scrollbar -mx-4 px-4 md:mx-0 md:px-0 pb-2">
+                <a href="../statuie-gta-vi/" class="related-card group block snap-start shrink-0 w-[64%] sm:w-[40%] md:w-auto" data-goatcounter-click="3d-related-statuie-gta-vi">
+                    <div class="aspect-[4/5] overflow-hidden rounded-xl bg-zinc-900">
                         <img src="../../../Photos/(43)GTA6_Statuie/1.webp" alt="Statuie GTA VI" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="mt-3 flex justify-between gap-2 text-[10px] md:text-xs font-semibold uppercase tracking-wide text-white">
-                        <span class="min-w-0 break-words">Statuie GTA VI</span>
-                        <span class="shrink-0 text-gray-400">40 LEI</span>
+                    <div class="mt-3 px-0.5">
+                        <div class="text-[11px] md:text-xs font-semibold uppercase tracking-wide leading-snug line-clamp-2 text-white">Statuie GTA VI</div>
+                        <div class="mt-1 text-[11px] md:text-xs tracking-wider text-gray-400">40 LEI</div>
                     </div>
                 </a>
-                <a href="../one-wish-willow/" class="group block" data-goatcounter-click="3d-related-one-wish-willow">
-                    <div class="aspect-[4/5] overflow-hidden bg-zinc-900">
+                <a href="../one-wish-willow/" class="related-card group block snap-start shrink-0 w-[64%] sm:w-[40%] md:w-auto" data-goatcounter-click="3d-related-one-wish-willow">
+                    <div class="aspect-[4/5] overflow-hidden rounded-xl bg-zinc-900">
                         <img src="../../../Photos/(44)OneWithWillow/1.webp" alt="One Wish Willow" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="mt-3 flex justify-between gap-2 text-[10px] md:text-xs font-semibold uppercase tracking-wide text-white">
-                        <span class="min-w-0 break-words">One Wish Willow</span>
-                        <span class="shrink-0 text-gray-400">25 LEI</span>
+                    <div class="mt-3 px-0.5">
+                        <div class="text-[11px] md:text-xs font-semibold uppercase tracking-wide leading-snug line-clamp-2 text-white">One Wish Willow</div>
+                        <div class="mt-1 text-[11px] md:text-xs tracking-wider text-gray-400">25 LEI</div>
                     </div>
                 </a>
-                <a href="../f1-race-calendar-matte-edition/" class="group block" data-goatcounter-click="3d-related-f1-race-calendar-matte-edition">
-                    <div class="aspect-[4/5] overflow-hidden bg-zinc-900">
+                <a href="../f1-race-calendar-matte-edition/" class="related-card group block snap-start shrink-0 w-[64%] sm:w-[40%] md:w-auto" data-goatcounter-click="3d-related-f1-race-calendar-matte-edition">
+                    <div class="aspect-[4/5] overflow-hidden rounded-xl bg-zinc-900">
                         <img src="../../../Photos/(02)%20F1%20Race%20Calendar%20-%20Matte%20Edition/1.webp" alt="F1 Race Calendar - Matte Edition" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="mt-3 flex justify-between gap-2 text-[10px] md:text-xs font-semibold uppercase tracking-wide text-white">
-                        <span class="min-w-0 break-words">F1 Race Calendar - Matte Edition</span>
-                        <span class="shrink-0 text-gray-400">40 LEI</span>
+                    <div class="mt-3 px-0.5">
+                        <div class="text-[11px] md:text-xs font-semibold uppercase tracking-wide leading-snug line-clamp-2 text-white">F1 Race Calendar - Matte Edition</div>
+                        <div class="mt-1 text-[11px] md:text-xs tracking-wider text-gray-400">40 LEI</div>
                     </div>
                 </a>
-                <a href="../suport-pix-uri-f1/" class="group block" data-goatcounter-click="3d-related-suport-pix-uri-f1">
-                    <div class="aspect-[4/5] overflow-hidden bg-zinc-900">
+                <a href="../suport-pix-uri-f1/" class="related-card group block snap-start shrink-0 w-[64%] sm:w-[40%] md:w-auto" data-goatcounter-click="3d-related-suport-pix-uri-f1">
+                    <div class="aspect-[4/5] overflow-hidden rounded-xl bg-zinc-900">
                         <img src="../../../Photos/(03)%20Suport%20Pix-uri%20F1/1.webp" alt="Suport Pix-uri F1" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="mt-3 flex justify-between gap-2 text-[10px] md:text-xs font-semibold uppercase tracking-wide text-white">
-                        <span class="min-w-0 break-words">Suport Pix-uri F1</span>
-                        <span class="shrink-0 text-gray-400">45 LEI</span>
+                    <div class="mt-3 px-0.5">
+                        <div class="text-[11px] md:text-xs font-semibold uppercase tracking-wide leading-snug line-clamp-2 text-white">Suport Pix-uri F1</div>
+                        <div class="mt-1 text-[11px] md:text-xs tracking-wider text-gray-400">45 LEI</div>
                     </div>
                 </a>
                 </div>
@@ -179,7 +189,7 @@
     </footer>
 
     <script>window.ZEEPLY_CATALOG = { instagram: 'zeeply.3d', shop: '3d' };</script>
-    <script src="../../../cart.js?v=8"></script>
-    <script src="../../../product.js?v=2"></script>
+    <script src="../../../cart.js?v=9"></script>
+    <script src="../../../product.js?v=3"></script>
 </body>
 </html>

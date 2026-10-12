@@ -12,6 +12,20 @@ const products = [
     ],
     "price": "40",
     "description": "Pe 25 iunie a \u00eenceput preorder-ul pentru GTA 6. Adaug\u0103 \u00een comand\u0103 \u0219i trofeul de birou GTA 6, pentru o a\u0219teptare care merit\u0103!",
+    "colors": [
+      {
+        "name": "Mov",
+        "hex": "#8b5cf6"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
+        "name": "Gri",
+        "hex": "#9ca3af"
+      }
+    ],
     "slug": "statuie-gta-vi"
   },
   {
@@ -25,6 +39,12 @@ const products = [
     ],
     "price": "25",
     "description": "Ia-\u021bi dorin\u021ba acum! \u201eOne Wish Willow\u201d din Obsession.",
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "one-wish-willow"
   },
   {
@@ -39,6 +59,29 @@ const products = [
     ],
     "price": "80",
     "description": "Yoyo l-a postat \u00een videoclipul ei, de la noi! Este o vaz\u0103 printat\u0103 3D cu lalele printate 3D, disponibile \u00een orice culoare.",
+    "colors": [
+      {
+        "name": "Roz",
+        "hex": "#f9a8d4"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Galben",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Mov",
+        "hex": "#8b5cf6"
+      }
+    ],
+    "color_choice": true,
     "slug": "buchet-de-lalele-everbloom-cu-vaza-inclusa"
   },
   {
@@ -56,6 +99,16 @@ const products = [
     ],
     "price": "40",
     "description": "Calendar premium pentru sezonul F1 2026, cu finisaj mat.",
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      }
+    ],
     "slug": "f1-race-calendar-matte-edition"
   },
   {
@@ -73,6 +126,20 @@ const products = [
     ],
     "price": "45",
     "description": "Organizator de birou elegant, \u00een stil F1, pentru pixurile tale.",
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      }
+    ],
     "slug": "suport-pix-uri-f1"
   },
   {
@@ -90,6 +157,16 @@ const products = [
     ],
     "price": "70",
     "description": "Un superb decor de perete cu o ma\u0219in\u0103 de Formula 1, perfect pentru pasiona\u021bii de curse.",
+    "colors": [
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "formula-1-wall-display"
   },
   {
@@ -107,6 +184,16 @@ const products = [
     ],
     "price": "120",
     "description": "Vitrin\u0103 de colec\u021bie exclusivist\u0103, \u00een form\u0103 de carte, pentru figurinele tale.",
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      }
+    ],
     "slug": "stranger-things-kinder-joy-display"
   },
   {
@@ -120,6 +207,16 @@ const products = [
     ],
     "price": "50",
     "description": "O ram\u0103 personalizat\u0103 superb\u0103 pentru nou-n\u0103scu\u021bi b\u0103ie\u021bi. Include nume, dat\u0103, or\u0103, greutate \u0219i \u00een\u0103l\u021bime personalizate.",
+    "colors": [
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Albastru",
+        "hex": "#3b82f6"
+      }
+    ],
     "slug": "personalized-newborn-frame-boy"
   },
   {
@@ -133,6 +230,16 @@ const products = [
     ],
     "price": "50",
     "description": "O ram\u0103 personalizat\u0103 superb\u0103 pentru nou-n\u0103scute feti\u021be. Include nume, dat\u0103, or\u0103, greutate \u0219i \u00een\u0103l\u021bime personalizate.",
+    "colors": [
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Roz",
+        "hex": "#f9a8d4"
+      }
+    ],
     "slug": "personalized-newborn-frame-girl"
   },
   {
@@ -147,6 +254,12 @@ const products = [
     ],
     "price": "120",
     "description": "Suport premium pentru expunerea figurinelor tale preferate.",
+    "colors": [
+      {
+        "name": "Galben",
+        "hex": "#facc15"
+      }
+    ],
     "slug": "figurine-fiends-mcdonalds-support"
   },
   {
@@ -162,6 +275,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap Counter-Strike cu finisaj mat, de \u00eenalt\u0103 calitate.",
+    "colors": [
+      {
+        "name": "Portocaliu",
+        "hex": "#f97316"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "counter-strike-keycap"
   },
   {
@@ -177,6 +300,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap League of Legends premium, cu finisaj mat.",
+    "colors": [
+      {
+        "name": "Albastru",
+        "hex": "#3b82f6"
+      },
+      {
+        "name": "Galben",
+        "hex": "#facc15"
+      }
+    ],
     "slug": "league-of-legends-keycap"
   },
   {
@@ -194,6 +327,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap Valorant personalizat, pentru pasiona\u021bii de gaming.",
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      }
+    ],
     "slug": "valorant-keycap"
   },
   {
@@ -210,6 +353,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap Dota 2 detaliat, cu design mat.",
+    "colors": [
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "dota2"
   },
   {
@@ -226,6 +379,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap superb \u00een form\u0103 de inim\u0103, pentru tastatura ta.",
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      }
+    ],
     "slug": "heart-keycap"
   },
   {
@@ -239,6 +402,12 @@ const products = [
     ],
     "price": "20",
     "description": "Inim\u0103 din Lego, lucrat\u0103 manual, pentru colec\u021bia ta.",
+    "colors": [
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      }
+    ],
     "slug": "heart-lego"
   },
   {
@@ -252,6 +421,16 @@ const products = [
     ],
     "price": "30",
     "description": "Puzzle elegant \u00een form\u0103 de inim\u0103, perfect pentru cei dragi.",
+    "colors": [
+      {
+        "name": "Roz",
+        "hex": "#f9a8d4"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      }
+    ],
     "slug": "heart-puzzle"
   },
   {
@@ -267,6 +446,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat inspirat din Rust, cu un aspect robust.",
+    "colors": [
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "rust-keycap"
   },
   {
@@ -283,6 +472,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap personalizat, inspirat din iconicul Garry's Mod.",
+    "colors": [
+      {
+        "name": "Albastru",
+        "hex": "#3b82f6"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      }
+    ],
     "slug": "garry-s-mod"
   },
   {
@@ -300,6 +499,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap Apex Legends, realizat cu precizie.",
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      }
+    ],
     "slug": "apex-legends-keycap"
   },
   {
@@ -316,6 +525,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat, \u00een stil clasic, inspirat din Terraria.",
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
+        "name": "Verde",
+        "hex": "#22c55e"
+      }
+    ],
     "slug": "terraria-keycap"
   },
   {
@@ -332,6 +551,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap de colec\u021bie Team Fortress 2, de calitate premium.",
+    "colors": [
+      {
+        "name": "Maro",
+        "hex": "#8b5a2b"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "team-fortress-2-keycap"
   },
   {
@@ -347,6 +576,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap tactic Escape From Tarkov, cu finisaj mat.",
+    "colors": [
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "escape-from-tarkov-keycap"
   },
   {
@@ -365,6 +604,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap Overwatch, pentru fanii adev\u0103ra\u021bi.",
+    "colors": [
+      {
+        "name": "Gri",
+        "hex": "#9ca3af"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      }
+    ],
     "slug": "overwatch-keycap"
   },
   {
@@ -381,6 +630,20 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat premium, inspirat din Mass Effect N7.",
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      }
+    ],
     "slug": "n7-keycap"
   },
   {
@@ -398,6 +661,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap personalizat cu iconicul Plumbob din The Sims.",
+    "colors": [
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Verde",
+        "hex": "#22c55e"
+      }
+    ],
     "slug": "the-sims-keycap"
   },
   {
@@ -414,6 +687,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat minimalist, cu logo-ul Aphex Twin.",
+    "colors": [
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "aphex-twin-keycap"
   },
   {
@@ -431,6 +714,20 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap personalizat inspirat din Minecraft, cu aspectul cubic caracteristic.",
+    "colors": [
+      {
+        "name": "Gri",
+        "hex": "#9ca3af"
+      },
+      {
+        "name": "Galben",
+        "hex": "#facc15"
+      },
+      {
+        "name": "Albastru",
+        "hex": "#3b82f6"
+      }
+    ],
     "slug": "minecraft-keycap"
   },
   {
@@ -446,6 +743,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat premium, cu logo-ul Rockstar Games.",
+    "colors": [
+      {
+        "name": "Portocaliu",
+        "hex": "#f97316"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "rockstar-keycap"
   },
   {
@@ -462,6 +769,20 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap cu design dulce de acadea \u0219i finisaj mat festiv.",
+    "colors": [
+      {
+        "name": "Bej",
+        "hex": "#e8d8c3"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      }
+    ],
     "slug": "candycan-keycap"
   },
   {
@@ -476,6 +797,16 @@ const products = [
     ],
     "price": "15",
     "description": "Semn de carte inspirat din Stranger Things, cu un aspect misterios.",
+    "colors": [
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "the-upside-down-bookmark"
   },
   {
@@ -489,6 +820,16 @@ const products = [
     ],
     "price": "15",
     "description": "Breloc mat Stranger Things, pentru fanii serialului.",
+    "colors": [
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "stranger-things-keychain"
   },
   {
@@ -506,6 +847,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat premium, dr\u0103g\u0103la\u0219, inspirat din Pika.",
+    "colors": [
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Galben",
+        "hex": "#facc15"
+      }
+    ],
     "slug": "pika-keycap"
   },
   {
@@ -526,6 +877,20 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap festiv cu Mo\u0219 Cr\u0103ciun, edi\u021bie mat\u0103 de s\u0103rb\u0103tori.",
+    "colors": [
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "santaclaus-keycap"
   },
   {
@@ -542,6 +907,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat premium, cu un design feroce de lup.",
+    "colors": [
+      {
+        "name": "Auriu",
+        "hex": "#d4af37"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "wolft-keycap"
   },
   {
@@ -558,6 +933,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat The Finals, pentru jocul competitiv.",
+    "colors": [
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      }
+    ],
     "slug": "the-finals-keycap"
   },
   {
@@ -575,6 +960,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat legendar, cu simbolul Lambda din Half-Life.",
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      },
+      {
+        "name": "Portocaliu",
+        "hex": "#f97316"
+      }
+    ],
     "slug": "half-life-keycap"
   },
   {
@@ -589,6 +984,12 @@ const products = [
     ],
     "price": "50",
     "description": "Suport premium Zeeply pentru cheile ma\u0219inii tale.",
+    "colors": [
+      {
+        "name": "Bej",
+        "hex": "#e8d8c3"
+      }
+    ],
     "slug": "suport-cheie-masina"
   },
   {
@@ -605,6 +1006,20 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap de iarn\u0103 cu om de z\u0103pad\u0103, cu finisaj mat de sezon.",
+    "colors": [
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "snowman-keycap"
   },
   {
@@ -621,6 +1036,20 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat personalizat, inspirat din turt\u0103 dulce.",
+    "colors": [
+      {
+        "name": "Maro",
+        "hex": "#8b5a2b"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      }
+    ],
     "slug": "turtadulce"
   },
   {
@@ -638,6 +1067,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat cu design \u00een stil radioactiv.",
+    "colors": [
+      {
+        "name": "Albastru",
+        "hex": "#3b82f6"
+      },
+      {
+        "name": "Mov",
+        "hex": "#8b5cf6"
+      }
+    ],
     "slug": "radiations-keycap"
   },
   {
@@ -654,6 +1093,12 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap personalizat \u00een form\u0103 de baton de ciocolat\u0103.",
+    "colors": [
+      {
+        "name": "Maro",
+        "hex": "#8b5a2b"
+      }
+    ],
     "slug": "ciocolata"
   },
   {
@@ -668,6 +1113,16 @@ const products = [
     ],
     "price": "25",
     "description": "Keycap mat premium cu o broscu\u021b\u0103 relaxat\u0103, Chillfrog.",
+    "colors": [
+      {
+        "name": "Gri",
+        "hex": "#9ca3af"
+      },
+      {
+        "name": "Negru",
+        "hex": "#111111"
+      }
+    ],
     "slug": "justachillfrog"
   },
   {
@@ -681,6 +1136,24 @@ const products = [
     ],
     "price": "250",
     "description": "St\u00e2lp de frizerie (barber pole) de dimensiuni mari, cu design clasic \u00een spiral\u0103. Decor de impact pentru orice salon sau frizerie.",
+    "colors": [
+      {
+        "name": "Ro\u0219u",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Albastru",
+        "hex": "#3b82f6"
+      },
+      {
+        "name": "Gri",
+        "hex": "#9ca3af"
+      }
+    ],
     "slug": "barberpole"
   }
 ];

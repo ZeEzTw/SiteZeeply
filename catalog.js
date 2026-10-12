@@ -27,11 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const canHover = window.matchMedia('(hover: hover)').matches;
 
-    // Touch screens have no hover: cycle a card's photos while it is on screen instead
-    const slideshowInView = new IntersectionObserver((entries) => {
-        entries.forEach(entry => entry.isIntersecting ? entry.target.startSlideshow() : entry.target.stopSlideshow());
-    }, { threshold: 0.6 });
-
     // Instagram profile (ig.me direct-message links did not open reliably)
     const dmLink = `https://www.instagram.com/${config.instagram}/`;
 
@@ -47,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Stop the slideshows of the cards being replaced
         grid.querySelectorAll('.product-card').forEach(c => c.stopSlideshow && c.stopSlideshow());
-        slideshowInView.disconnect();
         grid.innerHTML = '';
 
         // Categories that have their own tab
@@ -159,15 +153,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             // Hover slideshow only for real pointers (see style.css, iOS tap handling)
-            let slideshowDelay;
-            card.stopSlideshow = () => { clearTimeout(slideshowDelay); stopSlideshow(); };
+            // Phones show the cover only; all photos are on the product page
+            card.stopSlideshow = stopSlideshow;
             if (canHover) {
                 card.addEventListener('mouseenter', startSlideshow);
                 card.addEventListener('mouseleave', stopSlideshow);
-            } else {
-                // Offset neighbouring cards so their photos don't all change at the same moment
-                card.startSlideshow = () => { slideshowDelay = setTimeout(startSlideshow, (index % 2) * 750); };
-                slideshowInView.observe(card);
             }
 
             // Photo and name open the product page; count the click in GoatCounter

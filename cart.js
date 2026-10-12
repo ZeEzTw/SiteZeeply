@@ -172,7 +172,7 @@
             <p>Zeeply e un atelier mic: fiecare produs e făcut de noi. De aceea confirmăm personal fiecare comandă.</p>
             <ol>
                 <li>Trimiți comanda de aici. Nu plătești nimic acum.</li>
-                <li>Te contactăm pe WhatsApp: confirmăm produsele și prețul exact al transportului. Coletul ajunge de obicei în 2–3 zile lucrătoare de la confirmare. Livrăm prin Colete-Online, cu cel mai potrivit curier (Sameday, FAN Courier, Cargus, DPD, GLS și alții).</li>
+                <li>Te contactăm pe WhatsApp: confirmăm produsele și prețul exact al transportului. Livrăm prin Colete-Online, cu cel mai potrivit curier (Sameday, FAN Courier, Cargus, DPD, GLS și alții).</li>
                 <li>Plătești cum preferi: ramburs, transfer bancar sau Revolut.</li>
             </ol>
         </div>`;

@@ -21,7 +21,7 @@ SHOPS = {
     '3d': {
         'label': 'Zeeply 3D',
         'instagram': 'zeeply.3d',
-        'stylesheet': '../../../style.css?v=3',
+        'stylesheet': '../../../style.css?v=4',
         'muted': 'text-gray-400',
         'strong': 'text-white',
         'line': 'border-white/10',
@@ -40,7 +40,7 @@ SHOPS = {
     'wool': {
         'label': 'Zeeply Wool',
         'instagram': 'zeeply.wool',
-        'stylesheet': '../../style-wool.css?v=3',
+        'stylesheet': '../../style-wool.css?v=4',
         'muted': 'text-gray-500',
         'strong': 'text-gray-900',
         'line': 'border-gray-200',
@@ -205,21 +205,22 @@ def render_page(shop, product, products, nav, footer):
 
     slides = '\n'.join(
         f'''                    <div class="snap-center shrink-0 w-full aspect-[4/5] {t['image_bg']}">
-                        <img src="../../../{e(url_quote(img))}" alt="{e(product['name'])} – poza {n + 1}" class="w-full h-full object-cover" {'fetchpriority="high"' if n == 0 else 'loading="lazy"'}>
+                        <img src="../../../{e(url_quote(img))}" alt="{e(product['name'])} – poza {n + 1}" class="gallery-img w-full h-full object-cover" {'fetchpriority="high"' if n == 0 else 'loading="lazy"'}>
                     </div>''' for n, img in enumerate(images))
     thumbs = '\n'.join(
         f'''                    <button type="button" data-slide="{n}" class="gallery-thumb shrink-0 w-16 h-20 md:w-20 md:h-24 overflow-hidden ring-2 ring-inset ring-transparent {t['image_bg']} transition" aria-label="Poza {n + 1}">
                         <img src="../../../{e(url_quote(img))}" alt="" class="w-full h-full object-cover" loading="lazy">
                     </button>''' for n, img in enumerate(images)) if len(images) > 1 else ''
 
+    # Phones: a swipeable row of cards; desktop: 4 columns
     cards = '\n'.join(
-        f'''                <a href="../{e(r['slug'])}/" class="group block" data-goatcounter-click="{shop}-related-{e(r['slug'])}">
-                    <div class="aspect-[4/5] overflow-hidden {t['image_bg']}">
+        f'''                <a href="../{e(r['slug'])}/" class="related-card group block snap-start shrink-0 w-[64%] sm:w-[40%] md:w-auto" data-goatcounter-click="{shop}-related-{e(r['slug'])}">
+                    <div class="aspect-[4/5] overflow-hidden rounded-xl {t['image_bg']}">
                         <img src="../../../{e(url_quote(site_path(r['cover_image'])))}" alt="{e(r['name'])}" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     </div>
-                    <div class="mt-3 flex justify-between gap-2 text-[10px] md:text-xs font-semibold uppercase tracking-wide {t['strong']}">
-                        <span class="min-w-0 break-words">{e(r['name'])}</span>
-                        <span class="shrink-0 {t['muted']}">{e(r['price'])} LEI</span>
+                    <div class="mt-3 px-0.5">
+                        <div class="text-[11px] md:text-xs font-semibold uppercase tracking-wide leading-snug line-clamp-2 {t['strong']}">{e(r['name'])}</div>
+                        <div class="mt-1 text-[11px] md:text-xs tracking-wider {t['muted']}">{e(r['price'])} LEI</div>
                     </div>
                 </a>''' for r in related_products(product, products))
 
@@ -242,7 +243,7 @@ def render_page(shop, product, products, nav, footer):
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/webp" href="../../../Logo/logo.webp">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../../dist.css?v=4">
+    <link rel="stylesheet" href="../../../dist.css?v=5">
     <link rel="stylesheet" href="{t['stylesheet']}">
     <script type="application/ld+json">{json.dumps(json_ld, ensure_ascii=False)}</script>
     <script data-goatcounter="https://zeeply.goatcounter.com/count"
@@ -258,16 +259,17 @@ def render_page(shop, product, products, nav, footer):
 
             <div class="grid md:grid-cols-2 gap-8 md:gap-14 items-start">
                 <!-- Gallery: swipe on phones, thumbnails/arrows on desktop -->
-                <div class="min-w-0">
+                <div class="min-w-0 -mx-4 md:mx-0">
                     <div class="relative">
                         <div id="gallery" class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar">
 {slides}
                         </div>
                         {'' if len(images) < 2 else f"""<button type="button" data-step="-1" class="gallery-arrow hidden md:flex absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 items-center justify-center rounded-full bg-black/40 text-white hover:bg-black/70 transition" aria-label="Poza anterioară">‹</button>
                         <button type="button" data-step="1" class="gallery-arrow hidden md:flex absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 items-center justify-center rounded-full bg-black/40 text-white hover:bg-black/70 transition" aria-label="Poza următoare">›</button>
-                        <div class="md:hidden absolute bottom-3 inset-x-0 text-center text-[10px] tracking-widest text-white/90"><span class="px-2 py-1 rounded-full bg-black/40"><span id="gallery-count">1</span> / {len(images)}</span></div>"""}
+"""}
                     </div>
-                    <div class="mt-3 flex gap-2 overflow-x-auto no-scrollbar" data-active="{t['thumb_active']}">
+                    {'' if len(images) < 2 else f'<div id="gallery-dots" class="md:hidden flex justify-center gap-1.5 mt-4 {t["strong"]}">' + '<span class="gallery-dot"></span>' * len(images) + '</div>'}
+                    <div class="hidden md:flex mt-3 gap-2 overflow-x-auto no-scrollbar" data-active="{t['thumb_active']}">
 {thumbs}
                     </div>
                 </div>
@@ -298,7 +300,6 @@ def render_page(shop, product, products, nav, footer):
 
                     <ul class="mt-8 p-5 border rounded-xl {t['panel']} space-y-3 text-xs md:text-sm {t['muted']}">
                         <li>✓ Făcut de noi, în atelierul Zeeply</li>
-                        <li>✓ Livrare în 2–3 zile lucrătoare de la confirmarea comenzii (produsele personalizate pot dura puțin mai mult)</li>
                         <li>✓ Livrare prin Colete-Online: curier la adresă sau easybox</li>
                         <li>✓ Transport gratuit la comenzi de peste 50 LEI</li>
                         <li>✓ Nu plătești nimic online: confirmăm comanda pe WhatsApp, apoi plătești ramburs, prin transfer sau Revolut</li>
@@ -308,7 +309,7 @@ def render_page(shop, product, products, nav, footer):
 
             <section class="mt-20 md:mt-28">
                 <h2 class="mb-6 md:mb-8 text-sm md:text-base font-semibold uppercase tracking-[0.25em] heading-font {t['strong']}">Îți mai pot plăcea</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-x-4 md:gap-x-8 gap-y-10">
+                <div class="flex md:grid md:grid-cols-4 gap-4 md:gap-8 overflow-x-auto md:overflow-visible snap-x snap-mandatory scroll-px-4 md:scroll-px-0 no-scrollbar -mx-4 px-4 md:mx-0 md:px-0 pb-2">
 {cards}
                 </div>
             </section>
@@ -318,8 +319,8 @@ def render_page(shop, product, products, nav, footer):
     {footer}
 
     <script>window.ZEEPLY_CATALOG = {{ instagram: '{t['instagram']}', shop: '{shop}' }};</script>
-    <script src="../../../cart.js?v=8"></script>
-    <script src="../../../product.js?v=2"></script>
+    <script src="../../../cart.js?v=9"></script>
+    <script src="../../../product.js?v=3"></script>
 </body>
 </html>
 '''

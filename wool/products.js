@@ -21,6 +21,20 @@ const products = [
         "value": "11 cm (înălțime) / 10 cm (lungime)."
       }
     ],
+    "colors": [
+      {
+        "name": "Verde",
+        "hex": "#22c55e"
+      },
+      {
+        "name": "Bej",
+        "hex": "#e8d8c3"
+      },
+      {
+        "name": "Maro",
+        "hex": "#8b5a2b"
+      }
+    ],
     "slug": "baby-yoda"
   },
   {
@@ -133,6 +147,20 @@ const products = [
       {
         "label": "Detalii",
         "value": "O inimă mare roșie, un ghiveci alb cu obrăjori roz și un zâmbet contagios."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Roșu",
+        "hex": "#dc2626"
+      },
+      {
+        "name": "Alb",
+        "hex": "#ffffff"
+      },
+      {
+        "name": "Roz",
+        "hex": "#f9a8d4"
       }
     ],
     "slug": "cupidonel"
@@ -322,6 +350,12 @@ const products = [
       {
         "label": "Material",
         "value": "Realizat prin printare 3D"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Negru",
+        "hex": "#111111"
       }
     ],
     "slug": "set-magic-pentru-biblioteca-harry-potter"

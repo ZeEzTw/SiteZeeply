@@ -2,6 +2,7 @@
 @source "./**/*.html";
 @source "./catalog.js";
 @source "./cart.js";
+@source "./product.js";
 
 @theme {
   --font-sans: 'Inter', sans-serif;

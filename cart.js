@@ -9,8 +9,13 @@
     const STORAGE_KEY = 'zeeply-cart';
 
     // ---------- State ----------
+    // Images are stored as site-absolute paths so the cart works on every page depth.
+    // Older carts saved '../Photos/…' from the shop pages: map those to '/Photos/…'.
     const load = () => {
-        try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; } catch { return []; }
+        try {
+            return (JSON.parse(localStorage.getItem(STORAGE_KEY)) || [])
+                .map(i => ({ ...i, image: String(i.image).replace(/^\.\.\//, '/') }));
+        } catch { return []; }
     };
     let items = load();
     const save = () => {
@@ -31,7 +36,7 @@
         const id = `${product.shop}:${product.name}`;
         const existing = items.find(i => i.id === id);
         if (existing) existing.qty += 1;
-        else items.push({ id, name: product.name, price: parseInt(product.price, 10) || 0, image: product.image, shop: product.shop, qty: 1 });
+        else items.push({ id, name: product.name, price: parseInt(product.price, 10) || 0, image: new URL(product.image, location.href).pathname, shop: product.shop, qty: 1 });
         track(`cart-add-${product.shop}-` + product.name.replace(/\s+/g, '-').toLowerCase(), 'Add to cart: ' + product.name);
         save();
         bump();
@@ -275,7 +280,7 @@
         foot.innerHTML = `
             <div class="zc-row zc-total"><span>Total</span><span>${sub >= FREE_SHIPPING_FROM ? `${sub} LEI` : `${sub} LEI + transport`}</span></div>
             <button class="zc-btn" type="submit" form="zc-form" id="zc-submit" style="margin-top:10px">Trimite comanda</button>
-            <p class="zc-legal">Prin trimitere ești de acord cu <a href="../terms/" target="_blank">Termenii</a> și <a href="../shipping/" target="_blank">Politica de livrare</a>.</p>
+            <p class="zc-legal">Prin trimitere ești de acord cu <a href="/terms/" target="_blank">Termenii</a> și <a href="/shipping/" target="_blank">Politica de livrare</a>.</p>
             <button class="zc-link" id="zc-back">← Înapoi la coș</button>`;
     };
 

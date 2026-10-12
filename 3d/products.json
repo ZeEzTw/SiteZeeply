@@ -11,7 +11,8 @@
       "../Photos/(43)GTA6_Statuie/4.webp"
     ],
     "price": "40",
-    "description": "Pe 25 iunie a \u00eenceput preorder-ul pentru GTA 6. Adaug\u0103 \u00een comand\u0103 \u0219i trofeul de birou GTA 6, pentru o a\u0219teptare care merit\u0103!"
+    "description": "Pe 25 iunie a \u00eenceput preorder-ul pentru GTA 6. Adaug\u0103 \u00een comand\u0103 \u0219i trofeul de birou GTA 6, pentru o a\u0219teptare care merit\u0103!",
+    "slug": "statuie-gta-vi"
   },
   {
     "name": "One Wish Willow",
@@ -23,7 +24,8 @@
       "../Photos/(44)OneWithWillow/2.webp"
     ],
     "price": "25",
-    "description": "Ia-\u021bi dorin\u021ba acum! \u201eOne Wish Willow\u201d din Obsession."
+    "description": "Ia-\u021bi dorin\u021ba acum! \u201eOne Wish Willow\u201d din Obsession.",
+    "slug": "one-wish-willow"
   },
   {
     "name": "Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa",
@@ -36,7 +38,8 @@
       "../Photos/(01) Buchet de Lalele \u201eEverbloom\u201d cu Vaza inclusa/3.webp"
     ],
     "price": "80",
-    "description": "Yoyo l-a postat \u00een videoclipul ei, de la noi! Este o vaz\u0103 printat\u0103 3D cu lalele printate 3D, disponibile \u00een orice culoare."
+    "description": "Yoyo l-a postat \u00een videoclipul ei, de la noi! Este o vaz\u0103 printat\u0103 3D cu lalele printate 3D, disponibile \u00een orice culoare.",
+    "slug": "buchet-de-lalele-everbloom-cu-vaza-inclusa"
   },
   {
     "name": "F1 Race Calendar - Matte Edition",
@@ -52,7 +55,8 @@
       "../Photos/(02) F1 Race Calendar - Matte Edition/7.webp"
     ],
     "price": "40",
-    "description": "Calendar premium pentru sezonul F1 2026, cu finisaj mat."
+    "description": "Calendar premium pentru sezonul F1 2026, cu finisaj mat.",
+    "slug": "f1-race-calendar-matte-edition"
   },
   {
     "name": "Suport Pix-uri F1",
@@ -68,7 +72,8 @@
       "../Photos/(03) Suport Pix-uri F1/6.webp"
     ],
     "price": "45",
-    "description": "Organizator de birou elegant, \u00een stil F1, pentru pixurile tale."
+    "description": "Organizator de birou elegant, \u00een stil F1, pentru pixurile tale.",
+    "slug": "suport-pix-uri-f1"
   },
   {
     "name": "Formula 1 Wall Display",
@@ -84,7 +89,8 @@
       "../Photos/(04) Formula 1 Wall Display/6.webp"
     ],
     "price": "70",
-    "description": "Un superb decor de perete cu o ma\u0219in\u0103 de Formula 1, perfect pentru pasiona\u021bii de curse."
+    "description": "Un superb decor de perete cu o ma\u0219in\u0103 de Formula 1, perfect pentru pasiona\u021bii de curse.",
+    "slug": "formula-1-wall-display"
   },
   {
     "name": "Stranger Things Kinder Joy Display",
@@ -100,7 +106,8 @@
       "../Photos/(05) Stranger Things Kinder Joy Display/6.webp"
     ],
     "price": "120",
-    "description": "Vitrin\u0103 de colec\u021bie exclusivist\u0103, \u00een form\u0103 de carte, pentru figurinele tale."
+    "description": "Vitrin\u0103 de colec\u021bie exclusivist\u0103, \u00een form\u0103 de carte, pentru figurinele tale.",
+    "slug": "stranger-things-kinder-joy-display"
   },
   {
     "name": "Personalized Newborn Frame - Boy",
@@ -112,7 +119,8 @@
       "../Photos/(06) Personalized Newborn Frame - Boy/2.webp"
     ],
     "price": "50",
-    "description": "O ram\u0103 personalizat\u0103 superb\u0103 pentru nou-n\u0103scu\u021bi b\u0103ie\u021bi. Include nume, dat\u0103, or\u0103, greutate \u0219i \u00een\u0103l\u021bime personalizate."
+    "description": "O ram\u0103 personalizat\u0103 superb\u0103 pentru nou-n\u0103scu\u021bi b\u0103ie\u021bi. Include nume, dat\u0103, or\u0103, greutate \u0219i \u00een\u0103l\u021bime personalizate.",
+    "slug": "personalized-newborn-frame-boy"
   },
   {
     "name": "Personalized Newborn Frame - Girl",
@@ -124,7 +132,8 @@
       "../Photos/(07) Personalized Newborn Frame - Girl/2.webp"
     ],
     "price": "50",
-    "description": "O ram\u0103 personalizat\u0103 superb\u0103 pentru nou-n\u0103scute feti\u021be. Include nume, dat\u0103, or\u0103, greutate \u0219i \u00een\u0103l\u021bime personalizate."
+    "description": "O ram\u0103 personalizat\u0103 superb\u0103 pentru nou-n\u0103scute feti\u021be. Include nume, dat\u0103, or\u0103, greutate \u0219i \u00een\u0103l\u021bime personalizate.",
+    "slug": "personalized-newborn-frame-girl"
   },
   {
     "name": "Figurine Fiends McDonalds Support",
@@ -137,7 +146,8 @@
       "../Photos/(08) Figurine Fiends McDonalds Support/3.webp"
     ],
     "price": "120",
-    "description": "Suport premium pentru expunerea figurinelor tale preferate."
+    "description": "Suport premium pentru expunerea figurinelor tale preferate.",
+    "slug": "figurine-fiends-mcdonalds-support"
   },
   {
     "name": "Counter Strike keycap",
@@ -151,7 +161,8 @@
       "../Photos/(09) Counter Strike keycap/8.webp"
     ],
     "price": "25",
-    "description": "Keycap Counter-Strike cu finisaj mat, de \u00eenalt\u0103 calitate."
+    "description": "Keycap Counter-Strike cu finisaj mat, de \u00eenalt\u0103 calitate.",
+    "slug": "counter-strike-keycap"
   },
   {
     "name": "League of Legends keycap",
@@ -165,7 +176,8 @@
       "../Photos/(10) League of Legends keycap/9.webp"
     ],
     "price": "25",
-    "description": "Keycap League of Legends premium, cu finisaj mat."
+    "description": "Keycap League of Legends premium, cu finisaj mat.",
+    "slug": "league-of-legends-keycap"
   },
   {
     "name": "Valorant keycap",
@@ -181,7 +193,8 @@
       "../Photos/(11) Valorant keycap/6.webp"
     ],
     "price": "25",
-    "description": "Keycap Valorant personalizat, pentru pasiona\u021bii de gaming."
+    "description": "Keycap Valorant personalizat, pentru pasiona\u021bii de gaming.",
+    "slug": "valorant-keycap"
   },
   {
     "name": "Dota2",
@@ -196,7 +209,8 @@
       "../Photos/(12) Dota2/5.webp"
     ],
     "price": "25",
-    "description": "Keycap Dota 2 detaliat, cu design mat."
+    "description": "Keycap Dota 2 detaliat, cu design mat.",
+    "slug": "dota2"
   },
   {
     "name": "Heart keycap",
@@ -211,7 +225,8 @@
       "../Photos/(13) Heart keycap/7.webp"
     ],
     "price": "25",
-    "description": "Keycap superb \u00een form\u0103 de inim\u0103, pentru tastatura ta."
+    "description": "Keycap superb \u00een form\u0103 de inim\u0103, pentru tastatura ta.",
+    "slug": "heart-keycap"
   },
   {
     "name": "Heart Lego",
@@ -223,7 +238,8 @@
       "../Photos/(14) Heart Lego/2.webp"
     ],
     "price": "20",
-    "description": "Inim\u0103 din Lego, lucrat\u0103 manual, pentru colec\u021bia ta."
+    "description": "Inim\u0103 din Lego, lucrat\u0103 manual, pentru colec\u021bia ta.",
+    "slug": "heart-lego"
   },
   {
     "name": "Heart Puzzle",
@@ -235,7 +251,8 @@
       "../Photos/(15) Heart Puzzle/2.webp"
     ],
     "price": "30",
-    "description": "Puzzle elegant \u00een form\u0103 de inim\u0103, perfect pentru cei dragi."
+    "description": "Puzzle elegant \u00een form\u0103 de inim\u0103, perfect pentru cei dragi.",
+    "slug": "heart-puzzle"
   },
   {
     "name": "Rust keycap",
@@ -249,7 +266,8 @@
       "../Photos/(16) Rust keycap/4.webp"
     ],
     "price": "25",
-    "description": "Keycap mat inspirat din Rust, cu un aspect robust."
+    "description": "Keycap mat inspirat din Rust, cu un aspect robust.",
+    "slug": "rust-keycap"
   },
   {
     "name": "Garry'S Mod",
@@ -264,7 +282,8 @@
       "../Photos/(17) Garry'S Mod/5.webp"
     ],
     "price": "25",
-    "description": "Keycap personalizat, inspirat din iconicul Garry's Mod."
+    "description": "Keycap personalizat, inspirat din iconicul Garry's Mod.",
+    "slug": "garry-s-mod"
   },
   {
     "name": "Apex Legends keycap",
@@ -280,7 +299,8 @@
       "../Photos/(18) Apex Legends keycap/6.webp"
     ],
     "price": "25",
-    "description": "Keycap Apex Legends, realizat cu precizie."
+    "description": "Keycap Apex Legends, realizat cu precizie.",
+    "slug": "apex-legends-keycap"
   },
   {
     "name": "Terraria keycap",
@@ -295,7 +315,8 @@
       "../Photos/(19) Terraria keycap/5.webp"
     ],
     "price": "25",
-    "description": "Keycap mat, \u00een stil clasic, inspirat din Terraria."
+    "description": "Keycap mat, \u00een stil clasic, inspirat din Terraria.",
+    "slug": "terraria-keycap"
   },
   {
     "name": "Team Fortress 2 keycap",
@@ -310,7 +331,8 @@
       "../Photos/(20) Team Fortress 2 keycap/5.webp"
     ],
     "price": "25",
-    "description": "Keycap de colec\u021bie Team Fortress 2, de calitate premium."
+    "description": "Keycap de colec\u021bie Team Fortress 2, de calitate premium.",
+    "slug": "team-fortress-2-keycap"
   },
   {
     "name": "Escape From Tarkov keycap",
@@ -324,7 +346,8 @@
       "../Photos/(21) Escape From Tarkov keycap/4.webp"
     ],
     "price": "25",
-    "description": "Keycap tactic Escape From Tarkov, cu finisaj mat."
+    "description": "Keycap tactic Escape From Tarkov, cu finisaj mat.",
+    "slug": "escape-from-tarkov-keycap"
   },
   {
     "name": "Overwatch keycap",
@@ -341,7 +364,8 @@
       "../Photos/(22) Overwatch keycap/7.webp"
     ],
     "price": "25",
-    "description": "Keycap Overwatch, pentru fanii adev\u0103ra\u021bi."
+    "description": "Keycap Overwatch, pentru fanii adev\u0103ra\u021bi.",
+    "slug": "overwatch-keycap"
   },
   {
     "name": "N7 keycap",
@@ -356,7 +380,8 @@
       "../Photos/(23) N7 keycap/5.webp"
     ],
     "price": "25",
-    "description": "Keycap mat premium, inspirat din Mass Effect N7."
+    "description": "Keycap mat premium, inspirat din Mass Effect N7.",
+    "slug": "n7-keycap"
   },
   {
     "name": "The Sims keycap",
@@ -372,7 +397,8 @@
       "../Photos/(24) The Sims keycap/6.webp"
     ],
     "price": "25",
-    "description": "Keycap personalizat cu iconicul Plumbob din The Sims."
+    "description": "Keycap personalizat cu iconicul Plumbob din The Sims.",
+    "slug": "the-sims-keycap"
   },
   {
     "name": "Aphex Twin keycap",
@@ -387,7 +413,8 @@
       "../Photos/(25) Aphex Twin keycap/5.webp"
     ],
     "price": "25",
-    "description": "Keycap mat minimalist, cu logo-ul Aphex Twin."
+    "description": "Keycap mat minimalist, cu logo-ul Aphex Twin.",
+    "slug": "aphex-twin-keycap"
   },
   {
     "name": "Minecraft keycap",
@@ -403,7 +430,8 @@
       "../Photos/(26) Minecraft keycap/6.webp"
     ],
     "price": "25",
-    "description": "Keycap personalizat inspirat din Minecraft, cu aspectul cubic caracteristic."
+    "description": "Keycap personalizat inspirat din Minecraft, cu aspectul cubic caracteristic.",
+    "slug": "minecraft-keycap"
   },
   {
     "name": "Rockstar keycap",
@@ -417,7 +445,8 @@
       "../Photos/(27) Rockstar keycap/4.webp"
     ],
     "price": "25",
-    "description": "Keycap mat premium, cu logo-ul Rockstar Games."
+    "description": "Keycap mat premium, cu logo-ul Rockstar Games.",
+    "slug": "rockstar-keycap"
   },
   {
     "name": "Candycan keycap",
@@ -432,7 +461,8 @@
       "../Photos/(28) Candycan keycap/5.webp"
     ],
     "price": "25",
-    "description": "Keycap cu design dulce de acadea \u0219i finisaj mat festiv."
+    "description": "Keycap cu design dulce de acadea \u0219i finisaj mat festiv.",
+    "slug": "candycan-keycap"
   },
   {
     "name": "The Upside Down Bookmark",
@@ -445,7 +475,8 @@
       "../Photos/(29) The Upside Down Bookmark/3.webp"
     ],
     "price": "15",
-    "description": "Semn de carte inspirat din Stranger Things, cu un aspect misterios."
+    "description": "Semn de carte inspirat din Stranger Things, cu un aspect misterios.",
+    "slug": "the-upside-down-bookmark"
   },
   {
     "name": "Stranger Things keychain",
@@ -457,7 +488,8 @@
       "../Photos/(30) Stranger Things keychain/2.webp"
     ],
     "price": "15",
-    "description": "Breloc mat Stranger Things, pentru fanii serialului."
+    "description": "Breloc mat Stranger Things, pentru fanii serialului.",
+    "slug": "stranger-things-keychain"
   },
   {
     "name": "Pika keycap",
@@ -473,7 +505,8 @@
       "../Photos/(31) Pika keycap/6.webp"
     ],
     "price": "25",
-    "description": "Keycap mat premium, dr\u0103g\u0103la\u0219, inspirat din Pika."
+    "description": "Keycap mat premium, dr\u0103g\u0103la\u0219, inspirat din Pika.",
+    "slug": "pika-keycap"
   },
   {
     "name": "SantaClaus keycap",
@@ -492,7 +525,8 @@
       "../Photos/(32) SantaClaus keycap/9.webp"
     ],
     "price": "25",
-    "description": "Keycap festiv cu Mo\u0219 Cr\u0103ciun, edi\u021bie mat\u0103 de s\u0103rb\u0103tori."
+    "description": "Keycap festiv cu Mo\u0219 Cr\u0103ciun, edi\u021bie mat\u0103 de s\u0103rb\u0103tori.",
+    "slug": "santaclaus-keycap"
   },
   {
     "name": "Wolft Keycap",
@@ -507,7 +541,8 @@
       "../Photos/(33) Wolft Keycap/5.webp"
     ],
     "price": "25",
-    "description": "Keycap mat premium, cu un design feroce de lup."
+    "description": "Keycap mat premium, cu un design feroce de lup.",
+    "slug": "wolft-keycap"
   },
   {
     "name": "The Finals keycap",
@@ -522,7 +557,8 @@
       "../Photos/(34) The Finals keycap/5.webp"
     ],
     "price": "25",
-    "description": "Keycap mat The Finals, pentru jocul competitiv."
+    "description": "Keycap mat The Finals, pentru jocul competitiv.",
+    "slug": "the-finals-keycap"
   },
   {
     "name": "Half Life keycap",
@@ -538,7 +574,8 @@
       "../Photos/(35) Half Life keycap/6.webp"
     ],
     "price": "25",
-    "description": "Keycap mat legendar, cu simbolul Lambda din Half-Life."
+    "description": "Keycap mat legendar, cu simbolul Lambda din Half-Life.",
+    "slug": "half-life-keycap"
   },
   {
     "name": "Suport Cheie Masina",
@@ -551,7 +588,8 @@
       "../Photos/(36) Suport Cheie Masina/3.webp"
     ],
     "price": "50",
-    "description": "Suport premium Zeeply pentru cheile ma\u0219inii tale."
+    "description": "Suport premium Zeeply pentru cheile ma\u0219inii tale.",
+    "slug": "suport-cheie-masina"
   },
   {
     "name": "Snowman keycap",
@@ -566,7 +604,8 @@
       "../Photos/(37) Snowman keycap/5.webp"
     ],
     "price": "25",
-    "description": "Keycap de iarn\u0103 cu om de z\u0103pad\u0103, cu finisaj mat de sezon."
+    "description": "Keycap de iarn\u0103 cu om de z\u0103pad\u0103, cu finisaj mat de sezon.",
+    "slug": "snowman-keycap"
   },
   {
     "name": "Turtadulce",
@@ -581,7 +620,8 @@
       "../Photos/(38) Turtadulce/5.webp"
     ],
     "price": "25",
-    "description": "Keycap mat personalizat, inspirat din turt\u0103 dulce."
+    "description": "Keycap mat personalizat, inspirat din turt\u0103 dulce.",
+    "slug": "turtadulce"
   },
   {
     "name": "Radiations keycap",
@@ -597,7 +637,8 @@
       "../Photos/(39) Radiations keycap/6.webp"
     ],
     "price": "25",
-    "description": "Keycap mat cu design \u00een stil radioactiv."
+    "description": "Keycap mat cu design \u00een stil radioactiv.",
+    "slug": "radiations-keycap"
   },
   {
     "name": "Ciocolata",
@@ -612,7 +653,8 @@
       "../Photos/(40) Ciocolata/5.webp"
     ],
     "price": "25",
-    "description": "Keycap personalizat \u00een form\u0103 de baton de ciocolat\u0103."
+    "description": "Keycap personalizat \u00een form\u0103 de baton de ciocolat\u0103.",
+    "slug": "ciocolata"
   },
   {
     "name": "Justachillfrog",
@@ -625,7 +667,8 @@
       "../Photos/(41) Justachillfrog/3.webp"
     ],
     "price": "25",
-    "description": "Keycap mat premium cu o broscu\u021b\u0103 relaxat\u0103, Chillfrog."
+    "description": "Keycap mat premium cu o broscu\u021b\u0103 relaxat\u0103, Chillfrog.",
+    "slug": "justachillfrog"
   },
   {
     "name": "Barberpole",
@@ -637,6 +680,7 @@
       "../Photos/(42) Barberpole/2.webp"
     ],
     "price": "250",
-    "description": "St\u00e2lp de frizerie (barber pole) de dimensiuni mari, cu design clasic \u00een spiral\u0103. Decor de impact pentru orice salon sau frizerie."
+    "description": "St\u00e2lp de frizerie (barber pole) de dimensiuni mari, cu design clasic \u00een spiral\u0103. Decor de impact pentru orice salon sau frizerie.",
+    "slug": "barberpole"
   }
 ]

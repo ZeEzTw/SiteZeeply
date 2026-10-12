@@ -68,7 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         filteredProducts.forEach((product, index) => {
             const card = document.createElement('div');
-            card.className = 'product-card group cursor-pointer';
+            card.className = 'product-card group';
+            const pageLink = `p/${product.slug}/`;
             card.style.transitionDelay = `${(index % config.columns) * 50}ms`;
 
             // Slideshow Logic: Initial image is the cover
@@ -77,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const description = product.description || config.defaultDescription;
 
             card.innerHTML = `
-                <div class="aspect-[4/5] overflow-hidden ${theme.imageBox} relative product-image-container">
+                <a href="${pageLink}" class="product-link block aspect-[4/5] overflow-hidden ${theme.imageBox} relative product-image-container">
                     <img src="${product.cover_image}" alt="${product.name}" loading="lazy"
                             class="w-full h-full object-cover group-hover:scale-105 transition-all duration-700 main-product-image">
 
@@ -91,11 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p class="text-[10px] md:text-xs ${theme.overlayText} font-light tracking-wide">
                             ${description}
                         </p>
+                        <span class="mt-3 text-[9px] md:text-[10px] uppercase font-semibold tracking-[0.2em] ${theme.name}">Vezi detalii →</span>
                     </div>
-                </div>
+                </a>
                 <div class="mt-4 md:mt-6 flex justify-between items-start px-1 md:px-2">
                     <div class="min-w-0 flex-1">
-                        <h3 class="text-[10px] md:text-xs font-semibold tracking-wide md:tracking-widest mb-1 uppercase break-words ${theme.name}">${product.name}</h3>
+                        <h3 class="text-[10px] md:text-xs font-semibold tracking-wide md:tracking-widest mb-1 uppercase break-words ${theme.name}"><a href="${pageLink}" class="product-link hover:opacity-70 transition">${product.name}</a></h3>
                         <p class="text-[8px] md:text-[9px] ${theme.tagline} font-light uppercase tracking-tighter">
                             ${config.tagline}
                         </p>
@@ -149,15 +151,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const addBtn = card.querySelector('.add-to-cart');
             addBtn.addEventListener('click', (e) => {
-                e.stopPropagation();
                 if (!window.ZeeplyCart) return;
                 window.ZeeplyCart.add({ shop: config.shop, name: product.name, price: product.price, image: product.cover_image });
                 const label = addBtn.querySelector('.add-label');
                 label.textContent = 'Adăugat ✓';
                 setTimeout(() => { label.textContent = 'Adaugă în coș'; }, 1200);
             });
-
-            card.querySelector('.dm-link').addEventListener('click', (e) => e.stopPropagation());
 
             // Hover slideshow only for real pointers (see style.css, iOS tap handling)
             let slideshowDelay;
@@ -171,18 +170,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 slideshowInView.observe(card);
             }
 
-            // Mobile overlay auto-dismiss timer
-            let mobileOverlayTimer = null;
-
-            const dismissOverlay = (overlay) => {
-                overlay.classList.remove('mobile-desc-active');
-                clearTimeout(mobileOverlayTimer);
-                mobileOverlayTimer = null;
-            };
-
-            // Click Handling: On mobile, toggle description.
-            card.addEventListener('click', () => {
-                // Track product click in GoatCounter
+            // Photo and name open the product page; count the click in GoatCounter
+            card.querySelectorAll('.product-link').forEach(link => link.addEventListener('click', () => {
                 if (window.goatcounter && window.goatcounter.count) {
                     window.goatcounter.count({
                         path: config.analytics.path + product.name.replace(/\s+/g, '-').toLowerCase(),
@@ -190,39 +179,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         event: true,
                     });
                 }
-
-                if (window.innerWidth < 768) {
-                    const descOverlay = card.querySelector('.absolute.inset-x-0.bottom-0');
-                    const isVisible = descOverlay.classList.contains('mobile-desc-active');
-
-                    if (!isVisible) {
-                        // Close any other open overlays first
-                        document.querySelectorAll('.mobile-desc-active').forEach(el => {
-                            el.classList.remove('mobile-desc-active');
-                        });
-                        descOverlay.classList.add('mobile-desc-active');
-                        // Auto-dismiss after 5 seconds
-                        clearTimeout(mobileOverlayTimer);
-                        mobileOverlayTimer = setTimeout(() => dismissOverlay(descOverlay), 5000);
-                    } else {
-                        dismissOverlay(descOverlay);
-                    }
-                }
-            });
+            }));
 
             grid.appendChild(card);
             observer.observe(card);
         });
     };
-
-    // Close mobile overlays when tapping outside any product card
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('.product-card')) {
-            document.querySelectorAll('.mobile-desc-active').forEach(el => {
-                el.classList.remove('mobile-desc-active');
-            });
-        }
-    });
 
     // Initialize with All
     if (typeof products !== 'undefined') {

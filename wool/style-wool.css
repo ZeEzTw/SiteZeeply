@@ -52,3 +52,7 @@ h1, h2, h3, .heading-font {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
+
+/* Swipeable rows (product gallery, thumbnails) without a visible scrollbar */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }

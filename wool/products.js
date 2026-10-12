@@ -10,7 +10,8 @@ const products = [
       "../Zeeply_Wool/Baby Yoda/3.webp"
     ],
     "price": "40",
-    "description": "Adaugă un plus de drăgălășenie colecției tale cu acest Baby Yoda croșetat manual!"
+    "description": "Adaugă un plus de drăgălășenie colecției tale cu acest Baby Yoda croșetat manual!",
+    "slug": "baby-yoda"
   },
   {
     "name": "Cenușilă",
@@ -23,7 +24,8 @@ const products = [
       "../Zeeply_Wool/Cenușilă/hamster spate.webp"
     ],
     "price": "40",
-    "description": "Faceți cunoștință cu Cenușilă! El este un hamster super pufos, creat 100% manual, fir cu fir."
+    "description": "Faceți cunoștință cu Cenușilă! El este un hamster super pufos, creat 100% manual, fir cu fir.",
+    "slug": "cenusila"
   },
   {
     "name": "Charmander",
@@ -38,7 +40,8 @@ const products = [
       "../Zeeply_Wool/Charmander/5.webp"
     ],
     "price": "80",
-    "description": "Charmander – Pokemonul tău pufos! L-am adus la viață pe Charmander, unul dintre cei mai iubiți Pokemoni, croșetat 100% manual din fir catifelat."
+    "description": "Charmander – Pokemonul tău pufos! L-am adus la viață pe Charmander, unul dintre cei mai iubiți Pokemoni, croșetat 100% manual din fir catifelat.",
+    "slug": "charmander"
   },
   {
     "name": "Cupidonel",
@@ -51,7 +54,8 @@ const products = [
       "../Zeeply_Wool/Cupidonel/3.webp"
     ],
     "price": "40",
-    "description": "Cupidonel – Planta care dăruiește iubire! El este Cupidonel, cel mai vesel ghiveci cu inimioară, lucrat 100% manual pentru a aduce zâmbete."
+    "description": "Cupidonel – Planta care dăruiește iubire! El este Cupidonel, cel mai vesel ghiveci cu inimioară, lucrat 100% manual pentru a aduce zâmbete.",
+    "slug": "cupidonel"
   },
   {
     "name": "Detectivul Mac",
@@ -64,7 +68,8 @@ const products = [
       "../Zeeply_Wool/Detectivul Mac/3.webp"
     ],
     "price": "40",
-    "description": "Detectivul Mac – Investigatorul pufos! El este Detectivul Mac, cea mai simpatică rățușcă sub acoperire, lucrată 100% manual din fir catifelat."
+    "description": "Detectivul Mac – Investigatorul pufos! El este Detectivul Mac, cea mai simpatică rățușcă sub acoperire, lucrată 100% manual din fir catifelat.",
+    "slug": "detectivul-mac"
   },
   {
     "name": "Milkshake",
@@ -77,7 +82,8 @@ const products = [
       "../Zeeply_Wool/Milkshake/3.webp"
     ],
     "price": "60",
-    "description": "Ea este Milkshake, o văcuță croșetată manual, gata să devină cea mai bună prietenă a ta. Este moale, colorată și plină de personalitate!"
+    "description": "Ea este Milkshake, o văcuță croșetată manual, gata să devină cea mai bună prietenă a ta. Este moale, colorată și plină de personalitate!",
+    "slug": "milkshake"
   },
   {
     "name": "Minty",
@@ -90,7 +96,8 @@ const products = [
       "../Zeeply_Wool/Minty/3jpg.webp"
     ],
     "price": "60",
-    "description": "Ea este Minty, o broscuță țestoasă creată 100% manual, gata să aducă liniște și zâmbete în orice casă."
+    "description": "Ea este Minty, o broscuță țestoasă creată 100% manual, gata să aducă liniște și zâmbete în orice casă.",
+    "slug": "minty"
   },
   {
     "name": "Norilă",
@@ -104,7 +111,8 @@ const products = [
       "../Zeeply_Wool/Norilă/4.webp"
     ],
     "price": "80",
-    "description": "Faceți cunoștință cu Norilă, un dragonel croșetat manual, creat special pentru îmbrățișări pufoase. Cu o textură catifelată și culori vibrante, este companionul ideal pentru momentele de relaxare."
+    "description": "Faceți cunoștință cu Norilă, un dragonel croșetat manual, creat special pentru îmbrățișări pufoase. Cu o textură catifelată și culori vibrante, este companionul ideal pentru momentele de relaxare.",
+    "slug": "norila"
   },
   {
     "name": "Set Magic pentru Bibliotecă - Harry Potter",
@@ -121,6 +129,7 @@ const products = [
       "../Zeeply_Wool/Set Magic pentru Bibliotecă - Harry Potter/7.webp"
     ],
     "price": "40",
-    "description": "Transformă-ți raftul de cărți cu acest set unic, creat special pentru iubitorii de magie și aventură!"
+    "description": "Transformă-ți raftul de cărți cu acest set unic, creat special pentru iubitorii de magie și aventură!",
+    "slug": "set-magic-pentru-biblioteca-harry-potter"
   }
 ];

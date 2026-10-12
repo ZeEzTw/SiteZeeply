@@ -95,7 +95,8 @@ def get_products():
     return products
 
 if __name__ == "__main__":
-    data = get_products()
+    import generate_product_pages
+    data = generate_product_pages.add_slugs(get_products())
 
     with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
@@ -104,3 +105,4 @@ if __name__ == "__main__":
         f.write(f"const products = {json.dumps(data, indent=2, ensure_ascii=False)};")
 
     print(f"\nSuccess! {len(data)} products written to {OUTPUT_JSON} and {OUTPUT_JS}")
+    generate_product_pages.build()

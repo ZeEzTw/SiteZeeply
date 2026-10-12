@@ -95,12 +95,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span class="text-[10px] md:text-xs font-bold tracking-widest ${theme.price} whitespace-nowrap shrink-0 ml-2 md:ml-4">${product.price} LEI</span>
                 </div>
                 <div class="mt-3 px-1 md:px-2">
-                    <button type="button" class="add-to-cart w-full py-2.5 md:py-3 ${theme.cta} text-[9px] md:text-[10px] uppercase font-bold tracking-[0.2em] transition">
-                        Adaugă în coș
+                    <button type="button" class="add-to-cart w-full py-2.5 md:py-3 flex items-center justify-center gap-1.5 md:gap-2 ${theme.cta} text-[9px] md:text-[10px] uppercase font-bold tracking-[0.12em] md:tracking-[0.2em] transition">
+                        <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+                        <span class="add-label">Adaugă în coș</span>
                     </button>
-                    <a href="${dmLink}" target="_blank" class="dm-link mt-2 w-full py-2 md:py-2.5 flex items-center justify-center gap-1.5 border ${theme.dmLink} text-[9px] md:text-[10px] uppercase font-semibold tracking-[0.12em] md:tracking-[0.18em] transition">
+                    <div class="flex items-center gap-2 my-1.5 md:my-2" aria-hidden="true">
+                        <span class="h-px flex-1 ${theme.divider}"></span>
+                        <span class="text-[9px] md:text-[10px] lowercase tracking-widest ${theme.dividerText}">sau</span>
+                        <span class="h-px flex-1 ${theme.divider}"></span>
+                    </div>
+                    <a href="${dmLink}" target="_blank" class="dm-link w-full py-2 md:py-2.5 flex items-center justify-center gap-1.5 md:gap-2 border ${theme.dmLink} text-[9px] md:text-[10px] uppercase font-semibold tracking-[0.12em] md:tracking-[0.18em] transition">
                         <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                        <span><span class="hidden sm:inline">Scrie-ne pe </span>Instagram</span>
+                        <span>Comandă prin mesaj</span>
                     </a>
                 </div>
             `;
@@ -137,8 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.stopPropagation();
                 if (!window.ZeeplyCart) return;
                 window.ZeeplyCart.add({ shop: config.shop, name: product.name, price: product.price, image: product.cover_image });
-                addBtn.textContent = 'Adăugat ✓';
-                setTimeout(() => { addBtn.textContent = 'Adaugă în coș'; }, 1200);
+                const label = addBtn.querySelector('.add-label');
+                label.textContent = 'Adăugat ✓';
+                setTimeout(() => { label.textContent = 'Adaugă în coș'; }, 1200);
             });
 
             card.querySelector('.dm-link').addEventListener('click', (e) => e.stopPropagation());

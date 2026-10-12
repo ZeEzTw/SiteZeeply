@@ -35,6 +35,9 @@
         track(`cart-add-${product.shop}-` + product.name.replace(/\s+/g, '-').toLowerCase(), 'Add to cart: ' + product.name);
         save();
         bump();
+        view = 'cart';
+        render();
+        open();
     };
 
     const setQty = (id, qty) => {
@@ -227,6 +230,12 @@
                 <input type="email" id="zc-email" name="email" autocomplete="email">
 
                 <div class="zc-section">2. Livrare</div>
+                <div class="zc-pay" style="margin-top:12px">
+                    <label><input type="radio" name="livrare" value="Curier la adresă" checked>
+                        <span>Curier la adresă<small>Coletul vine direct la ușa ta.</small></span></label>
+                    <label><input type="radio" name="livrare" value="Easybox / locker">
+                        <span>Easybox / locker<small>Ridici coletul când vrei, din cel mai apropiat locker.</small></span></label>
+                </div>
                 <div class="zc-two">
                     <div>
                         <label for="zc-county">Județ *</label>
@@ -237,16 +246,12 @@
                         <input type="text" id="zc-city" name="localitate" autocomplete="address-level2" required>
                     </div>
                 </div>
-                <label for="zc-address">Adresă (stradă, număr, bloc, ap.) *</label>
+                <label for="zc-address" id="zc-address-label">Adresă (stradă, număr, bloc, ap.) *</label>
                 <input type="text" id="zc-address" name="adresa" autocomplete="street-address" required>
-                <label>Cum preferi să primești coletul?</label>
-                <div class="zc-pay">
-                    <label><input type="radio" name="livrare" value="Oricare (cea mai bună ofertă)" checked>
-                        <span>Oricum e mai avantajos<small>Alegem noi curierul cu cea mai bună ofertă prin Colete-Online.</small></span></label>
-                    <label><input type="radio" name="livrare" value="Curier la adresă">
-                        <span>Curier la adresă<small>Coletul vine direct la ușa ta.</small></span></label>
-                    <label><input type="radio" name="livrare" value="Easybox / locker">
-                        <span>Easybox / locker<small>Ne spui la detalii lockerul preferat sau îl stabilim pe WhatsApp.</small></span></label>
+                <div id="zc-locker" hidden>
+                    <label for="zc-locker-name">Easybox / locker preferat (opțional)</label>
+                    <input type="text" id="zc-locker-name" name="locker" placeholder="Ex: easybox Kaufland Mărăști">
+                    <div class="zc-hint">Dacă nu știi, alegem noi lockerul cel mai apropiat de adresa ta și ți-l confirmăm pe WhatsApp.</div>
                 </div>
                 <div class="zc-hint">Prețul transportului se confirmă după comandă, pe WhatsApp.</div>
 
@@ -254,7 +259,7 @@
                 <div class="zc-hint" style="margin-bottom:10px">Nu plătești nimic acum. Alegi doar cum vrei să plătești după confirmare.</div>
                 <div class="zc-pay">
                     <label><input type="radio" name="plata" value="Ramburs" checked>
-                        <span>Ramburs<small>Plătești curierului când primești coletul.</small></span></label>
+                        <span>Ramburs<small id="zc-cod-hint">Plătești curierului, cash sau card, când primești coletul.</small></span></label>
                     <label><input type="radio" name="plata" value="Transfer bancar">
                         <span>Transfer bancar<small>Îți trimitem IBAN-ul pe WhatsApp după confirmare.</small></span></label>
                     <label><input type="radio" name="plata" value="Revolut">
@@ -291,6 +296,19 @@
         el.hidden = false;
         el.scrollIntoView({ behavior: 'smooth', block: 'center' });
     };
+
+    // Delivery choice changes the address hint, shows the locker field and the COD wording
+    root.addEventListener('change', (e) => {
+        if (e.target.name !== 'livrare') return;
+        const locker = e.target.value.startsWith('Easybox');
+        root.querySelector('#zc-locker').hidden = !locker;
+        root.querySelector('#zc-address-label').textContent = locker
+            ? 'Adresa ta (căutăm cel mai apropiat locker) *'
+            : 'Adresă (stradă, număr, bloc, ap.) *';
+        root.querySelector('#zc-cod-hint').textContent = locker
+            ? 'Plătești cu cardul la locker, când ridici coletul.'
+            : 'Plătești curierului, cash sau card, când primești coletul.';
+    });
 
     // Hide the validation message as soon as the customer edits the form
     root.addEventListener('input', () => {
@@ -334,7 +352,7 @@
             'Produse': items.map(i => `${i.qty} × ${i.name} (${i.shop === 'wool' ? 'Wool' : '3D'}) — ${i.price * i.qty} LEI`).join('\n'),
             'Subtotal': `${sub} LEI`,
             'Transport': free ? 'GRATUIT' : 'de confirmat cu clientul',
-            'Livrare preferată': data.livrare,
+            'Livrare': data.livrare + (data.locker ? ` (${data.locker})` : ''),
             'Plată': data.plata,
             'Nume': data.nume,
             'Telefon (WhatsApp)': data.telefon,
@@ -378,7 +396,7 @@
     document.querySelectorAll('[data-cart-slot]').forEach(slot => {
         slot.innerHTML = `
             <button class="zc-toggle" aria-label="Coș de cumpărături" data-goatcounter-click="nav-cart">
-                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
                 <span class="zc-badge" hidden>0</span>
             </button>`;
         slot.querySelector('button').addEventListener('click', () => { view = 'cart'; render(); open(); });

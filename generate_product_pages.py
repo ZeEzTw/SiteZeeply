@@ -333,7 +333,7 @@ def render_page(shop, product, products, nav, footer):
                         <li>✓ Făcut de noi, în atelierul Zeeply</li>
                         <li>✓ Livrare prin Colete-Online: curier la adresă sau easybox</li>
                         <li>✓ Transport gratuit la comenzi de peste 50 LEI</li>
-                        <li>✓ Confirmăm fiecare comandă personal, pe WhatsApp</li>
+                        <li>✓ Plătești ramburs la curier sau la locker, prin transfer bancar sau prin Revolut, după ce confirmăm comanda pe WhatsApp</li>
                     </ul>
                 </div>
             </div>

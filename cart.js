@@ -93,8 +93,16 @@
             font-size: 12px; font-weight: 500; letter-spacing: 0; text-transform: none; color: #111; }
         .zc-pay label:has(input:checked) { border-color: #111; background: #fafafa; }
         .zc-pay small { display: block; color: #888; font-size: 11px; margin-top: 2px; }
-        .zc-agree { display: flex !important; gap: 8px; align-items: flex-start; font-size: 11px !important; font-weight: 400 !important; letter-spacing: 0 !important; text-transform: none !important; color: #555 !important; }
-        .zc-agree a { color: #111; }
+        .zc-section { font: 700 11px 'Montserrat', sans-serif; letter-spacing: .2em; text-transform: uppercase; color: #111; margin: 26px 0 2px; padding-top: 18px; border-top: 1px solid #f1f1f1; }
+        .zc-section:first-child { margin-top: 10px; padding-top: 0; border-top: 0; }
+        .zc-hint { font-size: 11px; color: #888; margin-top: 5px; line-height: 1.5; }
+        .zc-legal { font-size: 10px; color: #999; text-align: center; margin: 10px 0 0; line-height: 1.5; }
+        .zc-legal a { color: #666; }
+        .zc-steps { background: #f7f7f5; border-radius: 6px; padding: 14px 16px; margin: 14px 0 6px; }
+        .zc-steps p { font-size: 11px; color: #666; line-height: 1.5; margin: 0 0 10px; }
+        .zc-steps ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: zc; }
+        .zc-steps li { counter-increment: zc; display: flex; gap: 10px; align-items: flex-start; font-size: 12px; color: #222; line-height: 1.45; }
+        .zc-steps li::before { content: counter(zc); flex: none; width: 18px; height: 18px; border-radius: 50%; background: #111; color: #fff; font: 700 10px/18px 'Inter', sans-serif; text-align: center; margin-top: 1px; }
         .zc-error { color: #c00; font-size: 12px; margin-top: 12px; line-height: 1.5; }
         .zc-error a { color: #c00; }
         .zc-done { text-align: center; padding: 50px 10px; }
@@ -146,9 +154,19 @@
             <div class="zc-row zc-total"><span>Total</span><span>${free ? `${sub} LEI` : `${sub} LEI + transport`}</span></div>
             <p class="zc-note">${free
                 ? 'Transport gratuit pentru comenzile de peste 50 LEI.'
-                : `Mai adaugă ${FREE_SHIPPING_FROM - sub} LEI pentru transport gratuit. Costul exact al livrării îl confirmăm înainte de expediere.`}</p>
+                : `Mai adaugă ${FREE_SHIPPING_FROM - sub} LEI pentru transport gratuit. Prețul exact al livrării ți-l spunem pe WhatsApp.`}</p>
         `;
     };
+
+    const stepsHtml = () => `
+        <div class="zc-steps">
+            <p>Zeeply e un atelier mic: fiecare produs e făcut de noi. De aceea confirmăm personal fiecare comandă.</p>
+            <ol>
+                <li>Trimiți comanda de aici. Nu plătești nimic acum.</li>
+                <li>Te contactăm pe WhatsApp: confirmăm produsele și prețul exact al transportului.</li>
+                <li>Plătești cum preferi: ramburs, transfer bancar sau Revolut.</li>
+            </ol>
+        </div>`;
 
     const render = () => {
         // Badge
@@ -160,7 +178,8 @@
                 <div class="zc-done">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#1a7f37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6"/></svg>
                     <h3>Mulțumim!</h3>
-                    <p>Comanda <span class="zc-id">${esc(lastOrderId)}</span> a fost trimisă.<br>Te contactăm în curând pentru confirmare.</p>
+                    <p>Comanda <span class="zc-id">${esc(lastOrderId)}</span> a fost trimisă.</p>
+                    <p style="margin-top:10px">Te contactăm pe <strong>WhatsApp</strong> în curând ca să confirmăm produsele, transportul și plata.</p>
                 </div>`;
             foot.innerHTML = `<button class="zc-btn" data-close>Înapoi la magazin</button>`;
             return;
@@ -169,7 +188,7 @@
         if (items.length === 0) {
             view = 'cart';
             title.textContent = 'Coșul tău';
-            body.innerHTML = `<div class="zc-empty">Coșul este gol</div>`;
+            body.innerHTML = `<div class="zc-empty">Coșul este gol</div>` + stepsHtml();
             foot.innerHTML = '';
             return;
         }
@@ -189,7 +208,7 @@
                         </div>
                     </div>
                     <div class="zc-price">${i.price * i.qty} LEI</div>
-                </div>`).join('');
+                </div>`).join('') + stepsHtml();
             foot.innerHTML = totalsHtml() + `<button class="zc-btn" id="zc-checkout">Finalizează comanda</button>`;
             return;
         }
@@ -198,18 +217,16 @@
         title.textContent = 'Finalizare comandă';
         body.innerHTML = `
             <form class="zc-form" id="zc-form" novalidate>
+                <div class="zc-section">1. Contact</div>
                 <label for="zc-name">Nume complet *</label>
                 <input type="text" id="zc-name" name="nume" autocomplete="name" required>
-                <div class="zc-two">
-                    <div>
-                        <label for="zc-phone">Telefon *</label>
-                        <input type="tel" id="zc-phone" name="telefon" autocomplete="tel" required>
-                    </div>
-                    <div>
-                        <label for="zc-email">Email</label>
-                        <input type="email" id="zc-email" name="email" autocomplete="email">
-                    </div>
-                </div>
+                <label for="zc-phone">Telefon (WhatsApp) *</label>
+                <input type="tel" id="zc-phone" name="telefon" autocomplete="tel" placeholder="07xx xxx xxx" required>
+                <div class="zc-hint">Pe acest număr te contactăm pentru confirmarea comenzii.</div>
+                <label for="zc-email">Email (opțional)</label>
+                <input type="email" id="zc-email" name="email" autocomplete="email">
+
+                <div class="zc-section">2. Livrare</div>
                 <div class="zc-two">
                     <div>
                         <label for="zc-county">Județ *</label>
@@ -222,24 +239,29 @@
                 </div>
                 <label for="zc-address">Adresă (stradă, număr, bloc, ap.) *</label>
                 <input type="text" id="zc-address" name="adresa" autocomplete="street-address" required>
+                <div class="zc-hint">Preferi easybox? Scrie-ne la detalii și îți trimitem acolo.</div>
 
-                <label>Metodă de plată *</label>
+                <div class="zc-section">3. Plată</div>
+                <div class="zc-hint" style="margin-bottom:10px">Nu plătești nimic acum. Alegi doar cum vrei să plătești după confirmare.</div>
                 <div class="zc-pay">
                     <label><input type="radio" name="plata" value="Ramburs" checked>
-                        <span>Ramburs<small>Plătești la curier, când primești coletul.</small></span></label>
+                        <span>Ramburs<small>Plătești curierului când primești coletul.</small></span></label>
                     <label><input type="radio" name="plata" value="Transfer bancar">
-                        <span>Transfer bancar<small>Îți trimitem detaliile după confirmarea comenzii.</small></span></label>
+                        <span>Transfer bancar<small>Îți trimitem IBAN-ul pe WhatsApp după confirmare.</small></span></label>
+                    <label><input type="radio" name="plata" value="Revolut">
+                        <span>Revolut<small>Îți trimitem datele Revolut pe WhatsApp după confirmare.</small></span></label>
                 </div>
 
-                <label for="zc-notes">Detalii / personalizare</label>
-                <textarea id="zc-notes" name="detalii" placeholder="Ex: culoarea dorită, nume pentru ramă, easybox preferat…"></textarea>
-
-                <label class="zc-agree"><input type="checkbox" id="zc-agree" required>
-                    <span>Am citit <a href="../terms/" target="_blank">Termenii</a> și <a href="../shipping/" target="_blank">Politica de livrare</a>.</span></label>
+                <div class="zc-section">4. Detalii (opțional)</div>
+                <label for="zc-notes" style="margin-top:8px">Culori, personalizări, easybox, întrebări</label>
+                <textarea id="zc-notes" name="detalii" placeholder="Ex: lalele roz, numele „Maria” pe ramă…"></textarea>
                 <div class="zc-error" id="zc-error" hidden></div>
             </form>`;
-        foot.innerHTML = totalsHtml() + `
-            <button class="zc-btn" type="submit" form="zc-form" id="zc-submit">Trimite comanda</button>
+        const sub = subtotal();
+        foot.innerHTML = `
+            <div class="zc-row zc-total"><span>Total</span><span>${sub >= FREE_SHIPPING_FROM ? `${sub} LEI` : `${sub} LEI + transport`}</span></div>
+            <button class="zc-btn" type="submit" form="zc-form" id="zc-submit" style="margin-top:10px">Trimite comanda</button>
+            <p class="zc-legal">Prin trimitere ești de acord cu <a href="../terms/" target="_blank">Termenii</a> și <a href="../shipping/" target="_blank">Politica de livrare</a>.</p>
             <button class="zc-link" id="zc-back">← Înapoi la coș</button>`;
     };
 
@@ -267,15 +289,22 @@
         if (el) el.hidden = true;
     });
 
+    // Click-to-chat link for the order email (07xx… → 407xx…)
+    const waLink = (phone) => {
+        let d = phone.replace(/\D/g, '').replace(/^00/, '');
+        if (d.startsWith('0')) d = '4' + d;
+        return `https://wa.me/${d}`;
+    };
+
     root.addEventListener('submit', async (e) => {
         e.preventDefault();
         const form = e.target;
         const data = Object.fromEntries(new FormData(form));
 
-        const missing = [...form.querySelectorAll('[required]')].filter(f => f.type === 'checkbox' ? !f.checked : !f.value.trim());
+        const missing = [...form.querySelectorAll('[required]')].filter(f => !f.value.trim());
         if (missing.length) {
             missing[0].focus();
-            showError(missing[0].type === 'checkbox' ? 'Te rugăm să confirmi că ai citit termenii.' : 'Te rugăm să completezi câmpurile marcate cu *.');
+            showError('Te rugăm să completezi câmpurile marcate cu *.');
             return;
         }
         if (data.telefon.replace(/\D/g, '').length < 10) {
@@ -298,7 +327,8 @@
             'Transport': free ? 'GRATUIT' : `de confirmat (${SHIPPING_ESTIMATE})`,
             'Plată': data.plata,
             'Nume': data.nume,
-            'Telefon': data.telefon,
+            'Telefon (WhatsApp)': data.telefon,
+            'Deschide WhatsApp': waLink(data.telefon),
             'Email': data.email || '—',
             'Adresă': `${data.adresa}, ${data.localitate}, jud. ${data.judet}`,
             'Detalii': data.detalii || '—',

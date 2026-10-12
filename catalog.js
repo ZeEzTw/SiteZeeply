@@ -78,12 +78,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     <!-- Hover Overlay with Description -->
                     <div class="absolute inset-x-0 bottom-0 p-4 md:p-6 bg-gradient-to-t ${theme.overlay} translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 z-10 flex flex-col justify-end h-2/3">
-                        <p class="text-[10px] md:text-xs ${theme.overlayText} font-light tracking-wide mb-4">
+                        <p class="text-[10px] md:text-xs ${theme.overlayText} font-light tracking-wide">
                             ${description}
                         </p>
-                        <a href="${dmLink}" target="_blank" class="block w-full py-3 ${theme.cta} text-[10px] text-center uppercase font-bold tracking-widest transition" onclick="event.stopPropagation()">
-                            DM TO ORDER
-                        </a>
                     </div>
                 </div>
                 <div class="mt-4 md:mt-6 flex justify-between items-start px-1 md:px-2">
@@ -95,9 +92,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <span class="text-[10px] md:text-xs font-bold tracking-widest ${theme.price} whitespace-nowrap shrink-0 ml-2 md:ml-4">${product.price} LEI</span>
                 </div>
-                <button type="button" class="add-to-cart mt-3 mx-1 md:mx-2 w-[calc(100%-0.5rem)] md:w-[calc(100%-1rem)] py-2.5 border ${theme.addToCart} text-[9px] md:text-[10px] uppercase font-semibold tracking-[0.2em] transition">
-                    Add to cart
-                </button>
+                <div class="mt-3 px-1 md:px-2">
+                    <button type="button" class="add-to-cart w-full py-2.5 md:py-3 ${theme.cta} text-[9px] md:text-[10px] uppercase font-bold tracking-[0.2em] transition">
+                        Adaugă în coș
+                    </button>
+                    <a href="${dmLink}" target="_blank" class="dm-link block mt-2 text-center text-[9px] md:text-[10px] tracking-wide ${theme.dmLink} transition">
+                        sau scrie-ne pe Instagram
+                    </a>
+                </div>
             `;
 
             let slideshowInterval;
@@ -132,9 +134,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 e.stopPropagation();
                 if (!window.ZeeplyCart) return;
                 window.ZeeplyCart.add({ shop: config.shop, name: product.name, price: product.price, image: product.cover_image });
-                addBtn.textContent = 'Added ✓';
-                setTimeout(() => { addBtn.textContent = 'Add to cart'; }, 1200);
+                addBtn.textContent = 'Adăugat ✓';
+                setTimeout(() => { addBtn.textContent = 'Adaugă în coș'; }, 1200);
             });
+
+            card.querySelector('.dm-link').addEventListener('click', (e) => e.stopPropagation());
 
             card.addEventListener('mouseenter', startSlideshow);
             card.addEventListener('mouseleave', stopSlideshow);

@@ -150,11 +150,11 @@
         const free = sub >= FREE_SHIPPING_FROM;
         return `
             <div class="zc-row"><span>Subtotal</span><strong>${sub} LEI</strong></div>
-            <div class="zc-row"><span>Transport</span><strong>${free ? 'GRATUIT' : SHIPPING_ESTIMATE}</strong></div>
+            <div class="zc-row"><span>Transport</span><strong>${free ? 'GRATUIT' : 'se confirmă după comandă'}</strong></div>
             <div class="zc-row zc-total"><span>Total</span><span>${free ? `${sub} LEI` : `${sub} LEI + transport`}</span></div>
             <p class="zc-note">${free
                 ? 'Transport gratuit pentru comenzile de peste 50 LEI.'
-                : `Mai adaugă ${FREE_SHIPPING_FROM - sub} LEI pentru transport gratuit. Prețul exact al livrării ți-l spunem pe WhatsApp.`}</p>
+                : `Livrăm prin Colete-Online și alegem cea mai bună ofertă de curier pentru adresa ta (de obicei ${SHIPPING_ESTIMATE}). Prețul exact ți-l confirmăm pe WhatsApp înainte de expediere. Mai adaugă ${FREE_SHIPPING_FROM - sub} LEI pentru transport gratuit.`}</p>
         `;
     };
 
@@ -163,7 +163,7 @@
             <p>Zeeply e un atelier mic: fiecare produs e făcut de noi. De aceea confirmăm personal fiecare comandă.</p>
             <ol>
                 <li>Trimiți comanda de aici. Nu plătești nimic acum.</li>
-                <li>Te contactăm pe WhatsApp: confirmăm produsele și prețul exact al transportului.</li>
+                <li>Te contactăm pe WhatsApp: confirmăm produsele și prețul exact al transportului. Livrăm prin Colete-Online, cu cel mai potrivit curier (Sameday, FAN Courier, Cargus, DPD, GLS și alții).</li>
                 <li>Plătești cum preferi: ramburs, transfer bancar sau Revolut.</li>
             </ol>
         </div>`;
@@ -239,7 +239,16 @@
                 </div>
                 <label for="zc-address">Adresă (stradă, număr, bloc, ap.) *</label>
                 <input type="text" id="zc-address" name="adresa" autocomplete="street-address" required>
-                <div class="zc-hint">Preferi easybox? Scrie-ne la detalii și îți trimitem acolo.</div>
+                <label>Cum preferi să primești coletul?</label>
+                <div class="zc-pay">
+                    <label><input type="radio" name="livrare" value="Oricare (cea mai bună ofertă)" checked>
+                        <span>Oricum e mai avantajos<small>Alegem noi curierul cu cea mai bună ofertă prin Colete-Online.</small></span></label>
+                    <label><input type="radio" name="livrare" value="Curier la adresă">
+                        <span>Curier la adresă<small>Coletul vine direct la ușa ta.</small></span></label>
+                    <label><input type="radio" name="livrare" value="Easybox / locker">
+                        <span>Easybox / locker<small>Ne spui la detalii lockerul preferat sau îl stabilim pe WhatsApp.</small></span></label>
+                </div>
+                <div class="zc-hint">Prețul transportului se confirmă după comandă, pe WhatsApp.</div>
 
                 <div class="zc-section">3. Plată</div>
                 <div class="zc-hint" style="margin-bottom:10px">Nu plătești nimic acum. Alegi doar cum vrei să plătești după confirmare.</div>
@@ -324,7 +333,8 @@
             'Comandă': orderId,
             'Produse': items.map(i => `${i.qty} × ${i.name} (${i.shop === 'wool' ? 'Wool' : '3D'}) — ${i.price * i.qty} LEI`).join('\n'),
             'Subtotal': `${sub} LEI`,
-            'Transport': free ? 'GRATUIT' : `de confirmat (${SHIPPING_ESTIMATE})`,
+            'Transport': free ? 'GRATUIT' : 'de confirmat cu clientul',
+            'Livrare preferată': data.livrare,
             'Plată': data.plata,
             'Nume': data.nume,
             'Telefon (WhatsApp)': data.telefon,

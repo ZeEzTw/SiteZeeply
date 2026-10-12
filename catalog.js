@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
+    const canHover = window.matchMedia('(hover: hover)').matches;
+
     // Opens a direct message thread on mobile, the inbox on desktop
     const dmLink = `https://ig.me/m/${config.instagram}`;
 
@@ -96,8 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     <button type="button" class="add-to-cart w-full py-2.5 md:py-3 ${theme.cta} text-[9px] md:text-[10px] uppercase font-bold tracking-[0.2em] transition">
                         Adaugă în coș
                     </button>
-                    <a href="${dmLink}" target="_blank" class="dm-link block mt-2 text-center text-[9px] md:text-[10px] tracking-wide ${theme.dmLink} transition">
-                        sau scrie-ne pe Instagram
+                    <a href="${dmLink}" target="_blank" class="dm-link mt-2 w-full py-2 md:py-2.5 flex items-center justify-center gap-1.5 border ${theme.dmLink} text-[9px] md:text-[10px] uppercase font-semibold tracking-[0.12em] md:tracking-[0.18em] transition">
+                        <svg class="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        <span><span class="hidden sm:inline">Scrie-ne pe </span>Instagram</span>
                     </a>
                 </div>
             `;
@@ -140,8 +143,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             card.querySelector('.dm-link').addEventListener('click', (e) => e.stopPropagation());
 
-            card.addEventListener('mouseenter', startSlideshow);
-            card.addEventListener('mouseleave', stopSlideshow);
+            // Slideshow on hover only for real pointers (see style.css, iOS tap handling)
+            if (canHover) {
+                card.addEventListener('mouseenter', startSlideshow);
+                card.addEventListener('mouseleave', stopSlideshow);
+            }
 
             // Mobile overlay auto-dismiss timer
             let mobileOverlayTimer = null;

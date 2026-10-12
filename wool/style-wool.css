@@ -21,9 +21,17 @@ h1, h2, h3, .heading-font {
     transform: translateY(0);
 }
 
-.product-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+/* Hover lift only on real pointers (iOS would swallow the first tap on card buttons) */
+@media (hover: hover) {
+    .product-card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.add-to-cart, .dm-link {
+    touch-action: manipulation;
+    cursor: pointer;
 }
 
 .wool-gradient-overlay {

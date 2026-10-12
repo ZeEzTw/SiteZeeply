@@ -34,9 +34,18 @@ h1, h2, h3, .heading-font {
     transform: translateY(0);
 }
 
-.product-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 40px -10px rgba(255, 255, 255, 0.1);
+/* Hover lift only on real pointers: on touch screens iOS Safari would turn the
+   first tap into a hover and swallow the click on the buttons inside the card */
+@media (hover: hover) {
+    .product-card:hover {
+        transform: translateY(-12px);
+        box-shadow: 0 20px 40px -10px rgba(255, 255, 255, 0.1);
+    }
+}
+
+.add-to-cart, .dm-link {
+    touch-action: manipulation;
+    cursor: pointer;
 }
 
 .gradient-overlay {

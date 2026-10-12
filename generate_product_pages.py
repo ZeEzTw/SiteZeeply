@@ -152,6 +152,36 @@ def colors_html(product, t, e):
                     </div>'''
 
 
+PAYMENT_ICONS = {
+    'truck': '<path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/>',
+    'locker': '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18"/><path d="M3 9h9"/><path d="M3 15h9"/><path d="M15 12h2"/>',
+    'bank': '<path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="m12 2 8 5H4z"/>',
+    'phone': '<rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/>',
+}
+PAYMENT_METHODS = [
+    ('truck', 'Ramburs la curier', 'cash sau card, la livrare'),
+    ('locker', 'Ramburs la easybox', 'cu cardul, la locker'),
+    ('bank', 'Transfer bancar', 'IBAN-ul ți-l trimitem pe WhatsApp'),
+    ('phone', 'Transfer Revolut', 'rapid, direct din aplicație'),
+]
+
+
+def payment_html(t):
+    items = '\n'.join(
+        f'''                            <div class="flex items-start gap-2.5 p-3 border rounded-lg {t['panel']}">
+                                <svg class="w-4 h-4 mt-0.5 shrink-0 {t['strong']}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">{PAYMENT_ICONS[icon]}</svg>
+                                <span class="text-[11px] md:text-xs leading-snug {t['strong']}">{title}<span class="block mt-0.5 text-[10px] md:text-[11px] {t['muted']}">{note}</span></span>
+                            </div>''' for icon, title, note in PAYMENT_METHODS)
+    return f'''
+                    <div class="mt-8">
+                        <h2 class="mb-1 text-xs md:text-sm font-semibold uppercase tracking-[0.25em] heading-font {t['strong']}">Metode de plată</h2>
+                        <p class="mb-3 text-[11px] md:text-xs {t['muted']}">Nu plătești nimic online. După ce confirmăm comanda pe WhatsApp, alegi:</p>
+                        <div class="grid grid-cols-2 gap-2">
+{items}
+                        </div>
+                    </div>'''
+
+
 def details_html(product, t, e):
     out = ''
     specs = product.get('specs')
@@ -296,13 +326,14 @@ def render_page(shop, product, products, nav, footer):
                             {IG_ICON}<span>Comandă prin mesaj</span>
                         </a>
                     </div>
+{payment_html(t)}
 {details_html(product, t, e)}
 
                     <ul class="mt-8 p-5 border rounded-xl {t['panel']} space-y-3 text-xs md:text-sm {t['muted']}">
                         <li>✓ Făcut de noi, în atelierul Zeeply</li>
                         <li>✓ Livrare prin Colete-Online: curier la adresă sau easybox</li>
                         <li>✓ Transport gratuit la comenzi de peste 50 LEI</li>
-                        <li>✓ Nu plătești nimic online: confirmăm comanda pe WhatsApp, apoi plătești ramburs, prin transfer sau Revolut</li>
+                        <li>✓ Confirmăm fiecare comandă personal, pe WhatsApp</li>
                     </ul>
                 </div>
             </div>

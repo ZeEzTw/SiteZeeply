@@ -7,7 +7,10 @@
     <meta name="description" content="Zeeply Wool — Handcrafted crochet creations made with love. Amigurumi toys, characters, and unique gifts. Made in Romania.">
     <meta property="og:title" content="Zeeply Wool | Handcrafted Crochet">
     <meta property="og:description" content="Handcrafted crochet creations. Amigurumi toys and characters made with premium velvet yarn.">
-    <meta property="og:image" content="../Logo/logo.webp">
+    <meta property="og:image" content="https://zeeply.studio/Logo/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://zeeply.studio/wool/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/webp" href="../Logo/logo.webp">
@@ -78,7 +81,7 @@
             </div>
 
             <div id="product-grid" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
-                <!-- Products dynamically injected via script.js -->
+                <!-- Products dynamically injected via ../catalog.js -->
             </div>
         </div>
     </section>
@@ -95,7 +98,36 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="products.js?v=1"></script>
-    <script src="script.js"></script>
+    <script>
+        window.ZEEPLY_CATALOG = {
+            instagram: 'zeeply.wool',
+            columns: 3,
+            tagline: 'HANDCRAFTED ITEM',
+            defaultDescription: 'Handcrafted with premium velvet yarn.',
+            fallbackSubtitle: 'Handmade Collection',
+            tabbedCategories: null,
+            titles: {
+                'All': { title: 'All Creations', subtitle: 'Handmade Collection' },
+                'Trending': { title: 'Trending Now', subtitle: 'Most Popular' }
+            },
+            analytics: { path: 'wool-product-', title: 'Clicked Wool Product: ' },
+            theme: {
+                empty: 'text-gray-400',
+                imageBox: 'bg-gray-50 rounded-lg',
+                indicatorOff: 'bg-black/10',
+                indicatorOn: 'bg-black/50',
+                overlay: 'from-white via-white/90 to-transparent',
+                overlayText: 'text-gray-600',
+                cta: 'bg-gray-900 text-white hover:bg-gray-700 rounded',
+                name: 'text-gray-900',
+                tagline: 'text-gray-400',
+                price: 'text-gray-500',
+                tabActive: ['text-gray-900', 'border-b-2', 'border-gray-900'],
+                tabInactive: 'text-gray-400'
+            }
+        };
+    </script>
+    <script src="products.js?v=2"></script>
+    <script src="../catalog.js?v=1"></script>
 </body>
 </html>

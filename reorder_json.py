@@ -1,12 +1,12 @@
 import json
 
 def reorder_products():
-    input_file = 'products.json'
+    input_file = '3d/products.json'
     try:
         with open(input_file, 'r') as f:
             products = json.load(f)
     except FileNotFoundError:
-        print("products.json not found")
+        print("3d/products.json not found")
         return
 
     # User Request: "first cv (Cs), lol, valorant, rust all the games"
@@ -74,7 +74,7 @@ def reorder_products():
         json.dump(final_order, f, indent=2)
     
     # Update products.js
-    with open('products.js', 'w', encoding='utf-8') as f:
+    with open('3d/products.js', 'w', encoding='utf-8') as f:
         f.write(f"const products = {json.dumps(final_order, indent=2)};")
 
     print(f"Reordered {len(final_order)} products.")

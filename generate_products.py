@@ -3,15 +3,16 @@ import json
 import re
 
 # Configuration
-BASE_DIR = 'Phothos' 
-OUTPUT_JSON = 'products.json'
-OUTPUT_JS = 'products.js'
+BASE_DIR = 'Photos' 
+OUTPUT_JSON = '3d/products.json'
+OUTPUT_JS = '3d/products.js'
 
 # Supported image extensions
 IMAGE_EXTENSIONS = {'.jpg', '.jpeg', '.png', '.webp', '.gif'}
 
 def get_products():
     products = []
+    pinned = []
     
     if not os.path.exists(BASE_DIR):
         print(f"Error: Directory '{BASE_DIR}' not found.")
@@ -42,10 +43,13 @@ def get_products():
                     return f.read().strip()
             return default
 
+        clean_name = read_file_safe(os.path.join(folder_path, 'name.txt'), clean_name)
         price = read_file_safe(price_file, "25")
         description = read_file_safe(desc_file, f"A premium {clean_name} design, meticulously crafted for the Zeeply collection.")
         category = read_file_safe(cat_file, "Keycaps")
         is_trending = read_file_safe(trend_file, "false").lower() == "true"
+        # pinned.txt = "true" moves the product to the top of the list
+        is_pinned = read_file_safe(os.path.join(folder_path, 'pinned.txt'), "false").lower() == "true"
 
         # Special logic: If trending.txt doesn't exist, we can still use a fallback list or just default to False
         # (Already handled by read_file_safe default)
@@ -58,7 +62,7 @@ def get_products():
                 ext = os.path.splitext(f)[1].lower()
                 if ext in IMAGE_EXTENSIONS:
                     # Relative path for web use
-                    rel_path = f"{BASE_DIR}/{folder_name}/{f}"
+                    rel_path = f"../{BASE_DIR}/{folder_name}/{f}"
                     images.append(rel_path)
         except OSError as e:
             print(f"Skipping {folder_name}: {e}")
@@ -77,11 +81,14 @@ def get_products():
             "price": price, 
             "description": description
         }
-        
-        products.append(product)
+
+        if is_pinned:
+            pinned.append(product)
+        else:
+            products.append(product)
         print(f"Generated: {clean_name} [{category}]")
 
-    return products
+    return pinned + products
 
 if __name__ == "__main__":
     data = get_products()

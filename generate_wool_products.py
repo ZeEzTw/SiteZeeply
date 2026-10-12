@@ -51,11 +51,14 @@ def get_products():
         clean_name = folder_name.strip()
 
         # Read the text file for metadata
-        text_file = os.path.join(folder_path, 'New Text Document.txt')
+        text_file = os.path.join(folder_path, 'description.txt')
         text_content = ""
         if os.path.exists(text_file):
             with open(text_file, 'r', encoding='utf-8') as f:
                 text_content = f.read().strip()
+
+        trend_file = os.path.join(folder_path, 'trending.txt')
+        is_trending = os.path.exists(trend_file) and open(trend_file, encoding='utf-8').read().strip().lower() == "true"
 
         price = extract_price(text_content)
         description = extract_description(text_content) if text_content else f"Handcrafted {clean_name}, made with love from soft velvet yarn."
@@ -79,7 +82,7 @@ def get_products():
         product = {
             "name": clean_name,
             "category": "Amigurumi",
-            "is_trending": False,
+            "is_trending": is_trending,
             "cover_image": images[0],
             "all_images": images,
             "price": price,

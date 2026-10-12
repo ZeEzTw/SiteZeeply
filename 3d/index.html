@@ -7,7 +7,10 @@
     <meta name="description" content="Zeeply 3D — Exclusive collection of custom gaming keycaps, F1 memorabilia, Stranger Things collectibles, and personalized frames. Handcrafted in Romania.">
     <meta property="og:title" content="Zeeply 3D | Printed Creations">
     <meta property="og:description" content="Exclusive collection of custom gaming keycaps, F1 memorabilia, and handcrafted collectibles. Elevate Your Reality.">
-    <meta property="og:image" content="../Logo/logo.webp">
+    <meta property="og:image" content="https://zeeply.studio/Logo/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="https://zeeply.studio/3d/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" type="image/webp" href="../Logo/logo.webp">
@@ -50,7 +53,7 @@
 
     <!-- Hero Section -->
     <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
-        <video autoplay muted loop playsinline class="hero-video">
+        <video autoplay muted loop playsinline poster="../SiteVideo/hero-poster.webp" class="hero-video">
             <source src="../SiteVideo/hero.mp4" type="video/mp4">
         </video>
         <div class="relative z-10 text-center px-6">
@@ -85,7 +88,7 @@
             </div>
 
             <div id="product-grid" class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
-                <!-- Products dynamically injected via script.js -->
+                <!-- Products dynamically injected via ../catalog.js -->
             </div>
         </div>
     </section>
@@ -102,7 +105,41 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="products.js?v=1"></script>
-    <script src="script.js"></script>
+    <script>
+        window.ZEEPLY_CATALOG = {
+            instagram: 'zeeply.3d',
+            columns: 4,
+            tagline: 'AVAILABLE TO ORDER',
+            defaultDescription: 'Limited stock available for this design.',
+            fallbackSubtitle: 'Zeeply Exclusive',
+            tabbedCategories: ['Flori', 'Keycaps', 'F1', 'Stranger Things', 'Big Products'],
+            titles: {
+                'All': { title: 'The Full Collection', subtitle: 'Zeeply Exclusive' },
+                'Trending': { title: 'Trending Now', subtitle: 'Most Popular' },
+                'Flori': { title: 'Flori 3D', subtitle: 'Handcrafted Blooms' },
+                'Keycaps': { title: 'Custom Keycaps', subtitle: 'Mechanical Art' },
+                'F1': { title: 'Formula 1 Collection', subtitle: 'Race Ready' },
+                'Stranger Things': { title: 'Stranger Things', subtitle: 'Upside Down' },
+                'Big Products': { title: 'Big Products', subtitle: 'Large Format' }
+            },
+            analytics: { path: 'product-', title: 'Clicked Product: ' },
+            theme: {
+                empty: 'text-gray-500',
+                imageBox: 'bg-zinc-900',
+                indicatorOff: 'bg-white/20',
+                indicatorOn: 'bg-white/80',
+                overlay: 'from-black via-black/80 to-transparent',
+                overlayText: 'text-gray-300',
+                cta: 'bg-white text-black hover:bg-gray-200',
+                name: '',
+                tagline: 'text-gray-500',
+                price: 'text-zinc-400',
+                tabActive: ['text-white', 'border-b-2', 'border-white'],
+                tabInactive: 'text-gray-500'
+            }
+        };
+    </script>
+    <script src="products.js?v=2"></script>
+    <script src="../catalog.js?v=1"></script>
 </body>
 </html>

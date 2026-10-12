@@ -1,0 +1,1 @@
+Keycap mat inspirat din Rust, cu un aspect robust.

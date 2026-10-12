@@ -2,9 +2,8 @@
 // The cart lives in localStorage, so one cart spans both shops.
 // Orders are sent as an email through FormSubmit (no backend needed).
 (() => {
-    // FormSubmit endpoint. After the first order, FormSubmit emails an activation link
-    // plus a random alias — put the alias here instead of the address to keep it private.
-    const ORDER_ENDPOINT = 'https://formsubmit.co/ajax/neagoe.andrei@live.com';
+    // FormSubmit endpoint (random alias of the order inbox, so the address stays private).
+    const ORDER_ENDPOINT = 'https://formsubmit.co/ajax/948a031619110ce13f6b4c7a94c79cd3';
     const FREE_SHIPPING_FROM = 50;
     const SHIPPING_ESTIMATE = '8–20 LEI';
     const STORAGE_KEY = 'zeeply-cart';

@@ -47,6 +47,7 @@
                 <a href="https://www.tiktok.com/@.zeeply" target="_blank" class="hover:text-gray-400 transition text-gray-700" aria-label="TikTok" data-goatcounter-click="wool-nav-tiktok">
                     <svg fill="currentColor" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
                 </a>
+                <span data-cart-slot class="flex items-center ml-1"></span>
             </div>
         </div>
     </nav>
@@ -101,6 +102,7 @@
     <script>
         window.ZEEPLY_CATALOG = {
             instagram: 'zeeply.wool',
+            shop: 'wool',
             columns: 3,
             tagline: 'HANDCRAFTED ITEM',
             defaultDescription: 'Handcrafted with premium velvet yarn.',
@@ -123,11 +125,13 @@
                 tagline: 'text-gray-400',
                 price: 'text-gray-500',
                 tabActive: ['text-gray-900', 'border-b-2', 'border-gray-900'],
+                addToCart: 'border-gray-900/30 text-gray-900 hover:bg-gray-900 hover:text-white rounded',
                 tabInactive: 'text-gray-400'
             }
         };
     </script>
     <script src="products.js?v=2"></script>
-    <script src="../catalog.js?v=1"></script>
+    <script src="../cart.js?v=1"></script>
+    <script src="../catalog.js?v=2"></script>
 </body>
 </html>

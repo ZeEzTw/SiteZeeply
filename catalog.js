@@ -95,6 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <span class="text-[10px] md:text-xs font-bold tracking-widest ${theme.price} whitespace-nowrap shrink-0 ml-2 md:ml-4">${product.price} LEI</span>
                 </div>
+                <button type="button" class="add-to-cart mt-3 mx-1 md:mx-2 w-[calc(100%-0.5rem)] md:w-[calc(100%-1rem)] py-2.5 border ${theme.addToCart} text-[9px] md:text-[10px] uppercase font-semibold tracking-[0.2em] transition">
+                    Add to cart
+                </button>
             `;
 
             let slideshowInterval;
@@ -123,6 +126,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 mainImage.src = product.cover_image;
                 setActiveIndicator(0);
             };
+
+            const addBtn = card.querySelector('.add-to-cart');
+            addBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                if (!window.ZeeplyCart) return;
+                window.ZeeplyCart.add({ shop: config.shop, name: product.name, price: product.price, image: product.cover_image });
+                addBtn.textContent = 'Added ✓';
+                setTimeout(() => { addBtn.textContent = 'Add to cart'; }, 1200);
+            });
 
             card.addEventListener('mouseenter', startSlideshow);
             card.addEventListener('mouseleave', stopSlideshow);

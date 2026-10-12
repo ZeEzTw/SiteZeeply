@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @source "./**/*.html";
 @source "./catalog.js";
+@source "./cart.js";
 
 @theme {
   --font-sans: 'Inter', sans-serif;

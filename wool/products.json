@@ -1,43 +1,5 @@
 [
   {
-    "name": "Baby Yoda",
-    "category": "Amigurumi",
-    "is_trending": false,
-    "cover_image": "../Zeeply_Wool/Baby Yoda/1.webp",
-    "all_images": [
-      "../Zeeply_Wool/Baby Yoda/1.webp",
-      "../Zeeply_Wool/Baby Yoda/2.webp",
-      "../Zeeply_Wool/Baby Yoda/3.webp"
-    ],
-    "price": "40",
-    "description": "Adaugă un plus de drăgălășenie colecției tale cu acest Baby Yoda croșetat manual!",
-    "specs": [
-      {
-        "label": "Material",
-        "value": "Fir catifelat (velutto), foarte moale"
-      },
-      {
-        "label": "Dimensiuni",
-        "value": "11 cm (înălțime) / 10 cm (lungime)."
-      }
-    ],
-    "colors": [
-      {
-        "name": "Verde",
-        "hex": "#22c55e"
-      },
-      {
-        "name": "Bej",
-        "hex": "#e8d8c3"
-      },
-      {
-        "name": "Maro",
-        "hex": "#8b5a2b"
-      }
-    ],
-    "slug": "baby-yoda"
-  },
-  {
     "name": "Cenușilă",
     "category": "Amigurumi",
     "is_trending": true,
@@ -250,6 +212,30 @@
     ],
     "price": "40",
     "description": "Breloc simpatic inspirat din galaxiile îndepărtate, lucrat 100% manual din fir catifelat tip Velluto cu hăinuță texturată și urechiușe expresive, ideal pentru chei, ghiozdan sau colecționari și realizabil la comandă în culorile tale preferate.",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Fir catifelat (velutto), foarte moale"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "11 cm (înălțime) / 10 cm (lungime)."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Verde",
+        "hex": "#22c55e"
+      },
+      {
+        "name": "Bej",
+        "hex": "#e8d8c3"
+      },
+      {
+        "name": "Maro",
+        "hex": "#8b5a2b"
+      }
+    ],
     "slug": "micul-calator-galactic"
   },
   {

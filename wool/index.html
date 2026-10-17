@@ -16,7 +16,7 @@
     <link rel="icon" type="image/webp" href="../Logo/logo.webp">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../dist.css?v=5">
-    <link rel="stylesheet" href="style-wool.css?v=4">
+    <link rel="stylesheet" href="style-wool.css?v=5">
     <script data-goatcounter="https://zeeply.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 </head>
@@ -52,15 +52,38 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden bg-white">
-        <div class="absolute inset-0 bg-gradient-to-b from-rose-50/50 via-white to-white"></div>
-        <div class="relative z-10 text-center px-6">
-            <h1 class="text-5xl md:text-8xl font-bold tracking-tighter mb-4 animate-fade-in uppercase text-gray-900">Zeeply Wool</h1>
-            <p class="text-sm md:text-xl font-light tracking-[0.2em] md:tracking-widest text-gray-500 animate-fade-in">Handcrafted with Love</p>
-            <a href="#products" id="discover-btn" class="mt-8 inline-block px-8 py-3 md:px-10 md:py-4 border border-gray-900 text-gray-900 text-[10px] md:text-xs uppercase tracking-[0.3em] hover:bg-gray-900 hover:text-white transition duration-500 animate-fade-in" data-goatcounter-click="wool-hero-discover">Discover Collection</a>
+    <!-- Hero Section: Pufi's photo grows from an arch into a large card as you scroll -->
+    <section id="hero" class="wool-hero">
+        <div class="wool-hero-stage">
+            <div class="absolute inset-0 bg-gradient-to-b from-rose-50/50 via-white to-white"></div>
+
+            <div class="wool-hero-confetti" aria-hidden="true">
+                <span style="--x:14%; --y:62%; --c:#c4b5fd; --d:0s"></span>
+                <span style="--x:24%; --y:84%; --c:#7dd3fc; --d:-1.2s"></span>
+                <span style="--x:80%; --y:58%; --c:#fde68a; --d:-0.6s"></span>
+                <span style="--x:72%; --y:86%; --c:#fdba74; --d:-2s"></span>
+                <span style="--x:88%; --y:74%; --c:#f9a8d4; --d:-1.6s"></span>
+                <span style="--x:8%;  --y:76%; --c:#fde68a; --d:-2.6s"></span>
+            </div>
+
+            <div class="wool-hero-cards" aria-hidden="true">
+                <div class="wool-hero-card" data-card="left"><img src="../Zeeply_Wool/Pufi%20S%C4%83rb%C4%83toritul/2.webp" alt="" loading="lazy"></div>
+                <div class="wool-hero-card" data-card="right"><img src="../Zeeply_Wool/Pufi%20S%C4%83rb%C4%83toritul/3.webp" alt="" loading="lazy"></div>
+                <div class="wool-hero-card" data-card="main"><img src="../Zeeply_Wool/Pufi%20S%C4%83rb%C4%83toritul/1.webp" alt="" fetchpriority="high"></div>
+            </div>
+
+            <div class="wool-hero-text relative z-10 text-center px-6">
+                <h1 class="text-5xl md:text-8xl font-bold tracking-tighter mb-4 animate-fade-in uppercase text-gray-900">Zeeply Wool</h1>
+                <p class="text-sm md:text-xl font-light tracking-[0.2em] md:tracking-widest text-gray-500 animate-fade-in">Handcrafted with Love</p>
+                <a href="#products" id="discover-btn" class="mt-8 inline-block px-8 py-3 md:px-10 md:py-4 border border-gray-900 text-gray-900 text-[10px] md:text-xs uppercase tracking-[0.3em] hover:bg-gray-900 hover:text-white transition duration-500 animate-fade-in" data-goatcounter-click="wool-hero-discover">Discover Collection</a>
+            </div>
+
+            <a href="p/pufi-sarbatoritul/" class="wool-hero-caption" data-goatcounter-click="wool-hero-pufi">
+                <span class="wool-hero-caption-kicker">Nou</span>
+                <span class="wool-hero-caption-name">Pufi Sărbătoritul</span>
+                <span class="wool-hero-caption-cta">Vezi produsul →</span>
+            </a>
         </div>
-        <div class="absolute bottom-0 left-0 w-full h-32 wool-gradient-overlay"></div>
     </section>
 
     <!-- Product Grid Section -->
@@ -162,5 +185,6 @@
     <script src="products.js?v=5"></script>
     <script src="../cart.js?v=11"></script>
     <script src="../catalog.js?v=9"></script>
+    <script src="hero.js?v=1"></script>
 </body>
 </html>

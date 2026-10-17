@@ -37,6 +37,7 @@ def extract_description(text):
 
 def get_products():
     products = []
+    pinned = []
 
     if not os.path.exists(BASE_DIR):
         print(f"Error: Directory '{BASE_DIR}' not found.")
@@ -61,6 +62,10 @@ def get_products():
 
         trend_file = os.path.join(folder_path, 'trending.txt')
         is_trending = os.path.exists(trend_file) and open(trend_file, encoding='utf-8').read().strip().lower() == "true"
+
+        # pinned.txt = "true" moves the product to the top of the list
+        pinned_file = os.path.join(folder_path, 'pinned.txt')
+        is_pinned = os.path.exists(pinned_file) and open(pinned_file, encoding='utf-8').read().strip().lower() == "true"
 
         price = extract_price(text_content)
         description = extract_description(text_content) if text_content else f"Handcrafted {clean_name}, made with love from soft velvet yarn."
@@ -96,10 +101,13 @@ def get_products():
         product.update(product_details.extras(folder_path, f"../{BASE_DIR}/{folder_name}",
                                               product_details.wool_specs(text_content)))
 
-        products.append(product)
+        if is_pinned:
+            pinned.append(product)
+        else:
+            products.append(product)
         print(f"Generated: {clean_name} [{price} LEI]")
 
-    return products
+    return pinned + products
 
 if __name__ == "__main__":
     import generate_product_pages

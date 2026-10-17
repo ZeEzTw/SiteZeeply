@@ -24,7 +24,7 @@ Site-ul [zeeply.studio](https://zeeply.studio): pagina de start, magazinele `3d/
 | `pinned.txt` | `true` ca să apară primul în listă |
 | `name.txt` | alt nume decât cel al folderului (opțional) |
 
-Produsele Wool folosesc un singur `description.txt`. Din el se citesc automat prețul (`Preț: 40 lei`) și rândurile `Dimensiuni:`, `Material:`, `Textură:`, `Culori:`, `Detalii:`, `Accesorii:`.
+Produsele Wool folosesc un singur `description.txt`. Din el se citesc automat prețul (`Preț: 40 lei`) și rândurile `Dimensiuni:`, `Material:`, `Textură:`, `Culori:`, `Detalii:`, `Accesorii:`. Merg și `trending.txt` și `pinned.txt`, la fel ca la 3D.
 
 ## Detalii opționale pe pagina produsului (ambele magazine)
 

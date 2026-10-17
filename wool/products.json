@@ -1,5 +1,98 @@
 [
   {
+    "name": "Iepurașul Bulgăraș",
+    "category": "Amigurumi",
+    "is_trending": false,
+    "cover_image": "../Zeeply_Wool/Iepurașul Bulgăraș/1.webp",
+    "all_images": [
+      "../Zeeply_Wool/Iepurașul Bulgăraș/1.webp",
+      "../Zeeply_Wool/Iepurașul Bulgăraș/2.webp",
+      "../Zeeply_Wool/Iepurașul Bulgăraș/3.webp"
+    ],
+    "price": "40",
+    "description": "Breloc unicat în formă de iepuraș pufos, lucrat 100% manual din fir moale tip Velluto, ideal pentru chei, rucsac sau decor și disponibil la comandă în orice culoare dorești.",
+    "slug": "iepurasul-bulgaras"
+  },
+  {
+    "name": "Merlin cel Pufos",
+    "category": "Amigurumi",
+    "is_trending": false,
+    "cover_image": "../Zeeply_Wool/Merlin cel Pufos/1.webp",
+    "all_images": [
+      "../Zeeply_Wool/Merlin cel Pufos/1.webp",
+      "../Zeeply_Wool/Merlin cel Pufos/2.webp",
+      "../Zeeply_Wool/Merlin cel Pufos/3.webp"
+    ],
+    "price": "45",
+    "description": "Micuț animal vrăjitor lucrat 100% manual din fir catifelat tip Velluto, echipat cu mantie și pălărie fermecată cu steluțe, perfect ca talisman norocos sau cadou magic și realizabil la comandă în orice culoare dorești.",
+    "slug": "merlin-cel-pufos"
+  },
+  {
+    "name": "Micul Călător Galactic",
+    "category": "Amigurumi",
+    "is_trending": false,
+    "cover_image": "../Zeeply_Wool/Micul Călător Galactic/1.webp",
+    "all_images": [
+      "../Zeeply_Wool/Micul Călător Galactic/1.webp",
+      "../Zeeply_Wool/Micul Călător Galactic/2.webp"
+    ],
+    "price": "40",
+    "description": "Breloc simpatic inspirat din galaxiile îndepărtate, lucrat 100% manual din fir catifelat tip Velluto cu hăinuță texturată și urechiușe expresive, ideal pentru chei, ghiozdan sau colecționari și realizabil la comandă în culorile tale preferate.",
+    "specs": [
+      {
+        "label": "Material",
+        "value": "Fir catifelat (velutto), foarte moale"
+      },
+      {
+        "label": "Dimensiuni",
+        "value": "11 cm (înălțime) / 10 cm (lungime)."
+      }
+    ],
+    "colors": [
+      {
+        "name": "Verde",
+        "hex": "#22c55e"
+      },
+      {
+        "name": "Bej",
+        "hex": "#e8d8c3"
+      },
+      {
+        "name": "Maro",
+        "hex": "#8b5a2b"
+      }
+    ],
+    "slug": "micul-calator-galactic"
+  },
+  {
+    "name": "Pufi Sărbătoritul",
+    "category": "Amigurumi",
+    "is_trending": false,
+    "cover_image": "../Zeeply_Wool/Pufi Sărbătoritul/1.webp",
+    "all_images": [
+      "../Zeeply_Wool/Pufi Sărbătoritul/1.webp",
+      "../Zeeply_Wool/Pufi Sărbătoritul/2.webp",
+      "../Zeeply_Wool/Pufi Sărbătoritul/3.webp"
+    ],
+    "price": "40",
+    "description": "Puișor pufos lucrat 100% manual din fir catifelat tip Velluto, accesorizat cu un coif festiv vesel, cadoul perfect pentru zile de naștere și disponibil la comandă în orice combinație de culori dorești.",
+    "slug": "pufi-sarbatoritul"
+  },
+  {
+    "name": "Vidra Nola",
+    "category": "Amigurumi",
+    "is_trending": false,
+    "cover_image": "../Zeeply_Wool/Vidra Nola/1.webp",
+    "all_images": [
+      "../Zeeply_Wool/Vidra Nola/1.webp",
+      "../Zeeply_Wool/Vidra Nola/2.webp",
+      "../Zeeply_Wool/Vidra Nola/3.webp"
+    ],
+    "price": "45",
+    "description": "Breloc unicat, lucrat 100% manual din fir catifelat tip Velluto, înfățișând o vidră adorabilă care ține un peștișor albastru și care poate fi folosit atât pentru chei sau ghiozdan, cât și ca decor.",
+    "slug": "vidra-nola"
+  },
+  {
     "name": "Cenușilă",
     "category": "Amigurumi",
     "is_trending": true,
@@ -174,71 +267,6 @@
     "slug": "detectivul-mac"
   },
   {
-    "name": "Iepurașul Bulgăraș",
-    "category": "Amigurumi",
-    "is_trending": false,
-    "cover_image": "../Zeeply_Wool/Iepurașul Bulgăraș/1.webp",
-    "all_images": [
-      "../Zeeply_Wool/Iepurașul Bulgăraș/1.webp",
-      "../Zeeply_Wool/Iepurașul Bulgăraș/2.webp",
-      "../Zeeply_Wool/Iepurașul Bulgăraș/3.webp"
-    ],
-    "price": "40",
-    "description": "Breloc unicat în formă de iepuraș pufos, lucrat 100% manual din fir moale tip Velluto, ideal pentru chei, rucsac sau decor și disponibil la comandă în orice culoare dorești.",
-    "slug": "iepurasul-bulgaras"
-  },
-  {
-    "name": "Merlin cel Pufos",
-    "category": "Amigurumi",
-    "is_trending": false,
-    "cover_image": "../Zeeply_Wool/Merlin cel Pufos/1.webp",
-    "all_images": [
-      "../Zeeply_Wool/Merlin cel Pufos/1.webp",
-      "../Zeeply_Wool/Merlin cel Pufos/2.webp",
-      "../Zeeply_Wool/Merlin cel Pufos/3.webp"
-    ],
-    "price": "45",
-    "description": "Micuț animal vrăjitor lucrat 100% manual din fir catifelat tip Velluto, echipat cu mantie și pălărie fermecată cu steluțe, perfect ca talisman norocos sau cadou magic și realizabil la comandă în orice culoare dorești.",
-    "slug": "merlin-cel-pufos"
-  },
-  {
-    "name": "Micul Călător Galactic",
-    "category": "Amigurumi",
-    "is_trending": false,
-    "cover_image": "../Zeeply_Wool/Micul Călător Galactic/1.webp",
-    "all_images": [
-      "../Zeeply_Wool/Micul Călător Galactic/1.webp",
-      "../Zeeply_Wool/Micul Călător Galactic/2.webp"
-    ],
-    "price": "40",
-    "description": "Breloc simpatic inspirat din galaxiile îndepărtate, lucrat 100% manual din fir catifelat tip Velluto cu hăinuță texturată și urechiușe expresive, ideal pentru chei, ghiozdan sau colecționari și realizabil la comandă în culorile tale preferate.",
-    "specs": [
-      {
-        "label": "Material",
-        "value": "Fir catifelat (velutto), foarte moale"
-      },
-      {
-        "label": "Dimensiuni",
-        "value": "11 cm (înălțime) / 10 cm (lungime)."
-      }
-    ],
-    "colors": [
-      {
-        "name": "Verde",
-        "hex": "#22c55e"
-      },
-      {
-        "name": "Bej",
-        "hex": "#e8d8c3"
-      },
-      {
-        "name": "Maro",
-        "hex": "#8b5a2b"
-      }
-    ],
-    "slug": "micul-calator-galactic"
-  },
-  {
     "name": "Milkshake",
     "category": "Amigurumi",
     "is_trending": false,
@@ -356,33 +384,5 @@
       }
     ],
     "slug": "norila"
-  },
-  {
-    "name": "Pufi Sărbătoritul",
-    "category": "Amigurumi",
-    "is_trending": false,
-    "cover_image": "../Zeeply_Wool/Pufi Sărbătoritul/1.webp",
-    "all_images": [
-      "../Zeeply_Wool/Pufi Sărbătoritul/1.webp",
-      "../Zeeply_Wool/Pufi Sărbătoritul/2.webp",
-      "../Zeeply_Wool/Pufi Sărbătoritul/3.webp"
-    ],
-    "price": "40",
-    "description": "Puișor pufos lucrat 100% manual din fir catifelat tip Velluto, accesorizat cu un coif festiv vesel, cadoul perfect pentru zile de naștere și disponibil la comandă în orice combinație de culori dorești.",
-    "slug": "pufi-sarbatoritul"
-  },
-  {
-    "name": "Vidra Nola",
-    "category": "Amigurumi",
-    "is_trending": false,
-    "cover_image": "../Zeeply_Wool/Vidra Nola/1.webp",
-    "all_images": [
-      "../Zeeply_Wool/Vidra Nola/1.webp",
-      "../Zeeply_Wool/Vidra Nola/2.webp",
-      "../Zeeply_Wool/Vidra Nola/3.webp"
-    ],
-    "price": "45",
-    "description": "Breloc unicat, lucrat 100% manual din fir catifelat tip Velluto, înfățișând o vidră adorabilă care ține un peștișor albastru și care poate fi folosit atât pentru chei sau ghiozdan, cât și ca decor.",
-    "slug": "vidra-nola"
   }
 ]
